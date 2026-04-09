@@ -1,14 +1,15 @@
-# 🇩🇪 Deutsch Daily — German Flashcards
+# 📚 Vocab Daily — Language Flashcards
 
-Learn the most common German words with spaced repetition flashcards. Built as a static site for GitHub Pages — no backend, no build step.
+Learn vocabulary in any language with spaced repetition flashcards. Built as a static site for GitHub Pages — no backend, no build step.
 
 ## Features
 
-- **598 curated German words** — common nouns, verbs, adjectives, and adverbs (no filler words like articles or determiners)
+- **Language-agnostic** — ships with German, easily extendable to Spanish, French, etc.
+- **598 curated German words** — nouns, verbs, adjectives, and adverbs (no filler words)
 - **3 flashcard modes**:
-  - 🇩🇪→🇬🇧 German → English
-  - 🇬🇧→🇩🇪 English → German
-  - 🖼️→🇩🇪 Image → German (with Unsplash API)
+  - Target → Base (e.g., German → English)
+  - Base → Target (e.g., English → German)
+  - Image → Target (see an image, guess the word)
 - **Spaced repetition (SM-2)** — words you struggle with come back more often
 - **5 new words/day** (configurable) — steady vocabulary growth
 - **Progress tracking** — streak, accuracy, words learned
@@ -19,13 +20,18 @@ Learn the most common German words with spaced repetition flashcards. Built as a
 
 1. Clone or fork this repository
 2. Enable GitHub Pages (Settings → Pages → Source: `main` branch)
-3. Visit `https://<your-username>.github.io/german-flashcards`
+3. Visit `https://<your-username>.github.io/flashcards`
+
+### Adding a New Language
+
+1. Create a word list file in `data/` (e.g., `data/es.js`) following the same format as `data/de.js`
+   - Each word needs: `id`, `target` (the word to learn), `base` (translation), `pos`, `imageSearch`
+2. Register the language in `js/lang.js` under the `LANGUAGES` object
+3. Add a `<script src="data/es.js">` tag in `index.html`
 
 ### Image Mode (Optional)
 
-To enable image-based flashcards:
-1. Get a free API key at [unsplash.com/developers](https://unsplash.com/developers)
-2. Enter the key in Settings within the app
+Get a free API key at [unsplash.com/developers](https://unsplash.com/developers) and enter it in Settings.
 
 ## Keyboard Shortcuts
 

@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Learn the 1000 most common German words with flashcards and spaced repetition">
+  <meta name="description" content="Learn vocabulary with flashcards and spaced repetition">
   <meta name="theme-color" content="#1a1a2e">
-  <title>Deutsch Daily — German Flashcards</title>
+  <title>Vocab Daily — Flashcards</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇩🇪</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
 </head>
 <body>
   <div id="app">
     <header>
-      <h1 class="logo">🇩🇪 Deutsch Daily</h1>
+      <h1 class="logo" id="app-logo">📚 Vocab Daily</h1>
       <nav id="main-nav">
         <button class="nav-btn active" data-view="dashboard">Dashboard</button>
         <button class="nav-btn" data-view="practice">Practice</button>
@@ -45,8 +45,8 @@
 
         <div class="word-of-day" id="word-of-day">
           <h3>Word of the Day</h3>
-          <p class="wod-german" id="wod-german">—</p>
-          <p class="wod-english" id="wod-english">—</p>
+          <p class="wod-target" id="wod-target">—</p>
+          <p class="wod-base" id="wod-base">—</p>
         </div>
 
         <div class="progress-section">
@@ -61,20 +61,20 @@
       <section id="mode-view" class="view">
         <h2>Choose Your Mode</h2>
         <div class="mode-grid">
-          <button class="mode-card" data-mode="de-en">
-            <span class="mode-icon">🇩🇪 → 🇬🇧</span>
-            <span class="mode-title">German → English</span>
-            <span class="mode-desc">See German, guess English</span>
+          <button class="mode-card" data-mode="target-base">
+            <span class="mode-icon" id="mode-icon-tb"></span>
+            <span class="mode-title" id="mode-title-tb"></span>
+            <span class="mode-desc" id="mode-desc-tb"></span>
           </button>
-          <button class="mode-card" data-mode="en-de">
-            <span class="mode-icon">🇬🇧 → 🇩🇪</span>
-            <span class="mode-title">English → German</span>
-            <span class="mode-desc">See English, guess German</span>
+          <button class="mode-card" data-mode="base-target">
+            <span class="mode-icon" id="mode-icon-bt"></span>
+            <span class="mode-title" id="mode-title-bt"></span>
+            <span class="mode-desc" id="mode-desc-bt"></span>
           </button>
-          <button class="mode-card" data-mode="img-de">
-            <span class="mode-icon">🖼️ → 🇩🇪</span>
-            <span class="mode-title">Image → German</span>
-            <span class="mode-desc">See image, guess the word</span>
+          <button class="mode-card" data-mode="img-target">
+            <span class="mode-icon" id="mode-icon-it"></span>
+            <span class="mode-title" id="mode-title-it"></span>
+            <span class="mode-desc" id="mode-desc-it"></span>
           </button>
         </div>
       </section>
@@ -133,6 +133,12 @@
         <h2>Settings</h2>
         <div class="settings-group">
           <label>
+            Language
+            <select id="setting-language"></select>
+          </label>
+        </div>
+        <div class="settings-group">
+          <label>
             New words per day
             <input type="range" id="setting-daily" min="1" max="20" value="5">
             <span id="setting-daily-val">5</span>
@@ -152,8 +158,9 @@
     </main>
   </div>
 
-  <script src="js/words.js"></script>
   <script src="js/storage.js"></script>
+  <script src="js/lang.js"></script>
+  <script src="data/de.js"></script>
   <script src="js/srs.js"></script>
   <script src="js/images.js"></script>
   <script src="js/flashcard.js"></script>

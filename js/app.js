@@ -4,9 +4,48 @@ const App = (() => {
   function init() {
     Flashcard.init();
     loadTheme();
+    updateBranding();
+    updateModeLabels();
     bindEvents();
+    initLanguageSelector();
     showView('dashboard');
     updateDashboard();
+  }
+
+  function updateBranding() {
+    const lang = Lang.getCurrent();
+    document.getElementById('app-logo').textContent = `${lang.flag} Vocab Daily`;
+    document.title = `Vocab Daily — ${lang.name} Flashcards`;
+  }
+
+  function updateModeLabels() {
+    const labels = Lang.getModeLabels();
+    document.getElementById('mode-icon-tb').textContent = labels['target-base'].icon;
+    document.getElementById('mode-title-tb').textContent = labels['target-base'].title;
+    document.getElementById('mode-desc-tb').textContent = labels['target-base'].desc;
+    document.getElementById('mode-icon-bt').textContent = labels['base-target'].icon;
+    document.getElementById('mode-title-bt').textContent = labels['base-target'].title;
+    document.getElementById('mode-desc-bt').textContent = labels['base-target'].desc;
+    document.getElementById('mode-icon-it').textContent = labels['img-target'].icon;
+    document.getElementById('mode-title-it').textContent = labels['img-target'].title;
+    document.getElementById('mode-desc-it').textContent = labels['img-target'].desc;
+  }
+
+  function initLanguageSelector() {
+    const select = document.getElementById('setting-language');
+    const available = Lang.getAvailable();
+    const current = Lang.getCode();
+
+    select.innerHTML = available.map(l =>
+      `<option value="${l.code}" ${l.code === current ? 'selected' : ''}>${l.flag} ${l.name} (${l.nativeName})</option>`
+    ).join('');
+
+    select.addEventListener('change', () => {
+      Storage.updateSettings({ language: select.value });
+      updateBranding();
+      updateModeLabels();
+      updateDashboard();
+    });
   }
 
   function showView(name) {
@@ -14,7 +53,6 @@ const App = (() => {
     const view = document.getElementById(`${name}-view`);
     if (view) view.classList.add('active');
 
-    // Update nav
     document.querySelectorAll('.nav-btn').forEach(btn => {
       btn.classList.toggle('active', btn.dataset.view === name);
     });
@@ -32,10 +70,9 @@ const App = (() => {
     const today = new Date().toISOString().slice(0, 10);
     const dayHash = today.split('-').reduce((a, b) => a + parseInt(b), 0);
     const wod = WORDS[dayHash % WORDS.length];
-    document.getElementById('wod-german').textContent = wod.german;
-    document.getElementById('wod-english').textContent = wod.english;
+    document.getElementById('wod-target').textContent = wod.target;
+    document.getElementById('wod-base').textContent = wod.base;
 
-    // Weekly progress chart
     renderWeeklyChart();
   }
 

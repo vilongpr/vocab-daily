@@ -3,7 +3,7 @@
 const Flashcard = (() => {
   let currentQueue = [];
   let currentIndex = 0;
-  let currentMode = 'de-en';
+  let currentMode = 'target-base';
   let isFlipped = false;
   let sessionStats = { total: 0, correct: 0, newWords: 0, words: [] };
 
@@ -54,23 +54,24 @@ const Flashcard = (() => {
     elements.image.style.display = 'none';
     elements.image.style.backgroundImage = '';
 
-    if (currentMode === 'de-en') {
-      elements.word.textContent = word.german;
+    if (currentMode === 'target-base') {
+      elements.word.textContent = word.target;
       elements.hint.textContent = word.pos;
-      elements.answer.textContent = word.english;
+      elements.answer.textContent = word.base;
       elements.pos.textContent = '';
-      elements.extra.textContent = word.german;
-    } else if (currentMode === 'en-de') {
-      elements.word.textContent = word.english;
+      elements.extra.textContent = word.target;
+    } else if (currentMode === 'base-target') {
+      elements.word.textContent = word.base;
       elements.hint.textContent = word.pos;
-      elements.answer.textContent = word.german;
+      elements.answer.textContent = word.target;
       elements.pos.textContent = word.pos;
       elements.extra.textContent = '';
-    } else if (currentMode === 'img-de') {
+    } else if (currentMode === 'img-target') {
+      const lang = Lang.getCurrent();
       elements.word.textContent = '?';
-      elements.hint.textContent = 'Guess the German word';
+      elements.hint.textContent = `Guess the ${lang.name} word`;
 
-      const img = await Images.fetchImage(word.imageSearch || word.english, word.pos);
+      const img = await Images.fetchImage(word.imageSearch || word.base, word.pos);
       if (img.url) {
         elements.image.style.display = 'block';
         elements.image.style.backgroundImage = `url(${img.url})`;
@@ -78,12 +79,12 @@ const Flashcard = (() => {
       } else {
         elements.image.style.display = 'none';
         elements.word.textContent = img.emoji || '🖼️';
-        elements.hint.textContent = word.english;
+        elements.hint.textContent = word.base;
       }
 
-      elements.answer.textContent = word.german;
+      elements.answer.textContent = word.target;
       elements.pos.textContent = word.pos;
-      elements.extra.textContent = word.english;
+      elements.extra.textContent = word.base;
     }
   }
 
@@ -108,8 +109,8 @@ const Flashcard = (() => {
     if (correct) sessionStats.correct++;
     if (wasNew) sessionStats.newWords++;
     sessionStats.words.push({
-      german: word.german,
-      english: word.english,
+      target: word.target,
+      base: word.base,
       correct
     });
 
@@ -131,7 +132,7 @@ const Flashcard = (() => {
     const wordsDiv = document.getElementById('summary-words');
     wordsDiv.innerHTML = sessionStats.words.map(w => `
       <div class="summary-word-row">
-        <span>${w.german} — ${w.english}</span>
+        <span>${w.target} — ${w.base}</span>
         <span class="${w.correct ? 'correct' : 'incorrect'}">${w.correct ? '✓' : '✗'}</span>
       </div>
     `).join('');
