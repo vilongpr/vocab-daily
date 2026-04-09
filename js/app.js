@@ -136,7 +136,11 @@ const App = (() => {
     document.querySelectorAll('.mode-card').forEach(btn => {
       btn.addEventListener('click', () => {
         const mode = btn.dataset.mode;
-        const queue = SRS.getTodayQueue(WORDS);
+        // For image mode, only include words with clear visual representations
+        const wordPool = mode === 'img-target'
+          ? WORDS.filter(w => w.imageable)
+          : WORDS;
+        const queue = SRS.getTodayQueue(wordPool);
         showView('flashcard');
         Flashcard.startSession(queue, mode);
       });

@@ -68,18 +68,17 @@ const Flashcard = (() => {
       elements.extra.textContent = '';
     } else if (currentMode === 'img-target') {
       const lang = Lang.getCurrent();
-      elements.word.textContent = '?';
+      elements.word.textContent = '';
       elements.hint.textContent = `Guess the ${lang.name} word`;
 
       const img = await Images.fetchImage(word.imageSearch || word.base, word.pos);
       if (img.url) {
         elements.image.style.display = 'block';
         elements.image.style.backgroundImage = `url(${img.url})`;
-        elements.word.textContent = '';
       } else {
+        // Emoji-only fallback — never reveal the translation
         elements.image.style.display = 'none';
         elements.word.textContent = img.emoji || '🖼️';
-        elements.hint.textContent = word.base;
       }
 
       elements.answer.textContent = word.target;
