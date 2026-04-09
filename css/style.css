@@ -426,6 +426,60 @@ kbd {
 }
 .setting-hint a { color: var(--accent); }
 
+/* === Vocabulary Table === */
+.vocab-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.vocab-search {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 0.95rem;
+}
+.vocab-search:focus { outline: none; border-color: var(--accent); }
+.vocab-count { color: var(--text-secondary); font-size: 0.85rem; white-space: nowrap; }
+.vocab-table-wrap {
+  overflow-y: auto;
+  max-height: 65vh;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.vocab-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+.vocab-table thead { position: sticky; top: 0; z-index: 1; }
+.vocab-table th {
+  background: var(--accent);
+  color: #fff;
+  padding: 0.6rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  user-select: none;
+}
+.vocab-table th.sortable { cursor: pointer; }
+.vocab-table th.sortable:hover { opacity: 0.85; }
+.vocab-table td {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+.vocab-table tr:last-child td { border-bottom: none; }
+.vocab-table tr:hover td { background: var(--bg); }
+.vocab-table .pos-badge {
+  font-size: 0.75rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  background: var(--border);
+  color: var(--text-secondary);
+}
+
 /* === Responsive === */
 @media (max-width: 600px) {
   header { flex-wrap: wrap; padding: 0.75rem 1rem; }

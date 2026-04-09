@@ -58,6 +58,41 @@ const App = (() => {
     });
 
     if (name === 'dashboard') updateDashboard();
+    if (name === 'vocabulary') renderVocabulary();
+  }
+
+  // --- Vocabulary ---
+  let vocabSortField = 'base';
+  let vocabSortAsc = true;
+
+  function renderVocabulary(filter = '') {
+    const lang = Lang.getCurrent();
+    const baseName = lang.base.name;
+    const thBase = document.getElementById('vocab-th-base');
+    const thTarget = document.getElementById('vocab-th-target');
+
+    const query = filter.toLowerCase();
+    let words = WORDS.filter(w =>
+      !query || w.base.toLowerCase().includes(query) || w.target.toLowerCase().includes(query)
+    );
+
+    words.sort((a, b) => {
+      const av = a[vocabSortField].toLowerCase();
+      const bv = b[vocabSortField].toLowerCase();
+      return vocabSortAsc ? av.localeCompare(bv) : bv.localeCompare(av);
+    });
+
+    // Update column headers with sort arrows
+    const arrow = vocabSortAsc ? ' ↑' : ' ↓';
+    thBase.textContent = baseName + (vocabSortField === 'base' ? arrow : '');
+    thTarget.textContent = lang.name + (vocabSortField === 'target' ? arrow : '');
+    thBase.classList.toggle('active', vocabSortField === 'base');
+    thTarget.classList.toggle('active', vocabSortField === 'target');
+
+    document.getElementById('vocab-count').textContent = `${words.length} words`;
+    document.getElementById('vocab-body').innerHTML = words.map(w =>
+      `<tr><td>${w.base}</td><td>${w.target}</td><td><span class="pos-badge">${w.pos}</span></td></tr>`
+    ).join('');
   }
 
   function updateDashboard() {
@@ -126,6 +161,21 @@ const App = (() => {
 
     // Theme toggle
     document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+
+    // Vocabulary search and sort
+    document.getElementById('vocab-search').addEventListener('input', (e) => {
+      renderVocabulary(e.target.value);
+    });
+    document.getElementById('vocab-th-base').addEventListener('click', () => {
+      if (vocabSortField === 'base') vocabSortAsc = !vocabSortAsc;
+      else { vocabSortField = 'base'; vocabSortAsc = true; }
+      renderVocabulary(document.getElementById('vocab-search').value);
+    });
+    document.getElementById('vocab-th-target').addEventListener('click', () => {
+      if (vocabSortField === 'target') vocabSortAsc = !vocabSortAsc;
+      else { vocabSortField = 'target'; vocabSortAsc = true; }
+      renderVocabulary(document.getElementById('vocab-search').value);
+    });
 
     // Start practice
     document.getElementById('btn-start-practice').addEventListener('click', () => {

@@ -15,6 +15,7 @@
       <h1 class="logo" id="app-logo">📚 Vocab Daily</h1>
       <nav id="main-nav">
         <button class="nav-btn active" data-view="dashboard">Dashboard</button>
+        <button class="nav-btn" data-view="vocabulary">Vocabulary</button>
         <button class="nav-btn" data-view="settings">Settings</button>
       </nav>
       <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
@@ -125,6 +126,27 @@
         </div>
         <div class="summary-words" id="summary-words"></div>
         <button class="btn-primary" id="btn-back-dashboard">Back to Dashboard</button>
+      </section>
+
+      <!-- Vocabulary View -->
+      <section id="vocabulary-view" class="view">
+        <h2>Vocabulary</h2>
+        <div class="vocab-controls">
+          <input type="text" id="vocab-search" placeholder="Search words…" class="vocab-search">
+          <span class="vocab-count" id="vocab-count"></span>
+        </div>
+        <div class="vocab-table-wrap">
+          <table class="vocab-table">
+            <thead>
+              <tr>
+                <th id="vocab-th-base" class="sortable active">English ↑</th>
+                <th id="vocab-th-target" class="sortable">German</th>
+                <th>Type</th>
+              </tr>
+            </thead>
+            <tbody id="vocab-body"></tbody>
+          </table>
+        </div>
       </section>
 
       <!-- Settings View -->
