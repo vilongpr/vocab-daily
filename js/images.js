@@ -1,44 +1,39 @@
-/* images.js — Unsplash API integration for image flashcards */
+/* images.js — Image/emoji provider for image flashcards */
 
 const Images = (() => {
   const UNSPLASH_BASE = 'https://api.unsplash.com/search/photos';
-  const FALLBACK_EMOJIS = {
-    noun: '📦', verb: '🏃', adjective: '🎨', adverb: '⚡', default: '💬'
-  };
 
-  async function fetchImage(searchTerm, pos) {
-    // Check cache first
+  async function fetchImage(word) {
+    const emoji = word.emoji;
+    const searchTerm = word.imageSearch;
+
+    // Check Unsplash cache first
     const cached = Storage.getCachedImage(searchTerm);
-    if (cached) return { url: cached, source: 'cache' };
+    if (cached) return { url: cached, emoji, source: 'cache' };
 
+    // Try Unsplash if API key is configured
     const apiKey = Storage.getSettings().unsplashKey;
-    if (!apiKey) {
-      return { url: null, emoji: getEmoji(pos), source: 'fallback' };
-    }
-
-    try {
-      const resp = await fetch(
-        `${UNSPLASH_BASE}?query=${encodeURIComponent(searchTerm)}&per_page=1&orientation=squarish`,
-        { headers: { Authorization: `Client-ID ${apiKey}` } }
-      );
-
-      if (!resp.ok) throw new Error(`Unsplash ${resp.status}`);
-
-      const data = await resp.json();
-      if (data.results && data.results.length > 0) {
-        const url = data.results[0].urls.small;
-        Storage.setCachedImage(searchTerm, url);
-        return { url, source: 'unsplash' };
+    if (apiKey) {
+      try {
+        const resp = await fetch(
+          `${UNSPLASH_BASE}?query=${encodeURIComponent(searchTerm)}&per_page=1&orientation=squarish`,
+          { headers: { Authorization: `Client-ID ${apiKey}` } }
+        );
+        if (resp.ok) {
+          const data = await resp.json();
+          if (data.results && data.results.length > 0) {
+            const url = data.results[0].urls.small;
+            Storage.setCachedImage(searchTerm, url);
+            return { url, emoji, source: 'unsplash' };
+          }
+        }
+      } catch (err) {
+        console.warn('Unsplash fetch failed:', err.message);
       }
-    } catch (err) {
-      console.warn('Image fetch failed:', err.message);
     }
 
-    return { url: null, emoji: getEmoji(pos), source: 'fallback' };
-  }
-
-  function getEmoji(pos) {
-    return FALLBACK_EMOJIS[pos] || FALLBACK_EMOJIS.default;
+    // Default: use the word's emoji (works great without any API key)
+    return { url: null, emoji: emoji || '❓', source: 'emoji' };
   }
 
   return { fetchImage };

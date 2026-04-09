@@ -53,6 +53,7 @@ const Flashcard = (() => {
     // Reset image
     elements.image.style.display = 'none';
     elements.image.style.backgroundImage = '';
+    elements.word.style.fontSize = '';
 
     if (currentMode === 'target-base') {
       elements.word.textContent = word.target;
@@ -71,14 +72,16 @@ const Flashcard = (() => {
       elements.word.textContent = '';
       elements.hint.textContent = `Guess the ${lang.name} word`;
 
-      const img = await Images.fetchImage(word.imageSearch || word.base, word.pos);
+      const img = await Images.fetchImage(word);
       if (img.url) {
         elements.image.style.display = 'block';
         elements.image.style.backgroundImage = `url(${img.url})`;
+        elements.word.textContent = img.emoji || '';
       } else {
-        // Emoji-only fallback — never reveal the translation
+        // Emoji fallback — show the word-specific emoji large
         elements.image.style.display = 'none';
         elements.word.textContent = img.emoji || '🖼️';
+        elements.word.style.fontSize = '4rem';
       }
 
       elements.answer.textContent = word.target;
