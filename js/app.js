@@ -91,7 +91,7 @@ const App = (() => {
 
     document.getElementById('vocab-count').textContent = `${words.length} words`;
     document.getElementById('vocab-body').innerHTML = words.map(w =>
-      `<tr><td>${w.base}</td><td>${w.target}</td><td><span class="pos-badge">${w.pos}</span></td></tr>`
+      `<tr><td class="vocab-emoji">${w.emoji || ''}</td><td>${w.base}</td><td>${w.target}</td><td><span class="pos-badge">${w.pos}</span></td></tr>`
     ).join('');
   }
 
