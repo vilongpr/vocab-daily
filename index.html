@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn the 1000 most common German words with flashcards and spaced repetition">
+  <meta name="theme-color" content="#1a1a2e">
+  <title>Deutsch Daily — German Flashcards</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇩🇪</text></svg>">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1 class="logo">🇩🇪 Deutsch Daily</h1>
+      <nav id="main-nav">
+        <button class="nav-btn active" data-view="dashboard">Dashboard</button>
+        <button class="nav-btn" data-view="practice">Practice</button>
+        <button class="nav-btn" data-view="settings">Settings</button>
+      </nav>
+      <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </header>
+
+    <main id="view-container">
+      <!-- Dashboard View -->
+      <section id="dashboard-view" class="view active">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-number" id="stat-learned">0</span>
+            <span class="stat-label">Words Learned</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" id="stat-streak">0</span>
+            <span class="stat-label">Day Streak 🔥</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" id="stat-accuracy">0%</span>
+            <span class="stat-label">Accuracy</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" id="stat-due">0</span>
+            <span class="stat-label">Due Today</span>
+          </div>
+        </div>
+
+        <div class="word-of-day" id="word-of-day">
+          <h3>Word of the Day</h3>
+          <p class="wod-german" id="wod-german">—</p>
+          <p class="wod-english" id="wod-english">—</p>
+        </div>
+
+        <div class="progress-section">
+          <h3>Weekly Progress</h3>
+          <div class="progress-chart" id="progress-chart"></div>
+        </div>
+
+        <button class="btn-primary btn-start" id="btn-start-practice">Start Today's Practice →</button>
+      </section>
+
+      <!-- Mode Selection View -->
+      <section id="mode-view" class="view">
+        <h2>Choose Your Mode</h2>
+        <div class="mode-grid">
+          <button class="mode-card" data-mode="de-en">
+            <span class="mode-icon">🇩🇪 → 🇬🇧</span>
+            <span class="mode-title">German → English</span>
+            <span class="mode-desc">See German, guess English</span>
+          </button>
+          <button class="mode-card" data-mode="en-de">
+            <span class="mode-icon">🇬🇧 → 🇩🇪</span>
+            <span class="mode-title">English → German</span>
+            <span class="mode-desc">See English, guess German</span>
+          </button>
+          <button class="mode-card" data-mode="img-de">
+            <span class="mode-icon">🖼️ → 🇩🇪</span>
+            <span class="mode-title">Image → German</span>
+            <span class="mode-desc">See image, guess the word</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Flashcard View -->
+      <section id="flashcard-view" class="view">
+        <div class="flashcard-header">
+          <span class="card-counter" id="card-counter">1 / 10</span>
+          <button class="btn-icon" id="btn-exit-session" aria-label="Exit session">✕</button>
+        </div>
+        <div class="flashcard-container" id="flashcard-container">
+          <div class="flashcard" id="flashcard">
+            <div class="flashcard-front" id="card-front">
+              <div class="card-image" id="card-image" style="display:none"></div>
+              <p class="card-word" id="card-word">—</p>
+              <p class="card-hint" id="card-hint"></p>
+            </div>
+            <div class="flashcard-back" id="card-back">
+              <p class="card-answer" id="card-answer">—</p>
+              <p class="card-pos" id="card-pos"></p>
+              <p class="card-extra" id="card-extra"></p>
+            </div>
+          </div>
+        </div>
+        <div class="flashcard-actions" id="flashcard-actions" style="display:none">
+          <button class="btn-rating btn-fail" id="btn-fail">✗ Don't Know</button>
+          <button class="btn-rating btn-hard" id="btn-hard">😅 Hard</button>
+          <button class="btn-rating btn-good" id="btn-good">👍 Good</button>
+          <button class="btn-rating btn-easy" id="btn-easy">⚡ Easy</button>
+        </div>
+        <p class="flashcard-tip">Press <kbd>Space</kbd> to flip · <kbd>1-4</kbd> to rate</p>
+      </section>
+
+      <!-- Session Summary View -->
+      <section id="summary-view" class="view">
+        <h2>Session Complete! 🎉</h2>
+        <div class="summary-stats">
+          <div class="stat-card">
+            <span class="stat-number" id="summary-total">0</span>
+            <span class="stat-label">Cards Reviewed</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" id="summary-correct">0</span>
+            <span class="stat-label">Correct</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" id="summary-new">0</span>
+            <span class="stat-label">New Words</span>
+          </div>
+        </div>
+        <div class="summary-words" id="summary-words"></div>
+        <button class="btn-primary" id="btn-back-dashboard">Back to Dashboard</button>
+      </section>
+
+      <!-- Settings View -->
+      <section id="settings-view" class="view">
+        <h2>Settings</h2>
+        <div class="settings-group">
+          <label>
+            New words per day
+            <input type="range" id="setting-daily" min="1" max="20" value="5">
+            <span id="setting-daily-val">5</span>
+          </label>
+        </div>
+        <div class="settings-group">
+          <label>
+            Unsplash API Key (for image mode)
+            <input type="text" id="setting-api-key" placeholder="Enter your Unsplash access key">
+          </label>
+          <p class="setting-hint">Get a free key at <a href="https://unsplash.com/developers" target="_blank">unsplash.com/developers</a></p>
+        </div>
+        <div class="settings-group">
+          <button class="btn-danger" id="btn-reset">Reset All Progress</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/words.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/srs.js"></script>
+  <script src="js/images.js"></script>
+  <script src="js/flashcard.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
