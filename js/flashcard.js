@@ -46,7 +46,14 @@ const Flashcard = (() => {
 
     const word = currentQueue[currentIndex];
     isFlipped = false;
+
+    // Snap to front instantly (no animation) so the answer isn't revealed
+    elements.card.style.transition = 'none';
     elements.card.classList.remove('flipped');
+    // Force reflow, then restore the CSS transition for the user's flip
+    elements.card.offsetHeight;
+    elements.card.style.transition = '';
+
     elements.actions.style.display = 'none';
     elements.counter.textContent = `${currentIndex + 1} / ${currentQueue.length}`;
 
