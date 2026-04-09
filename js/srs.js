@@ -80,9 +80,9 @@ const SRS = (() => {
 
     // Introduce new words if needed
     const newWordsNeeded = Math.max(0, settings.dailyNew - getNewWordsToday());
-    const availableNew = allWords
-      .filter(w => !introduced.includes(w.id))
-      .slice(0, newWordsNeeded);
+    const availableNew = shuffle(
+      allWords.filter(w => !introduced.includes(w.id))
+    ).slice(0, newWordsNeeded);
 
     // Register new words
     if (availableNew.length > 0) {
