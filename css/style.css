@@ -329,7 +329,7 @@ header {
 /* === Rating Buttons === */
 .flashcard-actions {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 0.5rem;
 }
 
@@ -348,9 +348,7 @@ header {
 .btn-fail:hover { background: var(--danger); color: #fff; }
 .btn-hard { color: var(--warning); border-color: var(--warning); }
 .btn-hard:hover { background: var(--warning); color: #fff; }
-.btn-good { color: var(--success); border-color: var(--success); }
-.btn-good:hover { background: var(--success); color: #fff; }
-.btn-easy { color: var(--accent); border-color: var(--accent); }
+.btn-easy{ color: var(--accent); border-color: var(--accent); }
 .btn-easy:hover { background: var(--accent); color: #fff; }
 
 .flashcard-tip {
@@ -429,7 +427,7 @@ kbd {
   .card-word { font-size: 2rem; }
   .card-answer { font-size: 1.8rem; }
   .flashcard { min-height: 240px; }
-  .flashcard-actions { grid-template-columns: repeat(2, 1fr); }
+  .flashcard-actions { grid-template-columns: repeat(3, 1fr); }
   .summary-stats { grid-template-columns: 1fr; }
   .btn-rating { font-size: 0.8rem; }
 }

@@ -112,7 +112,6 @@ const App = (() => {
 
     document.getElementById('btn-fail').addEventListener('click', () => Flashcard.rate(0));
     document.getElementById('btn-hard').addEventListener('click', () => Flashcard.rate(1));
-    document.getElementById('btn-good').addEventListener('click', () => Flashcard.rate(2));
     document.getElementById('btn-easy').addEventListener('click', () => Flashcard.rate(3));
 
     // Exit session

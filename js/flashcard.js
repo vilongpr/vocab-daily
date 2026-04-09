@@ -146,10 +146,9 @@ const Flashcard = (() => {
       e.preventDefault();
       flip();
     } else if (isFlipped) {
-      if (e.key === '1') rate(0);
-      else if (e.key === '2') rate(1);
-      else if (e.key === '3') rate(2);
-      else if (e.key === '4') rate(3);
+      if (e.key === '1') rate(0);      // Don't Know
+      else if (e.key === '2') rate(1);  // Hard
+      else if (e.key === '3') rate(3);  // Easy
     }
   }
 
