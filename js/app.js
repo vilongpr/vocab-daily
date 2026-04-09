@@ -179,12 +179,6 @@ const App = (() => {
       Storage.updateSettings({ dailyNew: parseInt(dailySlider.value) });
     });
 
-    const apiKeyInput = document.getElementById('setting-api-key');
-    apiKeyInput.value = Storage.getSettings().unsplashKey || '';
-    apiKeyInput.addEventListener('change', () => {
-      Storage.updateSettings({ unsplashKey: apiKeyInput.value.trim() });
-    });
-
     // Reset
     document.getElementById('btn-reset').addEventListener('click', () => {
       if (confirm('Are you sure? This will erase all your progress.')) {

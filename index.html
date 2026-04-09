@@ -15,7 +15,6 @@
       <h1 class="logo" id="app-logo">📚 Vocab Daily</h1>
       <nav id="main-nav">
         <button class="nav-btn active" data-view="dashboard">Dashboard</button>
-        <button class="nav-btn" data-view="practice">Practice</button>
         <button class="nav-btn" data-view="settings">Settings</button>
       </nav>
       <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
@@ -143,13 +142,6 @@
             <input type="range" id="setting-daily" min="1" max="20" value="5">
             <span id="setting-daily-val">5</span>
           </label>
-        </div>
-        <div class="settings-group">
-          <label>
-            Unsplash API Key (for image mode)
-            <input type="text" id="setting-api-key" placeholder="Enter your Unsplash access key">
-          </label>
-          <p class="setting-hint">Get a free key at <a href="https://unsplash.com/developers" target="_blank">unsplash.com/developers</a></p>
         </div>
         <div class="settings-group">
           <button class="btn-danger" id="btn-reset">Reset All Progress</button>
