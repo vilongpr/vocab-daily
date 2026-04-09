@@ -123,6 +123,11 @@ const Flashcard = (() => {
       correct
     });
 
+    // "Don't Know" — re-queue the word later in this session
+    if (quality === 0) {
+      currentQueue.push(word);
+    }
+
     currentIndex++;
     showCard();
   }
