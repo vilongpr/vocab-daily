@@ -1,6 +1,8 @@
 /* app.js — Main app logic, routing, and event binding */
 
 const App = (() => {
+  let lastMode = 'target-base';
+
   function init() {
     Flashcard.init();
     loadTheme();
@@ -102,7 +104,7 @@ const App = (() => {
     document.getElementById('stat-due').textContent = SRS.getDueCount(WORDS);
 
     // Word of the Day (deterministic per date)
-    const today = new Date().toISOString().slice(0, 10);
+    const today = Storage.getLocalDateStr();
     const dayHash = today.split('-').reduce((a, b) => a + parseInt(b), 0);
     const wod = WORDS[dayHash % WORDS.length];
     document.getElementById('wod-target').textContent = wod.target;
@@ -120,7 +122,7 @@ const App = (() => {
     for (let i = 6; i >= 0; i--) {
       const d = new Date(today);
       d.setDate(d.getDate() - i);
-      const dateStr = d.toISOString().slice(0, 10);
+      const dateStr = Storage.getLocalDateStr(d);
       const daySessions = history.filter(h => h.date === dateStr);
       const total = daySessions.reduce((s, h) => s + h.total, 0);
       const label = d.toLocaleDateString('en', { weekday: 'short' });
@@ -186,6 +188,7 @@ const App = (() => {
     document.querySelectorAll('.mode-card').forEach(btn => {
       btn.addEventListener('click', () => {
         const mode = btn.dataset.mode;
+        lastMode = mode;
         // For image mode, only include words with clear visual representations
         const wordPool = mode === 'img-target'
           ? WORDS.filter(w => w.imageable)
@@ -213,6 +216,18 @@ const App = (() => {
     // Back to dashboard from summary
     document.getElementById('btn-back-dashboard').addEventListener('click', () => {
       showView('dashboard');
+    });
+
+    // Learn more words from summary
+    document.getElementById('btn-learn-more').addEventListener('click', () => {
+      const wordPool = lastMode === 'img-target'
+        ? WORDS.filter(w => w.imageable)
+        : WORDS;
+      const queue = SRS.getExtraQueue(wordPool, 5);
+      if (queue.length > 0) {
+        showView('flashcard');
+        Flashcard.startSession(queue, lastMode);
+      }
     });
 
     // Keyboard shortcuts

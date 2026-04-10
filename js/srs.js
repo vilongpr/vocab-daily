@@ -9,7 +9,7 @@ const SRS = (() => {
       ef: 2.5,       // easiness factor
       interval: 0,   // days until next review
       reps: 0,       // successful repetitions in a row
-      nextReview: new Date().toISOString().slice(0, 10),
+      nextReview: Storage.getLocalDateStr(),
       lastQuality: null
     };
   }
@@ -42,10 +42,10 @@ const SRS = (() => {
     data.ef = data.ef + (0.1 - (5 - q) * (0.08 + (5 - q) * 0.02));
     if (data.ef < MIN_EF) data.ef = MIN_EF;
 
-    // Calculate next review date
-    const next = new Date();
-    next.setDate(next.getDate() + Math.max(data.interval, 1));
-    data.nextReview = next.toISOString().slice(0, 10);
+    // Calculate next review date (local calendar day, not 24h from now)
+    const now = new Date();
+    const next = new Date(now.getFullYear(), now.getMonth(), now.getDate() + Math.max(data.interval, 1));
+    data.nextReview = Storage.getLocalDateStr(next);
     data.lastQuality = quality;
 
     return data;
@@ -67,7 +67,7 @@ const SRS = (() => {
    * Returns an array of word objects to study.
    */
   function getTodayQueue(allWords) {
-    const today = new Date().toISOString().slice(0, 10);
+    const today = Storage.getLocalDateStr();
     const introduced = Storage.getIntroducedWords();
     const settings = Storage.getSettings();
     const allSRS = Storage.getAllWordData();
@@ -104,7 +104,7 @@ const SRS = (() => {
   }
 
   function getNewWordsToday() {
-    const today = new Date().toISOString().slice(0, 10);
+    const today = Storage.getLocalDateStr();
     const history = Storage.getHistory();
     return history
       .filter(h => h.date === today)
@@ -112,7 +112,7 @@ const SRS = (() => {
   }
 
   function getDueCount(allWords) {
-    const today = new Date().toISOString().slice(0, 10);
+    const today = Storage.getLocalDateStr();
     const introduced = Storage.getIntroducedWords();
     const allSRS = Storage.getAllWordData();
     const settings = Storage.getSettings();
@@ -153,8 +153,34 @@ const SRS = (() => {
     return total > 0 ? Math.round((correct / total) * 100) : 0;
   }
 
+  /**
+   * Get extra new words beyond the daily limit.
+   */
+  function getExtraQueue(allWords, count = 5) {
+    const introduced = Storage.getIntroducedWords();
+    const availableNew = shuffle(
+      allWords.filter(w => !introduced.includes(w.id))
+    ).slice(0, count);
+
+    if (availableNew.length > 0) {
+      const newIds = availableNew.map(w => w.id);
+      Storage.setIntroducedWords([...introduced, ...newIds]);
+      for (const w of availableNew) {
+        Storage.setWordData(w.id, initWord());
+      }
+    }
+
+    return availableNew;
+  }
+
+  function getAvailableNewCount(allWords) {
+    const introduced = Storage.getIntroducedWords();
+    return allWords.filter(w => !introduced.includes(w.id)).length;
+  }
+
   return {
     initWord, grade, getTodayQueue, getDueCount,
-    getTotalLearned, getAccuracy, shuffle
+    getTotalLearned, getAccuracy, shuffle,
+    getExtraQueue, getAvailableNewCount
   };
 })();

@@ -98,10 +98,15 @@ const Flashcard = (() => {
   }
 
   function flip() {
-    if (isFlipped) return;
-    isFlipped = true;
-    elements.card.classList.add('flipped');
-    elements.actions.style.display = 'grid';
+    if (isFlipped) {
+      isFlipped = false;
+      elements.card.classList.remove('flipped');
+      elements.actions.style.display = 'none';
+    } else {
+      isFlipped = true;
+      elements.card.classList.add('flipped');
+      elements.actions.style.display = 'grid';
+    }
   }
 
   function rate(quality) {
@@ -150,6 +155,18 @@ const Flashcard = (() => {
         <span class="${w.correct ? 'correct' : 'incorrect'}">${w.correct ? '✓' : '✗'}</span>
       </div>
     `).join('');
+
+    // Show/hide "Learn More" button based on available words
+    const learnMoreBtn = document.getElementById('btn-learn-more');
+    const available = SRS.getAvailableNewCount(WORDS);
+    if (available > 0) {
+      learnMoreBtn.disabled = false;
+      const count = Math.min(5, available);
+      learnMoreBtn.textContent = `📚 Learn ${count} More Word${count !== 1 ? 's' : ''}`;
+    } else {
+      learnMoreBtn.disabled = true;
+      learnMoreBtn.textContent = '📚 All Words Learned!';
+    }
 
     App.showView('summary');
   }

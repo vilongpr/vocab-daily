@@ -3,6 +3,15 @@
 const Storage = (() => {
   const PREFIX = 'dd_';
 
+  // Return local date string (YYYY-MM-DD) to avoid UTC timezone issues
+  function getLocalDateStr(d) {
+    if (!d) d = new Date();
+    const year = d.getFullYear();
+    const month = String(d.getMonth() + 1).padStart(2, '0');
+    const day = String(d.getDate()).padStart(2, '0');
+    return `${year}-${month}-${day}`;
+  }
+
   function get(key, defaultVal = null) {
     try {
       const raw = localStorage.getItem(PREFIX + key);
@@ -52,7 +61,7 @@ const Storage = (() => {
 
   function addSession(session) {
     const history = getHistory();
-    history.push({ ...session, date: new Date().toISOString().slice(0, 10) });
+    history.push({ ...session, date: getLocalDateStr() });
     set('history', history);
   }
 
@@ -61,7 +70,7 @@ const Storage = (() => {
     const history = getHistory();
     if (history.length === 0) return 0;
 
-    const today = new Date().toISOString().slice(0, 10);
+    const today = getLocalDateStr();
     const dates = [...new Set(history.map(h => h.date))].sort().reverse();
 
     if (dates[0] !== today && dates[0] !== getPreviousDay(today)) return 0;
@@ -86,7 +95,7 @@ const Storage = (() => {
   function getPreviousDay(dateStr) {
     const d = new Date(dateStr + 'T12:00:00');
     d.setDate(d.getDate() - 1);
-    return d.toISOString().slice(0, 10);
+    return getLocalDateStr(d);
   }
 
   // Settings
@@ -132,6 +141,6 @@ const Storage = (() => {
     getHistory, addSession, getStreak,
     getSettings, updateSettings,
     getCachedImage, setCachedImage,
-    resetAll
+    resetAll, getLocalDateStr
   };
 })();
