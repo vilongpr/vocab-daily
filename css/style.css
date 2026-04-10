@@ -530,6 +530,19 @@ kbd {
 .vocab-table tr:last-child td { border-bottom: none; }
 .vocab-table tr:hover td { background: var(--bg); }
 .vocab-table .vocab-emoji { text-align: center; font-size: 1.2rem; width: 2.5rem; }
+.vocab-table .vocab-speak { text-align: center; width: 2.5rem; }
+.btn-pronounce-sm {
+  width: 2rem;
+  height: 2rem;
+  border: 1.5px solid var(--border);
+  border-radius: 50%;
+  background: var(--bg-card);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-pronounce-sm:hover { border-color: var(--accent); background: var(--accent); color: #fff; transform: scale(1.1); }
+.btn-pronounce-sm:active { transform: scale(0.95); }
 .vocab-table .pos-badge {
   font-size: 0.75rem;
   padding: 0.15rem 0.5rem;

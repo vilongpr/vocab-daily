@@ -91,10 +91,27 @@ const App = (() => {
     thBase.classList.toggle('active', vocabSortField === 'base');
     thTarget.classList.toggle('active', vocabSortField === 'target');
 
+    const canSpeak = Speech.isSupported();
+    const speakCol = canSpeak
+      ? '<td class="vocab-speak"><button class="btn-pronounce-sm" aria-label="Hear pronunciation">🔊</button></td>'
+      : '<td></td>';
+
     document.getElementById('vocab-count').textContent = `${words.length} words`;
-    document.getElementById('vocab-body').innerHTML = words.map(w =>
-      `<tr><td class="vocab-emoji">${w.emoji || ''}</td><td>${w.base}</td><td>${w.target}</td><td><span class="pos-badge">${w.pos}</span></td></tr>`
+    const body = document.getElementById('vocab-body');
+    body.innerHTML = words.map(w =>
+      `<tr data-target="${w.target}"><td class="vocab-emoji">${w.emoji || ''}</td><td>${w.base}</td><td>${w.target}</td><td><span class="pos-badge">${w.pos}</span></td>${speakCol}</tr>`
     ).join('');
+  }
+
+  function handleVocabSpeak(e) {
+    const btn = e.target.closest('.btn-pronounce-sm');
+    if (!btn) return;
+    const row = btn.closest('tr');
+    const word = row?.dataset.target;
+    if (word) {
+      const lang = Lang.getCurrent();
+      Speech.speak(word, lang.speechCode || lang.code);
+    }
   }
 
   function updateDashboard() {
@@ -168,6 +185,7 @@ const App = (() => {
     document.getElementById('vocab-search').addEventListener('input', (e) => {
       renderVocabulary(e.target.value);
     });
+    document.getElementById('vocab-body').addEventListener('click', handleVocabSpeak);
     document.getElementById('vocab-th-base').addEventListener('click', () => {
       if (vocabSortField === 'base') vocabSortAsc = !vocabSortAsc;
       else { vocabSortField = 'base'; vocabSortAsc = true; }
