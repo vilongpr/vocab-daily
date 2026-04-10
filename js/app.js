@@ -230,6 +230,21 @@ const App = (() => {
       }
     });
 
+    // "Caught up" screen buttons
+    document.getElementById('btn-caught-up-learn').addEventListener('click', () => {
+      const wordPool = lastMode === 'img-target'
+        ? WORDS.filter(w => w.imageable)
+        : WORDS;
+      const queue = SRS.getExtraQueue(wordPool, 5);
+      if (queue.length > 0) {
+        Flashcard.startSession(queue, lastMode);
+      }
+    });
+
+    document.getElementById('btn-caught-up-back').addEventListener('click', () => {
+      showView('dashboard');
+    });
+
     // Keyboard shortcuts
     document.addEventListener('keydown', Flashcard.handleKeyboard);
 

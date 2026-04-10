@@ -30,10 +30,36 @@ const Flashcard = (() => {
     isFlipped = false;
     sessionStats = { total: 0, correct: 0, newWords: 0, words: [] };
 
+    const caughtUp = document.getElementById('caught-up');
+    const container = elements.container;
+    const tip = document.querySelector('.flashcard-tip');
+
     if (queue.length === 0) {
-      App.showView('dashboard');
+      // Show "all caught up" state
+      caughtUp.style.display = '';
+      container.style.display = 'none';
+      elements.actions.style.display = 'none';
+      tip.style.display = 'none';
+      elements.counter.style.display = 'none';
+
+      const learnBtn = document.getElementById('btn-caught-up-learn');
+      const available = SRS.getAvailableNewCount(WORDS);
+      if (available > 0) {
+        learnBtn.disabled = false;
+        const count = Math.min(5, available);
+        learnBtn.textContent = `📚 Learn ${count} More Word${count !== 1 ? 's' : ''}`;
+      } else {
+        learnBtn.disabled = true;
+        learnBtn.textContent = '📚 All Words Learned!';
+      }
       return;
     }
+
+    // Normal session — ensure card UI is visible
+    caughtUp.style.display = 'none';
+    container.style.display = '';
+    tip.style.display = '';
+    elements.counter.style.display = '';
 
     showCard();
   }

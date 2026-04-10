@@ -279,6 +279,19 @@ header {
 }
 .card-counter { font-weight: 600; color: var(--text-secondary); }
 
+.caught-up {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  background: var(--bg-card);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 1.5rem;
+}
+.caught-up-emoji { font-size: 4rem; margin-bottom: 0.5rem; }
+.caught-up h2 { margin-bottom: 0.5rem; }
+.caught-up-desc { color: var(--text-secondary); margin-bottom: 1.5rem; }
+
 .flashcard-container {
   perspective: 1000px;
   margin-bottom: 1.5rem;
