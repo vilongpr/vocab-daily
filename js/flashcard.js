@@ -21,6 +21,18 @@ const Flashcard = (() => {
     elements.extra = document.getElementById('card-extra');
     elements.counter = document.getElementById('card-counter');
     elements.actions = document.getElementById('flashcard-actions');
+    elements.pronounceFront = document.getElementById('btn-pronounce-front');
+    elements.pronounceBack = document.getElementById('btn-pronounce-back');
+
+    // Pronounce buttons — stop propagation so clicking doesn't flip the card
+    elements.pronounceFront.addEventListener('click', (e) => {
+      e.stopPropagation();
+      pronounceCurrent();
+    });
+    elements.pronounceBack.addEventListener('click', (e) => {
+      e.stopPropagation();
+      pronounceCurrent();
+    });
   }
 
   function startSession(queue, mode) {
@@ -87,6 +99,16 @@ const Flashcard = (() => {
     elements.image.style.display = 'none';
     elements.image.style.backgroundImage = '';
     elements.word.style.fontSize = '';
+
+    // Show pronounce buttons only on the side with the target word
+    const canSpeak = Speech.isSupported();
+    if (currentMode === 'target-base') {
+      elements.pronounceFront.style.display = canSpeak ? '' : 'none';
+      elements.pronounceBack.style.display = 'none';
+    } else {
+      elements.pronounceFront.style.display = 'none';
+      elements.pronounceBack.style.display = canSpeak ? '' : 'none';
+    }
 
     if (currentMode === 'target-base') {
       elements.word.textContent = word.target;
@@ -197,12 +219,21 @@ const Flashcard = (() => {
     App.showView('summary');
   }
 
+  function pronounceCurrent() {
+    if (currentIndex >= currentQueue.length) return;
+    const word = currentQueue[currentIndex];
+    const lang = Lang.getCurrent();
+    Speech.speak(word.target, lang.speechCode || lang.code);
+  }
+
   function handleKeyboard(e) {
     if (!document.getElementById('flashcard-view').classList.contains('active')) return;
 
     if (e.code === 'Space') {
       e.preventDefault();
       flip();
+    } else if (e.key === 'p' || e.key === 'P') {
+      pronounceCurrent();
     } else if (isFlipped) {
       if (e.key === '1') rate(0);      // Don't Know
       else if (e.key === '2') rate(1);  // Hard

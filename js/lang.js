@@ -7,6 +7,7 @@ const LANGUAGES = {
     nativeName: 'Deutsch',
     flag: '🇩🇪',
     dataFile: 'data/de.js',
+    speechCode: 'de-DE',
     // Base language the learner already speaks
     base: { code: 'en', name: 'English', flag: '🇬🇧' }
   }
