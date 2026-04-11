@@ -179,6 +179,34 @@ const SRS = (() => {
   }
 
   /**
+   * Build a review-only queue: only previously-seen words, no new introductions.
+   * Prioritises due words, then adds seen-but-not-due words (shuffled).
+   */
+  function getReviewQueue(allWords) {
+    const today = Storage.getLocalDateStr();
+    const introduced = Storage.getIntroducedWords();
+    const allSRS = Storage.getAllWordData();
+
+    const due = [];
+    const notDue = [];
+
+    for (const wordId of introduced) {
+      const data = allSRS[wordId];
+      if (data && data.nextReview <= today) {
+        due.push(wordId);
+      } else {
+        notDue.push(wordId);
+      }
+    }
+
+    // Due words first, then a shuffle of not-yet-due for extra practice
+    const queue = [...shuffle(due), ...shuffle(notDue)];
+
+    const wordMap = new Map(allWords.map(w => [w.id, w]));
+    return queue.map(id => wordMap.get(id)).filter(Boolean);
+  }
+
+  /**
    * Categorise every word into a mastery level.
    * Returns { new, learning, familiar, mastered, total }.
    */
@@ -207,6 +235,7 @@ const SRS = (() => {
   return {
     initWord, grade, getTodayQueue, getDueCount,
     getTotalLearned, getAccuracy, shuffle,
-    getExtraQueue, getAvailableNewCount, getMasteryBreakdown
+    getExtraQueue, getAvailableNewCount, getMasteryBreakdown,
+    getReviewQueue
   };
 })();

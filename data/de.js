@@ -5,7 +5,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "clock time",
     "id": "w0000",
-    "imageable": false
+    "imageable": false,
+    "category": "time"
   },
   {
     "target": "Jahr",
@@ -14,7 +15,8 @@ const WORDS = [
     "imageSearch": "calendar year",
     "id": "w0001",
     "imageable": true,
-    "emoji": "📅"
+    "emoji": "📅",
+    "category": "time"
   },
   {
     "target": "Mensch",
@@ -23,7 +25,8 @@ const WORDS = [
     "imageSearch": "person human",
     "id": "w0002",
     "imageable": true,
-    "emoji": "🧑"
+    "emoji": "🧑",
+    "category": "people"
   },
   {
     "target": "Tag",
@@ -32,7 +35,8 @@ const WORDS = [
     "imageSearch": "sunny day",
     "id": "w0003",
     "imageable": true,
-    "emoji": "☀️"
+    "emoji": "☀️",
+    "category": "time"
   },
   {
     "target": "Welt",
@@ -41,7 +45,8 @@ const WORDS = [
     "imageSearch": "earth globe",
     "id": "w0004",
     "imageable": true,
-    "emoji": "🌍"
+    "emoji": "🌍",
+    "category": "nature"
   },
   {
     "target": "Hand",
@@ -50,7 +55,8 @@ const WORDS = [
     "imageSearch": "human hand",
     "id": "w0005",
     "imageable": true,
-    "emoji": "✋"
+    "emoji": "✋",
+    "category": "body"
   },
   {
     "target": "Teil",
@@ -58,7 +64,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "puzzle piece",
     "id": "w0006",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Kind",
@@ -67,7 +74,8 @@ const WORDS = [
     "imageSearch": "child playing",
     "id": "w0007",
     "imageable": true,
-    "emoji": "👶"
+    "emoji": "👶",
+    "category": "people"
   },
   {
     "target": "Auge",
@@ -76,7 +84,8 @@ const WORDS = [
     "imageSearch": "human eye close up",
     "id": "w0008",
     "imageable": true,
-    "emoji": "👁️"
+    "emoji": "👁️",
+    "category": "body"
   },
   {
     "target": "Kopf",
@@ -85,7 +94,8 @@ const WORDS = [
     "imageSearch": "head portrait",
     "id": "w0009",
     "imageable": true,
-    "emoji": "🗣️"
+    "emoji": "🗣️",
+    "category": "body"
   },
   {
     "target": "Wort",
@@ -93,7 +103,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "letters words",
     "id": "w0010",
-    "imageable": false
+    "imageable": false,
+    "category": "education"
   },
   {
     "target": "Frau",
@@ -102,7 +113,8 @@ const WORDS = [
     "imageSearch": "woman portrait",
     "id": "w0011",
     "imageable": true,
-    "emoji": "👩"
+    "emoji": "👩",
+    "category": "people"
   },
   {
     "target": "Mann",
@@ -111,7 +123,8 @@ const WORDS = [
     "imageSearch": "man portrait",
     "id": "w0012",
     "imageable": true,
-    "emoji": "👨"
+    "emoji": "👨",
+    "category": "people"
   },
   {
     "target": "Geld",
@@ -120,7 +133,8 @@ const WORDS = [
     "imageSearch": "money coins",
     "id": "w0013",
     "imageable": true,
-    "emoji": "💰"
+    "emoji": "💰",
+    "category": "people"
   },
   {
     "target": "Freund",
@@ -129,7 +143,8 @@ const WORDS = [
     "imageSearch": "friends together",
     "id": "w0014",
     "imageable": true,
-    "emoji": "🤝"
+    "emoji": "🤝",
+    "category": "people"
   },
   {
     "target": "Frage",
@@ -138,7 +153,8 @@ const WORDS = [
     "imageSearch": "question mark",
     "id": "w0015",
     "imageable": true,
-    "emoji": "❓"
+    "emoji": "❓",
+    "category": "emotions"
   },
   {
     "target": "Haus",
@@ -147,7 +163,8 @@ const WORDS = [
     "imageSearch": "house building",
     "id": "w0016",
     "imageable": true,
-    "emoji": "🏠"
+    "emoji": "🏠",
+    "category": "home"
   },
   {
     "target": "Land",
@@ -156,7 +173,8 @@ const WORDS = [
     "imageSearch": "countryside landscape",
     "id": "w0017",
     "imageable": true,
-    "emoji": "🗺️"
+    "emoji": "🗺️",
+    "category": "travel"
   },
   {
     "target": "Leute",
@@ -165,7 +183,8 @@ const WORDS = [
     "imageSearch": "crowd people",
     "id": "w0018",
     "imageable": true,
-    "emoji": "👥"
+    "emoji": "👥",
+    "category": "people"
   },
   {
     "target": "Arbeit",
@@ -173,7 +192,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "office work",
     "id": "w0019",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Nacht",
@@ -182,7 +202,8 @@ const WORDS = [
     "imageSearch": "night sky stars",
     "id": "w0020",
     "imageable": true,
-    "emoji": "🌙"
+    "emoji": "🌙",
+    "category": "time"
   },
   {
     "target": "Stadt",
@@ -191,7 +212,8 @@ const WORDS = [
     "imageSearch": "city skyline",
     "id": "w0021",
     "imageable": true,
-    "emoji": "🏙️"
+    "emoji": "🏙️",
+    "category": "travel"
   },
   {
     "target": "Wasser",
@@ -200,7 +222,8 @@ const WORDS = [
     "imageSearch": "water drop",
     "id": "w0022",
     "imageable": true,
-    "emoji": "💧"
+    "emoji": "💧",
+    "category": "nature"
   },
   {
     "target": "Buch",
@@ -209,7 +232,8 @@ const WORDS = [
     "imageSearch": "open book",
     "id": "w0023",
     "imageable": true,
-    "emoji": "📖"
+    "emoji": "📖",
+    "category": "education"
   },
   {
     "target": "Schule",
@@ -218,7 +242,8 @@ const WORDS = [
     "imageSearch": "school building",
     "id": "w0024",
     "imageable": true,
-    "emoji": "🏫"
+    "emoji": "🏫",
+    "category": "education"
   },
   {
     "target": "Mutter",
@@ -227,7 +252,8 @@ const WORDS = [
     "imageSearch": "mother child",
     "id": "w0025",
     "imageable": true,
-    "emoji": "👩"
+    "emoji": "👩",
+    "category": "people"
   },
   {
     "target": "Vater",
@@ -236,7 +262,8 @@ const WORDS = [
     "imageSearch": "father family",
     "id": "w0026",
     "imageable": true,
-    "emoji": "👨"
+    "emoji": "👨",
+    "category": "people"
   },
   {
     "target": "Bild",
@@ -245,7 +272,8 @@ const WORDS = [
     "imageSearch": "picture frame",
     "id": "w0027",
     "imageable": true,
-    "emoji": "🖼️"
+    "emoji": "🖼️",
+    "category": "education"
   },
   {
     "target": "Leben",
@@ -253,7 +281,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "life nature",
     "id": "w0028",
-    "imageable": false
+    "imageable": false,
+    "category": "emotions"
   },
   {
     "target": "Stunde",
@@ -261,7 +290,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "clock hour",
     "id": "w0029",
-    "imageable": false
+    "imageable": false,
+    "category": "time"
   },
   {
     "target": "Weg",
@@ -269,7 +299,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "path road",
     "id": "w0030",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Platz",
@@ -277,7 +308,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "town square",
     "id": "w0031",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Grund",
@@ -285,7 +317,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "ground earth",
     "id": "w0032",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Seite",
@@ -293,7 +326,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "book page",
     "id": "w0033",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Ende",
@@ -301,7 +335,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "road end",
     "id": "w0034",
-    "imageable": false
+    "imageable": false,
+    "category": "emotions"
   },
   {
     "target": "Stimme",
@@ -309,7 +344,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "microphone singing",
     "id": "w0035",
-    "imageable": false
+    "imageable": false,
+    "category": "emotions"
   },
   {
     "target": "Sache",
@@ -317,7 +353,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "objects things",
     "id": "w0036",
-    "imageable": false
+    "imageable": false,
+    "category": "emotions"
   },
   {
     "target": "Kraft",
@@ -325,7 +362,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "strong muscle",
     "id": "w0037",
-    "imageable": false
+    "imageable": false,
+    "category": "emotions"
   },
   {
     "target": "Auto",
@@ -334,7 +372,8 @@ const WORDS = [
     "imageSearch": "car automobile",
     "id": "w0038",
     "imageable": true,
-    "emoji": "🚗"
+    "emoji": "🚗",
+    "category": "travel"
   },
   {
     "target": "Straße",
@@ -343,7 +382,8 @@ const WORDS = [
     "imageSearch": "street road",
     "id": "w0039",
     "imageable": true,
-    "emoji": "🛣️"
+    "emoji": "🛣️",
+    "category": "travel"
   },
   {
     "target": "Tür",
@@ -352,7 +392,8 @@ const WORDS = [
     "imageSearch": "door entrance",
     "id": "w0040",
     "imageable": true,
-    "emoji": "🚪"
+    "emoji": "🚪",
+    "category": "home"
   },
   {
     "target": "Sprache",
@@ -360,7 +401,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "languages speech",
     "id": "w0041",
-    "imageable": false
+    "imageable": false,
+    "category": "education"
   },
   {
     "target": "Milch",
@@ -369,7 +411,8 @@ const WORDS = [
     "imageSearch": "milk glass",
     "id": "w0042",
     "imageable": true,
-    "emoji": "🥛"
+    "emoji": "🥛",
+    "category": "food-drink"
   },
   {
     "target": "Brot",
@@ -378,7 +421,8 @@ const WORDS = [
     "imageSearch": "bread loaf",
     "id": "w0043",
     "imageable": true,
-    "emoji": "🍞"
+    "emoji": "🍞",
+    "category": "food-drink"
   },
   {
     "target": "Tisch",
@@ -387,7 +431,8 @@ const WORDS = [
     "imageSearch": "wooden table",
     "id": "w0044",
     "imageable": true,
-    "emoji": "🪑"
+    "emoji": "🪑",
+    "category": "home"
   },
   {
     "target": "Stuhl",
@@ -396,7 +441,8 @@ const WORDS = [
     "imageSearch": "chair furniture",
     "id": "w0045",
     "imageable": true,
-    "emoji": "💺"
+    "emoji": "💺",
+    "category": "home"
   },
   {
     "target": "Fenster",
@@ -405,7 +451,8 @@ const WORDS = [
     "imageSearch": "window light",
     "id": "w0046",
     "imageable": true,
-    "emoji": "🪟"
+    "emoji": "🪟",
+    "category": "home"
   },
   {
     "target": "Herz",
@@ -414,7 +461,8 @@ const WORDS = [
     "imageSearch": "heart love",
     "id": "w0047",
     "imageable": true,
-    "emoji": "❤️"
+    "emoji": "❤️",
+    "category": "body"
   },
   {
     "target": "Bruder",
@@ -423,7 +471,8 @@ const WORDS = [
     "imageSearch": "brothers siblings",
     "id": "w0048",
     "imageable": true,
-    "emoji": "👦"
+    "emoji": "👦",
+    "category": "people"
   },
   {
     "target": "Schwester",
@@ -432,7 +481,8 @@ const WORDS = [
     "imageSearch": "sisters siblings",
     "id": "w0049",
     "imageable": true,
-    "emoji": "👧"
+    "emoji": "👧",
+    "category": "people"
   },
   {
     "target": "Hund",
@@ -441,7 +491,8 @@ const WORDS = [
     "imageSearch": "dog pet",
     "id": "w0050",
     "imageable": true,
-    "emoji": "🐕"
+    "emoji": "🐕",
+    "category": "animals"
   },
   {
     "target": "Katze",
@@ -450,7 +501,8 @@ const WORDS = [
     "imageSearch": "cat pet",
     "id": "w0051",
     "imageable": true,
-    "emoji": "🐱"
+    "emoji": "🐱",
+    "category": "animals"
   },
   {
     "target": "Baum",
@@ -459,7 +511,8 @@ const WORDS = [
     "imageSearch": "tree nature",
     "id": "w0052",
     "imageable": true,
-    "emoji": "🌳"
+    "emoji": "🌳",
+    "category": "nature"
   },
   {
     "target": "Blume",
@@ -468,7 +521,8 @@ const WORDS = [
     "imageSearch": "flower blossom",
     "id": "w0053",
     "imageable": true,
-    "emoji": "🌸"
+    "emoji": "🌸",
+    "category": "nature"
   },
   {
     "target": "Berg",
@@ -477,7 +531,8 @@ const WORDS = [
     "imageSearch": "mountain peak",
     "id": "w0054",
     "imageable": true,
-    "emoji": "⛰️"
+    "emoji": "⛰️",
+    "category": "nature"
   },
   {
     "target": "Sonne",
@@ -486,7 +541,8 @@ const WORDS = [
     "imageSearch": "sun sunshine",
     "id": "w0055",
     "imageable": true,
-    "emoji": "☀️"
+    "emoji": "☀️",
+    "category": "nature"
   },
   {
     "target": "Mond",
@@ -495,7 +551,8 @@ const WORDS = [
     "imageSearch": "moon night",
     "id": "w0056",
     "imageable": true,
-    "emoji": "🌙"
+    "emoji": "🌙",
+    "category": "nature"
   },
   {
     "target": "Stern",
@@ -504,7 +561,8 @@ const WORDS = [
     "imageSearch": "star night sky",
     "id": "w0057",
     "imageable": true,
-    "emoji": "⭐"
+    "emoji": "⭐",
+    "category": "nature"
   },
   {
     "target": "Feuer",
@@ -513,7 +571,8 @@ const WORDS = [
     "imageSearch": "fire flames",
     "id": "w0058",
     "imageable": true,
-    "emoji": "🔥"
+    "emoji": "🔥",
+    "category": "nature"
   },
   {
     "target": "Luft",
@@ -522,7 +581,8 @@ const WORDS = [
     "imageSearch": "air breeze wind",
     "id": "w0059",
     "imageable": true,
-    "emoji": "💨"
+    "emoji": "💨",
+    "category": "nature"
   },
   {
     "target": "Erde",
@@ -531,7 +591,8 @@ const WORDS = [
     "imageSearch": "earth soil",
     "id": "w0060",
     "imageable": true,
-    "emoji": "🌍"
+    "emoji": "🌍",
+    "category": "nature"
   },
   {
     "target": "Meer",
@@ -540,7 +601,8 @@ const WORDS = [
     "imageSearch": "sea ocean",
     "id": "w0061",
     "imageable": true,
-    "emoji": "🌊"
+    "emoji": "🌊",
+    "category": "nature"
   },
   {
     "target": "Fluss",
@@ -549,7 +611,8 @@ const WORDS = [
     "imageSearch": "river flowing",
     "id": "w0062",
     "imageable": true,
-    "emoji": "🏞️"
+    "emoji": "🏞️",
+    "category": "nature"
   },
   {
     "target": "Brücke",
@@ -558,7 +621,8 @@ const WORDS = [
     "imageSearch": "bridge architecture",
     "id": "w0063",
     "imageable": true,
-    "emoji": "🌉"
+    "emoji": "🌉",
+    "category": "nature"
   },
   {
     "target": "Kirche",
@@ -567,7 +631,8 @@ const WORDS = [
     "imageSearch": "church building",
     "id": "w0064",
     "imageable": true,
-    "emoji": "⛪"
+    "emoji": "⛪",
+    "category": "nature"
   },
   {
     "target": "Garten",
@@ -576,7 +641,8 @@ const WORDS = [
     "imageSearch": "garden flowers",
     "id": "w0065",
     "imageable": true,
-    "emoji": "🌻"
+    "emoji": "🌻",
+    "category": "nature"
   },
   {
     "target": "Küche",
@@ -585,7 +651,8 @@ const WORDS = [
     "imageSearch": "kitchen cooking",
     "id": "w0066",
     "imageable": true,
-    "emoji": "👨‍🍳"
+    "emoji": "👨‍🍳",
+    "category": "home"
   },
   {
     "target": "Zimmer",
@@ -594,7 +661,8 @@ const WORDS = [
     "imageSearch": "room interior",
     "id": "w0067",
     "imageable": true,
-    "emoji": "🏠"
+    "emoji": "🏠",
+    "category": "home"
   },
   {
     "target": "Bett",
@@ -603,7 +671,8 @@ const WORDS = [
     "imageSearch": "bed bedroom",
     "id": "w0068",
     "imageable": true,
-    "emoji": "🛏️"
+    "emoji": "🛏️",
+    "category": "home"
   },
   {
     "target": "Schlüssel",
@@ -612,7 +681,8 @@ const WORDS = [
     "imageSearch": "key lock",
     "id": "w0069",
     "imageable": true,
-    "emoji": "🔑"
+    "emoji": "🔑",
+    "category": "home"
   },
   {
     "target": "Uhr",
@@ -621,7 +691,8 @@ const WORDS = [
     "imageSearch": "clock watch",
     "id": "w0070",
     "imageable": true,
-    "emoji": "⏰"
+    "emoji": "⏰",
+    "category": "entertainment"
   },
   {
     "target": "Telefon",
@@ -630,7 +701,8 @@ const WORDS = [
     "imageSearch": "telephone phone",
     "id": "w0071",
     "imageable": true,
-    "emoji": "📞"
+    "emoji": "📞",
+    "category": "entertainment"
   },
   {
     "target": "Brief",
@@ -639,7 +711,8 @@ const WORDS = [
     "imageSearch": "letter envelope",
     "id": "w0072",
     "imageable": true,
-    "emoji": "✉️"
+    "emoji": "✉️",
+    "category": "education"
   },
   {
     "target": "Zeitung",
@@ -648,7 +721,8 @@ const WORDS = [
     "imageSearch": "newspaper reading",
     "id": "w0073",
     "imageable": true,
-    "emoji": "📰"
+    "emoji": "📰",
+    "category": "education"
   },
   {
     "target": "Musik",
@@ -657,7 +731,8 @@ const WORDS = [
     "imageSearch": "music notes",
     "id": "w0074",
     "imageable": true,
-    "emoji": "🎵"
+    "emoji": "🎵",
+    "category": "entertainment"
   },
   {
     "target": "Film",
@@ -666,7 +741,8 @@ const WORDS = [
     "imageSearch": "movie cinema",
     "id": "w0075",
     "imageable": true,
-    "emoji": "🎬"
+    "emoji": "🎬",
+    "category": "entertainment"
   },
   {
     "target": "Spiel",
@@ -675,7 +751,8 @@ const WORDS = [
     "imageSearch": "board game",
     "id": "w0076",
     "imageable": true,
-    "emoji": "🎮"
+    "emoji": "🎮",
+    "category": "entertainment"
   },
   {
     "target": "Zug",
@@ -684,7 +761,8 @@ const WORDS = [
     "imageSearch": "train railway",
     "id": "w0077",
     "imageable": true,
-    "emoji": "🚂"
+    "emoji": "🚂",
+    "category": "travel"
   },
   {
     "target": "Flugzeug",
@@ -693,7 +771,8 @@ const WORDS = [
     "imageSearch": "airplane flying",
     "id": "w0078",
     "imageable": true,
-    "emoji": "✈️"
+    "emoji": "✈️",
+    "category": "travel"
   },
   {
     "target": "Schiff",
@@ -702,7 +781,8 @@ const WORDS = [
     "imageSearch": "ship boat",
     "id": "w0079",
     "imageable": true,
-    "emoji": "🚢"
+    "emoji": "🚢",
+    "category": "travel"
   },
   {
     "target": "Fahrrad",
@@ -711,7 +791,8 @@ const WORDS = [
     "imageSearch": "bicycle bike",
     "id": "w0080",
     "imageable": true,
-    "emoji": "🚲"
+    "emoji": "🚲",
+    "category": "travel"
   },
   {
     "target": "Arzt",
@@ -720,7 +801,8 @@ const WORDS = [
     "imageSearch": "doctor medical",
     "id": "w0081",
     "imageable": true,
-    "emoji": "👨‍⚕️"
+    "emoji": "👨‍⚕️",
+    "category": "health"
   },
   {
     "target": "Krankenhaus",
@@ -729,7 +811,8 @@ const WORDS = [
     "imageSearch": "hospital building",
     "id": "w0082",
     "imageable": true,
-    "emoji": "🏥"
+    "emoji": "🏥",
+    "category": "health"
   },
   {
     "target": "Apotheke",
@@ -738,7 +821,8 @@ const WORDS = [
     "imageSearch": "pharmacy drugstore",
     "id": "w0083",
     "imageable": true,
-    "emoji": "💊"
+    "emoji": "💊",
+    "category": "health"
   },
   {
     "target": "Geschäft",
@@ -747,7 +831,8 @@ const WORDS = [
     "imageSearch": "shop store",
     "id": "w0084",
     "imageable": true,
-    "emoji": "🏪"
+    "emoji": "🏪",
+    "category": "work"
   },
   {
     "target": "Markt",
@@ -756,7 +841,8 @@ const WORDS = [
     "imageSearch": "market stall",
     "id": "w0085",
     "imageable": true,
-    "emoji": "🛒"
+    "emoji": "🛒",
+    "category": "work"
   },
   {
     "target": "Restaurant",
@@ -765,7 +851,8 @@ const WORDS = [
     "imageSearch": "restaurant dining",
     "id": "w0086",
     "imageable": true,
-    "emoji": "🍽️"
+    "emoji": "🍽️",
+    "category": "food-drink"
   },
   {
     "target": "Kaffee",
@@ -774,7 +861,8 @@ const WORDS = [
     "imageSearch": "coffee cup",
     "id": "w0087",
     "imageable": true,
-    "emoji": "☕"
+    "emoji": "☕",
+    "category": "food-drink"
   },
   {
     "target": "Tee",
@@ -783,7 +871,8 @@ const WORDS = [
     "imageSearch": "tea cup",
     "id": "w0088",
     "imageable": true,
-    "emoji": "🍵"
+    "emoji": "🍵",
+    "category": "food-drink"
   },
   {
     "target": "Bier",
@@ -792,7 +881,8 @@ const WORDS = [
     "imageSearch": "beer glass",
     "id": "w0089",
     "imageable": true,
-    "emoji": "🍺"
+    "emoji": "🍺",
+    "category": "food-drink"
   },
   {
     "target": "Wein",
@@ -801,7 +891,8 @@ const WORDS = [
     "imageSearch": "wine glass",
     "id": "w0090",
     "imageable": true,
-    "emoji": "🍷"
+    "emoji": "🍷",
+    "category": "food-drink"
   },
   {
     "target": "Fleisch",
@@ -810,7 +901,8 @@ const WORDS = [
     "imageSearch": "meat steak",
     "id": "w0091",
     "imageable": true,
-    "emoji": "🥩"
+    "emoji": "🥩",
+    "category": "food-drink"
   },
   {
     "target": "Fisch",
@@ -819,7 +911,8 @@ const WORDS = [
     "imageSearch": "fish seafood",
     "id": "w0092",
     "imageable": true,
-    "emoji": "🐟"
+    "emoji": "🐟",
+    "category": "animals"
   },
   {
     "target": "Obst",
@@ -828,7 +921,8 @@ const WORDS = [
     "imageSearch": "fruit basket",
     "id": "w0093",
     "imageable": true,
-    "emoji": "🍎"
+    "emoji": "🍎",
+    "category": "food-drink"
   },
   {
     "target": "Gemüse",
@@ -837,7 +931,8 @@ const WORDS = [
     "imageSearch": "vegetables fresh",
     "id": "w0094",
     "imageable": true,
-    "emoji": "🥦"
+    "emoji": "🥦",
+    "category": "food-drink"
   },
   {
     "target": "Apfel",
@@ -846,7 +941,8 @@ const WORDS = [
     "imageSearch": "red apple",
     "id": "w0095",
     "imageable": true,
-    "emoji": "🍎"
+    "emoji": "🍎",
+    "category": "food-drink"
   },
   {
     "target": "Kartoffel",
@@ -855,7 +951,8 @@ const WORDS = [
     "imageSearch": "potato",
     "id": "w0096",
     "imageable": true,
-    "emoji": "🥔"
+    "emoji": "🥔",
+    "category": "food-drink"
   },
   {
     "target": "Reis",
@@ -864,7 +961,8 @@ const WORDS = [
     "imageSearch": "rice bowl",
     "id": "w0097",
     "imageable": true,
-    "emoji": "🍚"
+    "emoji": "🍚",
+    "category": "food-drink"
   },
   {
     "target": "Zucker",
@@ -873,7 +971,8 @@ const WORDS = [
     "imageSearch": "sugar cubes",
     "id": "w0098",
     "imageable": true,
-    "emoji": "🍬"
+    "emoji": "🍬",
+    "category": "food-drink"
   },
   {
     "target": "Salz",
@@ -882,7 +981,8 @@ const WORDS = [
     "imageSearch": "salt shaker",
     "id": "w0099",
     "imageable": true,
-    "emoji": "🧂"
+    "emoji": "🧂",
+    "category": "food-drink"
   },
   {
     "target": "Ei",
@@ -891,7 +991,8 @@ const WORDS = [
     "imageSearch": "egg chicken",
     "id": "w0100",
     "imageable": true,
-    "emoji": "🥚"
+    "emoji": "🥚",
+    "category": "food-drink"
   },
   {
     "target": "Butter",
@@ -900,7 +1001,8 @@ const WORDS = [
     "imageSearch": "butter",
     "id": "w0101",
     "imageable": true,
-    "emoji": "🧈"
+    "emoji": "🧈",
+    "category": "food-drink"
   },
   {
     "target": "Käse",
@@ -909,7 +1011,8 @@ const WORDS = [
     "imageSearch": "cheese",
     "id": "w0102",
     "imageable": true,
-    "emoji": "🧀"
+    "emoji": "🧀",
+    "category": "food-drink"
   },
   {
     "target": "Kuchen",
@@ -918,7 +1021,8 @@ const WORDS = [
     "imageSearch": "cake dessert",
     "id": "w0103",
     "imageable": true,
-    "emoji": "🎂"
+    "emoji": "🎂",
+    "category": "food-drink"
   },
   {
     "target": "Eis",
@@ -927,7 +1031,8 @@ const WORDS = [
     "imageSearch": "ice cream cone",
     "id": "w0104",
     "imageable": true,
-    "emoji": "🍦"
+    "emoji": "🍦",
+    "category": "food-drink"
   },
   {
     "target": "Kleid",
@@ -936,7 +1041,8 @@ const WORDS = [
     "imageSearch": "dress clothing",
     "id": "w0105",
     "imageable": true,
-    "emoji": "👗"
+    "emoji": "👗",
+    "category": "clothing"
   },
   {
     "target": "Hemd",
@@ -945,7 +1051,8 @@ const WORDS = [
     "imageSearch": "shirt clothing",
     "id": "w0106",
     "imageable": true,
-    "emoji": "👕"
+    "emoji": "👕",
+    "category": "clothing"
   },
   {
     "target": "Hose",
@@ -954,7 +1061,8 @@ const WORDS = [
     "imageSearch": "pants trousers",
     "id": "w0107",
     "imageable": true,
-    "emoji": "👖"
+    "emoji": "👖",
+    "category": "clothing"
   },
   {
     "target": "Schuh",
@@ -963,7 +1071,8 @@ const WORDS = [
     "imageSearch": "shoe footwear",
     "id": "w0108",
     "imageable": true,
-    "emoji": "👟"
+    "emoji": "👟",
+    "category": "clothing"
   },
   {
     "target": "Hut",
@@ -972,7 +1081,8 @@ const WORDS = [
     "imageSearch": "hat",
     "id": "w0109",
     "imageable": true,
-    "emoji": "🎩"
+    "emoji": "🎩",
+    "category": "clothing"
   },
   {
     "target": "Tasche",
@@ -981,7 +1091,8 @@ const WORDS = [
     "imageSearch": "bag handbag",
     "id": "w0110",
     "imageable": true,
-    "emoji": "👜"
+    "emoji": "👜",
+    "category": "clothing"
   },
   {
     "target": "Regenschirm",
@@ -990,7 +1101,8 @@ const WORDS = [
     "imageSearch": "umbrella rain",
     "id": "w0111",
     "imageable": true,
-    "emoji": "☂️"
+    "emoji": "☂️",
+    "category": "clothing"
   },
   {
     "target": "Brille",
@@ -999,7 +1111,8 @@ const WORDS = [
     "imageSearch": "eyeglasses",
     "id": "w0112",
     "imageable": true,
-    "emoji": "👓"
+    "emoji": "👓",
+    "category": "clothing"
   },
   {
     "target": "Haar",
@@ -1008,7 +1121,8 @@ const WORDS = [
     "imageSearch": "hair hairstyle",
     "id": "w0113",
     "imageable": true,
-    "emoji": "💇"
+    "emoji": "💇",
+    "category": "body"
   },
   {
     "target": "Gesicht",
@@ -1017,7 +1131,8 @@ const WORDS = [
     "imageSearch": "face portrait",
     "id": "w0114",
     "imageable": true,
-    "emoji": "😊"
+    "emoji": "😊",
+    "category": "body"
   },
   {
     "target": "Mund",
@@ -1026,7 +1141,8 @@ const WORDS = [
     "imageSearch": "mouth lips",
     "id": "w0115",
     "imageable": true,
-    "emoji": "👄"
+    "emoji": "👄",
+    "category": "body"
   },
   {
     "target": "Nase",
@@ -1035,7 +1151,8 @@ const WORDS = [
     "imageSearch": "nose face",
     "id": "w0116",
     "imageable": true,
-    "emoji": "👃"
+    "emoji": "👃",
+    "category": "body"
   },
   {
     "target": "Ohr",
@@ -1044,7 +1161,8 @@ const WORDS = [
     "imageSearch": "ear listening",
     "id": "w0117",
     "imageable": true,
-    "emoji": "👂"
+    "emoji": "👂",
+    "category": "body"
   },
   {
     "target": "Finger",
@@ -1053,7 +1171,8 @@ const WORDS = [
     "imageSearch": "finger hand",
     "id": "w0118",
     "imageable": true,
-    "emoji": "☝️"
+    "emoji": "☝️",
+    "category": "body"
   },
   {
     "target": "Fuß",
@@ -1062,7 +1181,8 @@ const WORDS = [
     "imageSearch": "foot barefoot",
     "id": "w0119",
     "imageable": true,
-    "emoji": "🦶"
+    "emoji": "🦶",
+    "category": "body"
   },
   {
     "target": "Arm",
@@ -1071,7 +1191,8 @@ const WORDS = [
     "imageSearch": "arm body",
     "id": "w0120",
     "imageable": true,
-    "emoji": "💪"
+    "emoji": "💪",
+    "category": "body"
   },
   {
     "target": "Bein",
@@ -1080,7 +1201,8 @@ const WORDS = [
     "imageSearch": "leg running",
     "id": "w0121",
     "imageable": true,
-    "emoji": "🦵"
+    "emoji": "🦵",
+    "category": "body"
   },
   {
     "target": "Rücken",
@@ -1089,7 +1211,8 @@ const WORDS = [
     "imageSearch": "back body",
     "id": "w0122",
     "imageable": true,
-    "emoji": "🔙"
+    "emoji": "🔙",
+    "category": "body"
   },
   {
     "target": "Zahn",
@@ -1098,7 +1221,8 @@ const WORDS = [
     "imageSearch": "tooth smile",
     "id": "w0123",
     "imageable": true,
-    "emoji": "🦷"
+    "emoji": "🦷",
+    "category": "body"
   },
   {
     "target": "Blut",
@@ -1107,7 +1231,8 @@ const WORDS = [
     "imageSearch": "blood red",
     "id": "w0124",
     "imageable": true,
-    "emoji": "🩸"
+    "emoji": "🩸",
+    "category": "body"
   },
   {
     "target": "Körper",
@@ -1116,7 +1241,8 @@ const WORDS = [
     "imageSearch": "human body",
     "id": "w0125",
     "imageable": true,
-    "emoji": "🧍"
+    "emoji": "🧍",
+    "category": "body"
   },
   {
     "target": "Schnee",
@@ -1125,7 +1251,8 @@ const WORDS = [
     "imageSearch": "snow winter",
     "id": "w0126",
     "imageable": true,
-    "emoji": "❄️"
+    "emoji": "❄️",
+    "category": "nature"
   },
   {
     "target": "Regen",
@@ -1134,7 +1261,8 @@ const WORDS = [
     "imageSearch": "rain drops",
     "id": "w0127",
     "imageable": true,
-    "emoji": "🌧️"
+    "emoji": "🌧️",
+    "category": "nature"
   },
   {
     "target": "Wind",
@@ -1143,7 +1271,8 @@ const WORDS = [
     "imageSearch": "wind blowing",
     "id": "w0128",
     "imageable": true,
-    "emoji": "💨"
+    "emoji": "💨",
+    "category": "nature"
   },
   {
     "target": "Wolke",
@@ -1152,7 +1281,8 @@ const WORDS = [
     "imageSearch": "cloud sky",
     "id": "w0129",
     "imageable": true,
-    "emoji": "☁️"
+    "emoji": "☁️",
+    "category": "nature"
   },
   {
     "target": "Himmel",
@@ -1161,7 +1291,8 @@ const WORDS = [
     "imageSearch": "blue sky",
     "id": "w0130",
     "imageable": true,
-    "emoji": "🌤️"
+    "emoji": "🌤️",
+    "category": "nature"
   },
   {
     "target": "Wald",
@@ -1170,7 +1301,8 @@ const WORDS = [
     "imageSearch": "forest trees",
     "id": "w0131",
     "imageable": true,
-    "emoji": "🌲"
+    "emoji": "🌲",
+    "category": "nature"
   },
   {
     "target": "Feld",
@@ -1179,7 +1311,8 @@ const WORDS = [
     "imageSearch": "green field",
     "id": "w0132",
     "imageable": true,
-    "emoji": "🌾"
+    "emoji": "🌾",
+    "category": "nature"
   },
   {
     "target": "See",
@@ -1188,7 +1321,8 @@ const WORDS = [
     "imageSearch": "lake calm water",
     "id": "w0133",
     "imageable": true,
-    "emoji": "🏞️"
+    "emoji": "🏞️",
+    "category": "nature"
   },
   {
     "target": "Insel",
@@ -1197,7 +1331,8 @@ const WORDS = [
     "imageSearch": "island tropical",
     "id": "w0134",
     "imageable": true,
-    "emoji": "🏝️"
+    "emoji": "🏝️",
+    "category": "nature"
   },
   {
     "target": "Strand",
@@ -1206,7 +1341,8 @@ const WORDS = [
     "imageSearch": "beach sand",
     "id": "w0135",
     "imageable": true,
-    "emoji": "🏖️"
+    "emoji": "🏖️",
+    "category": "nature"
   },
   {
     "target": "Tier",
@@ -1215,7 +1351,8 @@ const WORDS = [
     "imageSearch": "animal wildlife",
     "id": "w0136",
     "imageable": true,
-    "emoji": "🐾"
+    "emoji": "🐾",
+    "category": "animals"
   },
   {
     "target": "Vogel",
@@ -1224,7 +1361,8 @@ const WORDS = [
     "imageSearch": "bird flying",
     "id": "w0137",
     "imageable": true,
-    "emoji": "🐦"
+    "emoji": "🐦",
+    "category": "animals"
   },
   {
     "target": "Pferd",
@@ -1233,7 +1371,8 @@ const WORDS = [
     "imageSearch": "horse running",
     "id": "w0138",
     "imageable": true,
-    "emoji": "🐴"
+    "emoji": "🐴",
+    "category": "animals"
   },
   {
     "target": "Kuh",
@@ -1242,7 +1381,8 @@ const WORDS = [
     "imageSearch": "cow farm",
     "id": "w0139",
     "imageable": true,
-    "emoji": "🐄"
+    "emoji": "🐄",
+    "category": "animals"
   },
   {
     "target": "Schwein",
@@ -1251,7 +1391,8 @@ const WORDS = [
     "imageSearch": "pig farm",
     "id": "w0140",
     "imageable": true,
-    "emoji": "🐷"
+    "emoji": "🐷",
+    "category": "animals"
   },
   {
     "target": "Maus",
@@ -1260,7 +1401,8 @@ const WORDS = [
     "imageSearch": "mouse animal",
     "id": "w0141",
     "imageable": true,
-    "emoji": "🐭"
+    "emoji": "🐭",
+    "category": "animals"
   },
   {
     "target": "Schmetterling",
@@ -1269,7 +1411,8 @@ const WORDS = [
     "imageSearch": "butterfly colorful",
     "id": "w0142",
     "imageable": true,
-    "emoji": "🦋"
+    "emoji": "🦋",
+    "category": "animals"
   },
   {
     "target": "Farbe",
@@ -1278,7 +1421,8 @@ const WORDS = [
     "imageSearch": "colors rainbow",
     "id": "w0143",
     "imageable": true,
-    "emoji": "🎨"
+    "emoji": "🎨",
+    "category": "nature"
   },
   {
     "target": "Licht",
@@ -1287,7 +1431,8 @@ const WORDS = [
     "imageSearch": "light beam",
     "id": "w0144",
     "imageable": true,
-    "emoji": "💡"
+    "emoji": "💡",
+    "category": "nature"
   },
   {
     "target": "Schatten",
@@ -1296,7 +1441,8 @@ const WORDS = [
     "imageSearch": "shadow silhouette",
     "id": "w0145",
     "imageable": true,
-    "emoji": "👤"
+    "emoji": "👤",
+    "category": "nature"
   },
   {
     "target": "Morgen",
@@ -1305,7 +1451,8 @@ const WORDS = [
     "imageSearch": "morning sunrise",
     "id": "w0146",
     "imageable": true,
-    "emoji": "🌅"
+    "emoji": "🌅",
+    "category": "time"
   },
   {
     "target": "Abend",
@@ -1314,7 +1461,8 @@ const WORDS = [
     "imageSearch": "evening sunset",
     "id": "w0147",
     "imageable": true,
-    "emoji": "🌆"
+    "emoji": "🌆",
+    "category": "time"
   },
   {
     "target": "Mittag",
@@ -1323,7 +1471,8 @@ const WORDS = [
     "imageSearch": "noon midday sun",
     "id": "w0148",
     "imageable": true,
-    "emoji": "🕛"
+    "emoji": "🕛",
+    "category": "time"
   },
   {
     "target": "Woche",
@@ -1332,7 +1481,8 @@ const WORDS = [
     "imageSearch": "weekly calendar",
     "id": "w0149",
     "imageable": true,
-    "emoji": "📆"
+    "emoji": "📆",
+    "category": "time"
   },
   {
     "target": "Monat",
@@ -1341,7 +1491,8 @@ const WORDS = [
     "imageSearch": "calendar month",
     "id": "w0150",
     "imageable": true,
-    "emoji": "🗓️"
+    "emoji": "🗓️",
+    "category": "time"
   },
   {
     "target": "Sommer",
@@ -1350,7 +1501,8 @@ const WORDS = [
     "imageSearch": "summer beach",
     "id": "w0151",
     "imageable": true,
-    "emoji": "☀️"
+    "emoji": "☀️",
+    "category": "time"
   },
   {
     "target": "Winter",
@@ -1359,7 +1511,8 @@ const WORDS = [
     "imageSearch": "winter snow",
     "id": "w0152",
     "imageable": true,
-    "emoji": "❄️"
+    "emoji": "❄️",
+    "category": "time"
   },
   {
     "target": "Frühling",
@@ -1368,7 +1521,8 @@ const WORDS = [
     "imageSearch": "spring flowers",
     "id": "w0153",
     "imageable": true,
-    "emoji": "🌸"
+    "emoji": "🌸",
+    "category": "time"
   },
   {
     "target": "Herbst",
@@ -1377,7 +1531,8 @@ const WORDS = [
     "imageSearch": "autumn leaves",
     "id": "w0154",
     "imageable": true,
-    "emoji": "🍂"
+    "emoji": "🍂",
+    "category": "time"
   },
   {
     "target": "Geburtstag",
@@ -1386,7 +1541,8 @@ const WORDS = [
     "imageSearch": "birthday cake candles",
     "id": "w0155",
     "imageable": true,
-    "emoji": "🎂"
+    "emoji": "🎂",
+    "category": "time"
   },
   {
     "target": "Geschenk",
@@ -1395,7 +1551,8 @@ const WORDS = [
     "imageSearch": "gift present",
     "id": "w0156",
     "imageable": true,
-    "emoji": "🎁"
+    "emoji": "🎁",
+    "category": "people"
   },
   {
     "target": "Fest",
@@ -1404,7 +1561,8 @@ const WORDS = [
     "imageSearch": "festival celebration",
     "id": "w0157",
     "imageable": true,
-    "emoji": "🎉"
+    "emoji": "🎉",
+    "category": "entertainment"
   },
   {
     "target": "Urlaub",
@@ -1413,7 +1571,8 @@ const WORDS = [
     "imageSearch": "vacation travel",
     "id": "w0158",
     "imageable": true,
-    "emoji": "🏖️"
+    "emoji": "🏖️",
+    "category": "travel"
   },
   {
     "target": "Reise",
@@ -1422,7 +1581,8 @@ const WORDS = [
     "imageSearch": "travel journey",
     "id": "w0159",
     "imageable": true,
-    "emoji": "✈️"
+    "emoji": "✈️",
+    "category": "travel"
   },
   {
     "target": "Flughafen",
@@ -1431,7 +1591,8 @@ const WORDS = [
     "imageSearch": "airport terminal",
     "id": "w0160",
     "imageable": true,
-    "emoji": "✈️"
+    "emoji": "✈️",
+    "category": "travel"
   },
   {
     "target": "Bahnhof",
@@ -1440,7 +1601,8 @@ const WORDS = [
     "imageSearch": "train station",
     "id": "w0161",
     "imageable": true,
-    "emoji": "🚉"
+    "emoji": "🚉",
+    "category": "travel"
   },
   {
     "target": "Hotel",
@@ -1449,7 +1611,8 @@ const WORDS = [
     "imageSearch": "hotel building",
     "id": "w0162",
     "imageable": true,
-    "emoji": "🏨"
+    "emoji": "🏨",
+    "category": "travel"
   },
   {
     "target": "Museum",
@@ -1458,7 +1621,8 @@ const WORDS = [
     "imageSearch": "museum art",
     "id": "w0163",
     "imageable": true,
-    "emoji": "🏛️"
+    "emoji": "🏛️",
+    "category": "travel"
   },
   {
     "target": "Kino",
@@ -1467,7 +1631,8 @@ const WORDS = [
     "imageSearch": "cinema movie theater",
     "id": "w0164",
     "imageable": true,
-    "emoji": "🎬"
+    "emoji": "🎬",
+    "category": "entertainment"
   },
   {
     "target": "Theater",
@@ -1476,7 +1641,8 @@ const WORDS = [
     "imageSearch": "theater stage",
     "id": "w0165",
     "imageable": true,
-    "emoji": "🎭"
+    "emoji": "🎭",
+    "category": "entertainment"
   },
   {
     "target": "Park",
@@ -1485,7 +1651,8 @@ const WORDS = [
     "imageSearch": "park nature",
     "id": "w0166",
     "imageable": true,
-    "emoji": "🌳"
+    "emoji": "🌳",
+    "category": "entertainment"
   },
   {
     "target": "Bibliothek",
@@ -1494,7 +1661,8 @@ const WORDS = [
     "imageSearch": "library books",
     "id": "w0167",
     "imageable": true,
-    "emoji": "📚"
+    "emoji": "📚",
+    "category": "education"
   },
   {
     "target": "Universität",
@@ -1503,7 +1671,8 @@ const WORDS = [
     "imageSearch": "university campus",
     "id": "w0168",
     "imageable": true,
-    "emoji": "🎓"
+    "emoji": "🎓",
+    "category": "education"
   },
   {
     "target": "Lehrer",
@@ -1512,7 +1681,8 @@ const WORDS = [
     "imageSearch": "teacher classroom",
     "id": "w0169",
     "imageable": true,
-    "emoji": "👩‍🏫"
+    "emoji": "👩‍🏫",
+    "category": "education"
   },
   {
     "target": "Schüler",
@@ -1521,7 +1691,8 @@ const WORDS = [
     "imageSearch": "student studying",
     "id": "w0170",
     "imageable": true,
-    "emoji": "🎓"
+    "emoji": "🎓",
+    "category": "education"
   },
   {
     "target": "Aufgabe",
@@ -1529,7 +1700,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "homework task",
     "id": "w0171",
-    "imageable": false
+    "imageable": false,
+    "category": "education"
   },
   {
     "target": "Prüfung",
@@ -1537,7 +1709,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "exam test",
     "id": "w0172",
-    "imageable": false
+    "imageable": false,
+    "category": "education"
   },
   {
     "target": "Antwort",
@@ -1545,7 +1718,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "answer response",
     "id": "w0173",
-    "imageable": false
+    "imageable": false,
+    "category": "education"
   },
   {
     "target": "Problem",
@@ -1553,7 +1727,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "problem solving",
     "id": "w0174",
-    "imageable": false
+    "imageable": false,
+    "category": "education"
   },
   {
     "target": "Lösung",
@@ -1561,7 +1736,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "solution idea",
     "id": "w0175",
-    "imageable": false
+    "imageable": false,
+    "category": "education"
   },
   {
     "target": "Idee",
@@ -1569,7 +1745,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "idea lightbulb",
     "id": "w0176",
-    "imageable": false
+    "imageable": false,
+    "category": "education"
   },
   {
     "target": "Erfahrung",
@@ -1577,7 +1754,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "experience adventure",
     "id": "w0177",
-    "imageable": false
+    "imageable": false,
+    "category": "education"
   },
   {
     "target": "Beispiel",
@@ -1585,7 +1763,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "example demonstration",
     "id": "w0178",
-    "imageable": false
+    "imageable": false,
+    "category": "education"
   },
   {
     "target": "Geschichte",
@@ -1593,7 +1772,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "story book",
     "id": "w0179",
-    "imageable": false
+    "imageable": false,
+    "category": "education"
   },
   {
     "target": "Anfang",
@@ -1601,7 +1781,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "beginning start",
     "id": "w0180",
-    "imageable": false
+    "imageable": false,
+    "category": "emotions"
   },
   {
     "target": "Ziel",
@@ -1609,7 +1790,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "target goal",
     "id": "w0181",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Erfolg",
@@ -1617,7 +1799,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "success achievement",
     "id": "w0182",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Fehler",
@@ -1625,7 +1808,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "mistake error",
     "id": "w0183",
-    "imageable": false
+    "imageable": false,
+    "category": "education"
   },
   {
     "target": "Hilfe",
@@ -1633,7 +1817,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "helping hand",
     "id": "w0184",
-    "imageable": false
+    "imageable": false,
+    "category": "emotions"
   },
   {
     "target": "Angst",
@@ -1641,7 +1826,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "fear scared",
     "id": "w0185",
-    "imageable": false
+    "imageable": false,
+    "category": "emotions"
   },
   {
     "target": "Freude",
@@ -1649,7 +1835,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "joy happiness",
     "id": "w0186",
-    "imageable": false
+    "imageable": false,
+    "category": "emotions"
   },
   {
     "target": "Liebe",
@@ -1657,7 +1844,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "love heart",
     "id": "w0187",
-    "imageable": false
+    "imageable": false,
+    "category": "emotions"
   },
   {
     "target": "Glück",
@@ -1665,7 +1853,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "four leaf clover luck",
     "id": "w0188",
-    "imageable": false
+    "imageable": false,
+    "category": "emotions"
   },
   {
     "target": "Hoffnung",
@@ -1673,7 +1862,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "hope light",
     "id": "w0189",
-    "imageable": false
+    "imageable": false,
+    "category": "emotions"
   },
   {
     "target": "Traum",
@@ -1681,7 +1871,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "dream clouds",
     "id": "w0190",
-    "imageable": false
+    "imageable": false,
+    "category": "emotions"
   },
   {
     "target": "Wahrheit",
@@ -1689,7 +1880,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "truth honesty",
     "id": "w0191",
-    "imageable": false
+    "imageable": false,
+    "category": "emotions"
   },
   {
     "target": "Freiheit",
@@ -1697,7 +1889,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "freedom bird flying",
     "id": "w0192",
-    "imageable": false
+    "imageable": false,
+    "category": "emotions"
   },
   {
     "target": "Frieden",
@@ -1705,7 +1898,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "peace dove",
     "id": "w0193",
-    "imageable": false
+    "imageable": false,
+    "category": "emotions"
   },
   {
     "target": "Krieg",
@@ -1713,7 +1907,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "war conflict",
     "id": "w0194",
-    "imageable": false
+    "imageable": false,
+    "category": "emotions"
   },
   {
     "target": "Polizei",
@@ -1722,7 +1917,8 @@ const WORDS = [
     "imageSearch": "police officer",
     "id": "w0195",
     "imageable": true,
-    "emoji": "👮"
+    "emoji": "👮",
+    "category": "work"
   },
   {
     "target": "Regierung",
@@ -1730,7 +1926,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "government building",
     "id": "w0196",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Gesetz",
@@ -1738,7 +1935,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "law justice",
     "id": "w0197",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Gesellschaft",
@@ -1746,7 +1944,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "society community",
     "id": "w0198",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Familie",
@@ -1755,7 +1954,8 @@ const WORDS = [
     "imageSearch": "family together",
     "id": "w0199",
     "imageable": true,
-    "emoji": "👨‍👩‍👧‍👦"
+    "emoji": "👨‍👩‍👧‍👦",
+    "category": "people"
   },
   {
     "target": "Eltern",
@@ -1764,7 +1964,8 @@ const WORDS = [
     "imageSearch": "parents family",
     "id": "w0200",
     "imageable": true,
-    "emoji": "👫"
+    "emoji": "👫",
+    "category": "people"
   },
   {
     "target": "Sohn",
@@ -1773,7 +1974,8 @@ const WORDS = [
     "imageSearch": "son boy",
     "id": "w0201",
     "imageable": true,
-    "emoji": "👦"
+    "emoji": "👦",
+    "category": "people"
   },
   {
     "target": "Tochter",
@@ -1782,7 +1984,8 @@ const WORDS = [
     "imageSearch": "daughter girl",
     "id": "w0202",
     "imageable": true,
-    "emoji": "👧"
+    "emoji": "👧",
+    "category": "people"
   },
   {
     "target": "Baby",
@@ -1791,7 +1994,8 @@ const WORDS = [
     "imageSearch": "baby infant",
     "id": "w0203",
     "imageable": true,
-    "emoji": "👶"
+    "emoji": "👶",
+    "category": "people"
   },
   {
     "target": "Nachbar",
@@ -1800,7 +2004,8 @@ const WORDS = [
     "imageSearch": "neighbor house",
     "id": "w0204",
     "imageable": true,
-    "emoji": "🏘️"
+    "emoji": "🏘️",
+    "category": "people"
   },
   {
     "target": "Chef",
@@ -1809,7 +2014,8 @@ const WORDS = [
     "imageSearch": "boss manager office",
     "id": "w0205",
     "imageable": true,
-    "emoji": "👔"
+    "emoji": "👔",
+    "category": "people"
   },
   {
     "target": "Kollege",
@@ -1818,7 +2024,8 @@ const WORDS = [
     "imageSearch": "colleague coworker",
     "id": "w0206",
     "imageable": true,
-    "emoji": "🤝"
+    "emoji": "🤝",
+    "category": "work"
   },
   {
     "target": "Computer",
@@ -1827,7 +2034,8 @@ const WORDS = [
     "imageSearch": "computer laptop",
     "id": "w0207",
     "imageable": true,
-    "emoji": "💻"
+    "emoji": "💻",
+    "category": "work"
   },
   {
     "target": "Internet",
@@ -1836,7 +2044,8 @@ const WORDS = [
     "imageSearch": "internet wifi",
     "id": "w0208",
     "imageable": true,
-    "emoji": "🌐"
+    "emoji": "🌐",
+    "category": "work"
   },
   {
     "target": "Handy",
@@ -1845,7 +2054,8 @@ const WORDS = [
     "imageSearch": "smartphone mobile",
     "id": "w0209",
     "imageable": true,
-    "emoji": "📱"
+    "emoji": "📱",
+    "category": "work"
   },
   {
     "target": "Nachricht",
@@ -1853,7 +2063,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "message notification",
     "id": "w0210",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Foto",
@@ -1862,7 +2073,8 @@ const WORDS = [
     "imageSearch": "camera photo",
     "id": "w0211",
     "imageable": true,
-    "emoji": "📸"
+    "emoji": "📸",
+    "category": "entertainment"
   },
   {
     "target": "Lied",
@@ -1871,7 +2083,8 @@ const WORDS = [
     "imageSearch": "song music",
     "id": "w0212",
     "imageable": true,
-    "emoji": "🎶"
+    "emoji": "🎶",
+    "category": "entertainment"
   },
   {
     "target": "Tanz",
@@ -1880,7 +2093,8 @@ const WORDS = [
     "imageSearch": "dance dancing",
     "id": "w0213",
     "imageable": true,
-    "emoji": "💃"
+    "emoji": "💃",
+    "category": "entertainment"
   },
   {
     "target": "Kunst",
@@ -1889,7 +2103,8 @@ const WORDS = [
     "imageSearch": "art painting",
     "id": "w0214",
     "imageable": true,
-    "emoji": "🎨"
+    "emoji": "🎨",
+    "category": "entertainment"
   },
   {
     "target": "Sport",
@@ -1898,7 +2113,8 @@ const WORDS = [
     "imageSearch": "sport athletics",
     "id": "w0215",
     "imageable": true,
-    "emoji": "⚽"
+    "emoji": "⚽",
+    "category": "entertainment"
   },
   {
     "target": "Fußball",
@@ -1907,7 +2123,8 @@ const WORDS = [
     "imageSearch": "soccer ball",
     "id": "w0216",
     "imageable": true,
-    "emoji": "⚽"
+    "emoji": "⚽",
+    "category": "entertainment"
   },
   {
     "target": "Schwimmbad",
@@ -1916,7 +2133,8 @@ const WORDS = [
     "imageSearch": "swimming pool",
     "id": "w0217",
     "imageable": true,
-    "emoji": "🏊"
+    "emoji": "🏊",
+    "category": "entertainment"
   },
   {
     "target": "Messer",
@@ -1925,7 +2143,8 @@ const WORDS = [
     "imageSearch": "knife kitchen",
     "id": "w0218",
     "imageable": true,
-    "emoji": "🔪"
+    "emoji": "🔪",
+    "category": "kitchen"
   },
   {
     "target": "Gabel",
@@ -1934,7 +2153,8 @@ const WORDS = [
     "imageSearch": "fork silverware",
     "id": "w0219",
     "imageable": true,
-    "emoji": "🍴"
+    "emoji": "🍴",
+    "category": "kitchen"
   },
   {
     "target": "Löffel",
@@ -1943,7 +2163,8 @@ const WORDS = [
     "imageSearch": "spoon",
     "id": "w0220",
     "imageable": true,
-    "emoji": "🥄"
+    "emoji": "🥄",
+    "category": "kitchen"
   },
   {
     "target": "Teller",
@@ -1952,7 +2173,8 @@ const WORDS = [
     "imageSearch": "plate dish",
     "id": "w0221",
     "imageable": true,
-    "emoji": "🍽️"
+    "emoji": "🍽️",
+    "category": "kitchen"
   },
   {
     "target": "Glas",
@@ -1961,7 +2183,8 @@ const WORDS = [
     "imageSearch": "drinking glass",
     "id": "w0222",
     "imageable": true,
-    "emoji": "🥃"
+    "emoji": "🥃",
+    "category": "kitchen"
   },
   {
     "target": "Flasche",
@@ -1970,7 +2193,8 @@ const WORDS = [
     "imageSearch": "bottle water",
     "id": "w0223",
     "imageable": true,
-    "emoji": "🍼"
+    "emoji": "🍼",
+    "category": "kitchen"
   },
   {
     "target": "Topf",
@@ -1979,7 +2203,8 @@ const WORDS = [
     "imageSearch": "cooking pot",
     "id": "w0224",
     "imageable": true,
-    "emoji": "🫕"
+    "emoji": "🫕",
+    "category": "kitchen"
   },
   {
     "target": "Kühlschrank",
@@ -1988,7 +2213,8 @@ const WORDS = [
     "imageSearch": "refrigerator fridge",
     "id": "w0225",
     "imageable": true,
-    "emoji": "🧊"
+    "emoji": "🧊",
+    "category": "kitchen"
   },
   {
     "target": "Ofen",
@@ -1997,7 +2223,8 @@ const WORDS = [
     "imageSearch": "oven kitchen",
     "id": "w0226",
     "imageable": true,
-    "emoji": "♨️"
+    "emoji": "♨️",
+    "category": "home"
   },
   {
     "target": "Spiegel",
@@ -2006,7 +2233,8 @@ const WORDS = [
     "imageSearch": "mirror reflection",
     "id": "w0227",
     "imageable": true,
-    "emoji": "🪞"
+    "emoji": "🪞",
+    "category": "home"
   },
   {
     "target": "Treppe",
@@ -2015,7 +2243,8 @@ const WORDS = [
     "imageSearch": "stairs staircase",
     "id": "w0228",
     "imageable": true,
-    "emoji": "🪜"
+    "emoji": "🪜",
+    "category": "home"
   },
   {
     "target": "Dach",
@@ -2024,7 +2253,8 @@ const WORDS = [
     "imageSearch": "roof house",
     "id": "w0229",
     "imageable": true,
-    "emoji": "🏠"
+    "emoji": "🏠",
+    "category": "home"
   },
   {
     "target": "Wand",
@@ -2033,7 +2263,8 @@ const WORDS = [
     "imageSearch": "wall brick",
     "id": "w0230",
     "imageable": true,
-    "emoji": "🧱"
+    "emoji": "🧱",
+    "category": "home"
   },
   {
     "target": "Boden",
@@ -2042,7 +2273,8 @@ const WORDS = [
     "imageSearch": "floor wooden",
     "id": "w0231",
     "imageable": true,
-    "emoji": "⬇️"
+    "emoji": "⬇️",
+    "category": "home"
   },
   {
     "target": "Decke",
@@ -2051,7 +2283,8 @@ const WORDS = [
     "imageSearch": "blanket warm",
     "id": "w0232",
     "imageable": true,
-    "emoji": "🛏️"
+    "emoji": "🛏️",
+    "category": "home"
   },
   {
     "target": "Lampe",
@@ -2060,7 +2293,8 @@ const WORDS = [
     "imageSearch": "lamp light",
     "id": "w0233",
     "imageable": true,
-    "emoji": "💡"
+    "emoji": "💡",
+    "category": "home"
   },
   {
     "target": "Sofa",
@@ -2069,7 +2303,8 @@ const WORDS = [
     "imageSearch": "sofa couch",
     "id": "w0234",
     "imageable": true,
-    "emoji": "🛋️"
+    "emoji": "🛋️",
+    "category": "home"
   },
   {
     "target": "Schrank",
@@ -2078,7 +2313,8 @@ const WORDS = [
     "imageSearch": "closet wardrobe",
     "id": "w0235",
     "imageable": true,
-    "emoji": "🗄️"
+    "emoji": "🗄️",
+    "category": "home"
   },
   {
     "target": "Bad",
@@ -2087,7 +2323,8 @@ const WORDS = [
     "imageSearch": "bathroom",
     "id": "w0236",
     "imageable": true,
-    "emoji": "🚿"
+    "emoji": "🚿",
+    "category": "home"
   },
   {
     "target": "Dusche",
@@ -2096,7 +2333,8 @@ const WORDS = [
     "imageSearch": "shower bathroom",
     "id": "w0237",
     "imageable": true,
-    "emoji": "🚿"
+    "emoji": "🚿",
+    "category": "home"
   },
   {
     "target": "Seife",
@@ -2105,7 +2343,8 @@ const WORDS = [
     "imageSearch": "soap bar",
     "id": "w0238",
     "imageable": true,
-    "emoji": "🧼"
+    "emoji": "🧼",
+    "category": "home"
   },
   {
     "target": "Handtuch",
@@ -2114,7 +2353,8 @@ const WORDS = [
     "imageSearch": "towel",
     "id": "w0239",
     "imageable": true,
-    "emoji": "🧣"
+    "emoji": "🧣",
+    "category": "home"
   },
   {
     "target": "Zahnarzt",
@@ -2123,7 +2363,8 @@ const WORDS = [
     "imageSearch": "dentist",
     "id": "w0240",
     "imageable": true,
-    "emoji": "🦷"
+    "emoji": "🦷",
+    "category": "health"
   },
   {
     "target": "Medizin",
@@ -2132,7 +2373,8 @@ const WORDS = [
     "imageSearch": "medicine pills",
     "id": "w0241",
     "imageable": true,
-    "emoji": "💊"
+    "emoji": "💊",
+    "category": "health"
   },
   {
     "target": "Schmerz",
@@ -2140,7 +2382,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "pain headache",
     "id": "w0242",
-    "imageable": false
+    "imageable": false,
+    "category": "health"
   },
   {
     "target": "Gesundheit",
@@ -2148,7 +2391,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "health wellness",
     "id": "w0243",
-    "imageable": false
+    "imageable": false,
+    "category": "health"
   },
   {
     "target": "Krankheit",
@@ -2156,7 +2400,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "sick illness",
     "id": "w0244",
-    "imageable": false
+    "imageable": false,
+    "category": "health"
   },
   {
     "target": "Unfall",
@@ -2165,7 +2410,8 @@ const WORDS = [
     "imageSearch": "car accident",
     "id": "w0245",
     "imageable": true,
-    "emoji": "🚨"
+    "emoji": "🚨",
+    "category": "health"
   },
   {
     "target": "Nummer",
@@ -2173,7 +2419,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "numbers",
     "id": "w0246",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Name",
@@ -2181,7 +2428,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "name tag",
     "id": "w0247",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Adresse",
@@ -2189,7 +2437,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "address mailbox",
     "id": "w0248",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Geheimnis",
@@ -2197,7 +2446,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "secret whisper",
     "id": "w0249",
-    "imageable": false
+    "imageable": false,
+    "category": "emotions"
   },
   {
     "target": "Überraschung",
@@ -2205,7 +2455,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "surprise party",
     "id": "w0250",
-    "imageable": false
+    "imageable": false,
+    "category": "emotions"
   },
   {
     "target": "Witz",
@@ -2213,7 +2464,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "joke laughing",
     "id": "w0251",
-    "imageable": false
+    "imageable": false,
+    "category": "emotions"
   },
   {
     "target": "Spaß",
@@ -2221,7 +2473,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "fun happy",
     "id": "w0252",
-    "imageable": false
+    "imageable": false,
+    "category": "emotions"
   },
   {
     "target": "Ruhe",
@@ -2229,7 +2482,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "calm quiet nature",
     "id": "w0253",
-    "imageable": false
+    "imageable": false,
+    "category": "emotions"
   },
   {
     "target": "Lärm",
@@ -2237,7 +2491,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "noise loud",
     "id": "w0254",
-    "imageable": false
+    "imageable": false,
+    "category": "emotions"
   },
   {
     "target": "Stück",
@@ -2245,7 +2500,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "puzzle piece",
     "id": "w0255",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Form",
@@ -2253,7 +2509,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "geometric shapes",
     "id": "w0256",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Größe",
@@ -2261,7 +2518,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "size comparison",
     "id": "w0257",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Preis",
@@ -2269,7 +2527,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "price tag",
     "id": "w0258",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Gruppe",
@@ -2277,7 +2536,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "group people",
     "id": "w0259",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Mannschaft",
@@ -2285,7 +2545,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "team sports",
     "id": "w0260",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Gewicht",
@@ -2293,7 +2554,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "weight scale",
     "id": "w0261",
-    "imageable": false
+    "imageable": false,
+    "category": "travel"
   },
   {
     "target": "Richtung",
@@ -2301,7 +2563,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "direction arrow sign",
     "id": "w0262",
-    "imageable": false
+    "imageable": false,
+    "category": "travel"
   },
   {
     "target": "Zukunft",
@@ -2309,7 +2572,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "future technology",
     "id": "w0263",
-    "imageable": false
+    "imageable": false,
+    "category": "time"
   },
   {
     "target": "Vergangenheit",
@@ -2317,7 +2581,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "vintage old photo",
     "id": "w0264",
-    "imageable": false
+    "imageable": false,
+    "category": "time"
   },
   {
     "target": "Gegenwart",
@@ -2325,7 +2590,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "present moment now",
     "id": "w0265",
-    "imageable": false
+    "imageable": false,
+    "category": "time"
   },
   {
     "target": "Unterschied",
@@ -2333,7 +2599,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "difference contrast",
     "id": "w0266",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Meinung",
@@ -2341,7 +2608,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "opinion speech bubble",
     "id": "w0267",
-    "imageable": false
+    "imageable": false,
+    "category": "emotions"
   },
   {
     "target": "Wunsch",
@@ -2349,7 +2617,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "wish star",
     "id": "w0268",
-    "imageable": false
+    "imageable": false,
+    "category": "emotions"
   },
   {
     "target": "Gefühl",
@@ -2357,7 +2626,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "feeling emotion",
     "id": "w0269",
-    "imageable": false
+    "imageable": false,
+    "category": "emotions"
   },
   {
     "target": "Sorge",
@@ -2365,7 +2635,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "worry anxious",
     "id": "w0270",
-    "imageable": false
+    "imageable": false,
+    "category": "emotions"
   },
   {
     "target": "Interesse",
@@ -2373,7 +2644,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "curiosity interest",
     "id": "w0271",
-    "imageable": false
+    "imageable": false,
+    "category": "emotions"
   },
   {
     "target": "Geduld",
@@ -2381,7 +2653,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "patience waiting",
     "id": "w0272",
-    "imageable": false
+    "imageable": false,
+    "category": "emotions"
   },
   {
     "target": "Mut",
@@ -2389,7 +2662,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "courage brave",
     "id": "w0273",
-    "imageable": false
+    "imageable": false,
+    "category": "emotions"
   },
   {
     "target": "Vertrauen",
@@ -2397,7 +2671,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "trust handshake",
     "id": "w0274",
-    "imageable": false
+    "imageable": false,
+    "category": "emotions"
   },
   {
     "target": "Respekt",
@@ -2405,7 +2680,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "respect bow",
     "id": "w0275",
-    "imageable": false
+    "imageable": false,
+    "category": "emotions"
   },
   {
     "target": "Wissen",
@@ -2413,7 +2689,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "knowledge books",
     "id": "w0276",
-    "imageable": false
+    "imageable": false,
+    "category": "education"
   },
   {
     "target": "Bildung",
@@ -2421,7 +2698,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "education learning",
     "id": "w0277",
-    "imageable": false
+    "imageable": false,
+    "category": "education"
   },
   {
     "target": "Wissenschaft",
@@ -2429,7 +2707,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "science laboratory",
     "id": "w0278",
-    "imageable": false
+    "imageable": false,
+    "category": "education"
   },
   {
     "target": "Technik",
@@ -2437,7 +2716,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "technology",
     "id": "w0279",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Energie",
@@ -2445,7 +2725,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "energy power",
     "id": "w0280",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Umwelt",
@@ -2453,7 +2734,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "environment nature",
     "id": "w0281",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Natur",
@@ -2461,7 +2743,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "nature landscape",
     "id": "w0282",
-    "imageable": false
+    "imageable": false,
+    "category": "nature"
   },
   {
     "target": "Verkehr",
@@ -2470,7 +2753,8 @@ const WORDS = [
     "imageSearch": "traffic cars",
     "id": "w0283",
     "imageable": true,
-    "emoji": "🚦"
+    "emoji": "🚦",
+    "category": "travel"
   },
   {
     "target": "Ampel",
@@ -2479,7 +2763,8 @@ const WORDS = [
     "imageSearch": "traffic light",
     "id": "w0284",
     "imageable": true,
-    "emoji": "🚦"
+    "emoji": "🚦",
+    "category": "travel"
   },
   {
     "target": "Haltestelle",
@@ -2488,7 +2773,8 @@ const WORDS = [
     "imageSearch": "bus stop",
     "id": "w0285",
     "imageable": true,
-    "emoji": "🚏"
+    "emoji": "🚏",
+    "category": "travel"
   },
   {
     "target": "Fahrkarte",
@@ -2497,7 +2783,8 @@ const WORDS = [
     "imageSearch": "ticket transit",
     "id": "w0286",
     "imageable": true,
-    "emoji": "🎫"
+    "emoji": "🎫",
+    "category": "travel"
   },
   {
     "target": "Gepäck",
@@ -2506,7 +2793,8 @@ const WORDS = [
     "imageSearch": "luggage suitcase",
     "id": "w0287",
     "imageable": true,
-    "emoji": "🧳"
+    "emoji": "🧳",
+    "category": "travel"
   },
   {
     "target": "Pass",
@@ -2515,7 +2803,8 @@ const WORDS = [
     "imageSearch": "passport travel",
     "id": "w0288",
     "imageable": true,
-    "emoji": "🛂"
+    "emoji": "🛂",
+    "category": "travel"
   },
   {
     "target": "Grenze",
@@ -2524,7 +2813,8 @@ const WORDS = [
     "imageSearch": "border crossing",
     "id": "w0289",
     "imageable": true,
-    "emoji": "🚧"
+    "emoji": "🚧",
+    "category": "travel"
   },
   {
     "target": "Schritt",
@@ -2532,7 +2822,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "footstep walk",
     "id": "w0290",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Bewegung",
@@ -2540,7 +2831,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "movement motion",
     "id": "w0291",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Entscheidung",
@@ -2548,7 +2840,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "crossroads decision",
     "id": "w0292",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Möglichkeit",
@@ -2556,7 +2849,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "open door possibility",
     "id": "w0293",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Bedeutung",
@@ -2564,7 +2858,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "meaning symbol",
     "id": "w0294",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Entwicklung",
@@ -2572,7 +2867,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "growth development",
     "id": "w0295",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Beziehung",
@@ -2580,7 +2876,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "couple relationship",
     "id": "w0296",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Gespräch",
@@ -2588,7 +2885,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "conversation talking",
     "id": "w0297",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Vertrag",
@@ -2596,7 +2894,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "contract signing",
     "id": "w0298",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Rechnung",
@@ -2604,7 +2903,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "bill receipt",
     "id": "w0299",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Konto",
@@ -2612,7 +2912,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "bank account",
     "id": "w0300",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Steuer",
@@ -2620,7 +2921,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "tax money",
     "id": "w0301",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Miete",
@@ -2628,7 +2930,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "apartment rent",
     "id": "w0302",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Wohnung",
@@ -2637,7 +2940,8 @@ const WORDS = [
     "imageSearch": "apartment building",
     "id": "w0303",
     "imageable": true,
-    "emoji": "🏢"
+    "emoji": "🏢",
+    "category": "work"
   },
   {
     "target": "Gebäude",
@@ -2646,7 +2950,8 @@ const WORDS = [
     "imageSearch": "building architecture",
     "id": "w0304",
     "imageable": true,
-    "emoji": "🏗️"
+    "emoji": "🏗️",
+    "category": "work"
   },
   {
     "target": "Fabrik",
@@ -2655,7 +2960,8 @@ const WORDS = [
     "imageSearch": "factory industrial",
     "id": "w0305",
     "imageable": true,
-    "emoji": "🏭"
+    "emoji": "🏭",
+    "category": "work"
   },
   {
     "target": "Büro",
@@ -2664,7 +2970,8 @@ const WORDS = [
     "imageSearch": "office desk",
     "id": "w0306",
     "imageable": true,
-    "emoji": "🏢"
+    "emoji": "🏢",
+    "category": "work"
   },
   {
     "target": "Beruf",
@@ -2672,7 +2979,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "career profession",
     "id": "w0307",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Gehalt",
@@ -2680,7 +2988,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "salary paycheck",
     "id": "w0308",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Termin",
@@ -2688,7 +2997,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "appointment calendar",
     "id": "w0309",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "Pause",
@@ -2696,7 +3006,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "coffee break",
     "id": "w0310",
-    "imageable": false
+    "imageable": false,
+    "category": "work"
   },
   {
     "target": "sein",
@@ -2704,7 +3015,8 @@ const WORDS = [
     "pos": "verb",
     "imageSearch": "being existence",
     "id": "w0311",
-    "imageable": false
+    "imageable": false,
+    "category": "verbs"
   },
   {
     "target": "haben",
@@ -2712,7 +3024,8 @@ const WORDS = [
     "pos": "verb",
     "imageSearch": "having holding",
     "id": "w0312",
-    "imageable": false
+    "imageable": false,
+    "category": "verbs"
   },
   {
     "target": "werden",
@@ -2720,7 +3033,8 @@ const WORDS = [
     "pos": "verb",
     "imageSearch": "transformation growing",
     "id": "w0313",
-    "imageable": false
+    "imageable": false,
+    "category": "verbs"
   },
   {
     "target": "können",
@@ -2728,7 +3042,8 @@ const WORDS = [
     "pos": "verb",
     "imageSearch": "ability strength",
     "id": "w0314",
-    "imageable": false
+    "imageable": false,
+    "category": "verbs"
   },
   {
     "target": "müssen",
@@ -2736,7 +3051,8 @@ const WORDS = [
     "pos": "verb",
     "imageSearch": "obligation rules",
     "id": "w0315",
-    "imageable": false
+    "imageable": false,
+    "category": "verbs"
   },
   {
     "target": "sagen",
@@ -2745,7 +3061,8 @@ const WORDS = [
     "imageSearch": "speaking talking",
     "id": "w0316",
     "imageable": true,
-    "emoji": "💬"
+    "emoji": "💬",
+    "category": "verbs"
   },
   {
     "target": "machen",
@@ -2754,7 +3071,8 @@ const WORDS = [
     "imageSearch": "making creating",
     "id": "w0317",
     "imageable": true,
-    "emoji": "🔨"
+    "emoji": "🔨",
+    "category": "verbs"
   },
   {
     "target": "geben",
@@ -2763,7 +3081,8 @@ const WORDS = [
     "imageSearch": "giving present",
     "id": "w0318",
     "imageable": true,
-    "emoji": "🤲"
+    "emoji": "🤲",
+    "category": "verbs"
   },
   {
     "target": "kommen",
@@ -2772,7 +3091,8 @@ const WORDS = [
     "imageSearch": "arriving coming",
     "id": "w0319",
     "imageable": true,
-    "emoji": "👋"
+    "emoji": "👋",
+    "category": "verbs"
   },
   {
     "target": "wollen",
@@ -2780,7 +3100,8 @@ const WORDS = [
     "pos": "verb",
     "imageSearch": "wanting desire",
     "id": "w0320",
-    "imageable": false
+    "imageable": false,
+    "category": "verbs"
   },
   {
     "target": "gehen",
@@ -2789,7 +3110,8 @@ const WORDS = [
     "imageSearch": "walking going",
     "id": "w0321",
     "imageable": true,
-    "emoji": "🚶"
+    "emoji": "🚶",
+    "category": "verbs"
   },
   {
     "target": "wissen",
@@ -2797,7 +3119,8 @@ const WORDS = [
     "pos": "verb",
     "imageSearch": "knowing thinking",
     "id": "w0322",
-    "imageable": false
+    "imageable": false,
+    "category": "verbs"
   },
   {
     "target": "sehen",
@@ -2806,7 +3129,8 @@ const WORDS = [
     "imageSearch": "seeing eyes",
     "id": "w0323",
     "imageable": true,
-    "emoji": "👀"
+    "emoji": "👀",
+    "category": "verbs"
   },
   {
     "target": "lassen",
@@ -2814,7 +3138,8 @@ const WORDS = [
     "pos": "verb",
     "imageSearch": "letting go releasing",
     "id": "w0324",
-    "imageable": false
+    "imageable": false,
+    "category": "verbs"
   },
   {
     "target": "stehen",
@@ -2823,7 +3148,8 @@ const WORDS = [
     "imageSearch": "standing person",
     "id": "w0325",
     "imageable": true,
-    "emoji": "🧍"
+    "emoji": "🧍",
+    "category": "verbs"
   },
   {
     "target": "finden",
@@ -2831,7 +3157,8 @@ const WORDS = [
     "pos": "verb",
     "imageSearch": "finding treasure",
     "id": "w0326",
-    "imageable": false
+    "imageable": false,
+    "category": "verbs"
   },
   {
     "target": "bleiben",
@@ -2839,7 +3166,8 @@ const WORDS = [
     "pos": "verb",
     "imageSearch": "staying home",
     "id": "w0327",
-    "imageable": false
+    "imageable": false,
+    "category": "verbs"
   },
   {
     "target": "liegen",
@@ -2847,7 +3175,8 @@ const WORDS = [
     "pos": "verb",
     "imageSearch": "lying down",
     "id": "w0328",
-    "imageable": false
+    "imageable": false,
+    "category": "verbs"
   },
   {
     "target": "heißen",
@@ -2855,7 +3184,8 @@ const WORDS = [
     "pos": "verb",
     "imageSearch": "name tag",
     "id": "w0329",
-    "imageable": false
+    "imageable": false,
+    "category": "verbs"
   },
   {
     "target": "denken",
@@ -2863,7 +3193,8 @@ const WORDS = [
     "pos": "verb",
     "imageSearch": "thinking person",
     "id": "w0330",
-    "imageable": false
+    "imageable": false,
+    "category": "verbs"
   },
   {
     "target": "nehmen",
@@ -2872,7 +3203,8 @@ const WORDS = [
     "imageSearch": "taking grabbing",
     "id": "w0331",
     "imageable": true,
-    "emoji": "✊"
+    "emoji": "✊",
+    "category": "verbs"
   },
   {
     "target": "halten",
@@ -2881,7 +3213,8 @@ const WORDS = [
     "imageSearch": "holding hands",
     "id": "w0332",
     "imageable": true,
-    "emoji": "✋"
+    "emoji": "✋",
+    "category": "verbs"
   },
   {
     "target": "bringen",
@@ -2890,7 +3223,8 @@ const WORDS = [
     "imageSearch": "bringing carrying",
     "id": "w0333",
     "imageable": true,
-    "emoji": "📦"
+    "emoji": "📦",
+    "category": "verbs"
   },
   {
     "target": "leben",
@@ -2898,7 +3232,8 @@ const WORDS = [
     "pos": "verb",
     "imageSearch": "living life",
     "id": "w0334",
-    "imageable": false
+    "imageable": false,
+    "category": "verbs"
   },
   {
     "target": "fahren",
@@ -2907,7 +3242,8 @@ const WORDS = [
     "imageSearch": "driving car",
     "id": "w0335",
     "imageable": true,
-    "emoji": "🚗"
+    "emoji": "🚗",
+    "category": "verbs"
   },
   {
     "target": "fragen",
@@ -2916,7 +3252,8 @@ const WORDS = [
     "imageSearch": "asking question",
     "id": "w0336",
     "imageable": true,
-    "emoji": "❓"
+    "emoji": "❓",
+    "category": "verbs"
   },
   {
     "target": "kennen",
@@ -2924,7 +3261,8 @@ const WORDS = [
     "pos": "verb",
     "imageSearch": "knowing recognizing",
     "id": "w0337",
-    "imageable": false
+    "imageable": false,
+    "category": "verbs"
   },
   {
     "target": "sprechen",
@@ -2933,7 +3271,8 @@ const WORDS = [
     "imageSearch": "speaking talking",
     "id": "w0338",
     "imageable": true,
-    "emoji": "🗣️"
+    "emoji": "🗣️",
+    "category": "verbs"
   },
   {
     "target": "spielen",
@@ -2942,7 +3281,8 @@ const WORDS = [
     "imageSearch": "playing children",
     "id": "w0339",
     "imageable": true,
-    "emoji": "🎮"
+    "emoji": "🎮",
+    "category": "verbs"
   },
   {
     "target": "arbeiten",
@@ -2951,7 +3291,8 @@ const WORDS = [
     "imageSearch": "working office",
     "id": "w0340",
     "imageable": true,
-    "emoji": "💼"
+    "emoji": "💼",
+    "category": "verbs"
   },
   {
     "target": "brauchen",
@@ -2959,7 +3300,8 @@ const WORDS = [
     "pos": "verb",
     "imageSearch": "needing essential",
     "id": "w0341",
-    "imageable": false
+    "imageable": false,
+    "category": "verbs"
   },
   {
     "target": "lernen",
@@ -2968,7 +3310,8 @@ const WORDS = [
     "imageSearch": "learning studying",
     "id": "w0342",
     "imageable": true,
-    "emoji": "📚"
+    "emoji": "📚",
+    "category": "verbs"
   },
   {
     "target": "beginnen",
@@ -2976,7 +3319,8 @@ const WORDS = [
     "pos": "verb",
     "imageSearch": "starting beginning",
     "id": "w0343",
-    "imageable": false
+    "imageable": false,
+    "category": "verbs"
   },
   {
     "target": "verstehen",
@@ -2984,7 +3328,8 @@ const WORDS = [
     "pos": "verb",
     "imageSearch": "understanding idea",
     "id": "w0344",
-    "imageable": false
+    "imageable": false,
+    "category": "verbs"
   },
   {
     "target": "bekommen",
@@ -2992,7 +3337,8 @@ const WORDS = [
     "pos": "verb",
     "imageSearch": "receiving package",
     "id": "w0345",
-    "imageable": false
+    "imageable": false,
+    "category": "verbs"
   },
   {
     "target": "tragen",
@@ -3001,7 +3347,8 @@ const WORDS = [
     "imageSearch": "carrying box",
     "id": "w0346",
     "imageable": true,
-    "emoji": "👕"
+    "emoji": "👕",
+    "category": "verbs"
   },
   {
     "target": "laufen",
@@ -3010,7 +3357,8 @@ const WORDS = [
     "imageSearch": "running jogging",
     "id": "w0347",
     "imageable": true,
-    "emoji": "🏃"
+    "emoji": "🏃",
+    "category": "verbs"
   },
   {
     "target": "lesen",
@@ -3019,7 +3367,8 @@ const WORDS = [
     "imageSearch": "reading book",
     "id": "w0348",
     "imageable": true,
-    "emoji": "📖"
+    "emoji": "📖",
+    "category": "verbs"
   },
   {
     "target": "schreiben",
@@ -3028,7 +3377,8 @@ const WORDS = [
     "imageSearch": "writing pen",
     "id": "w0349",
     "imageable": true,
-    "emoji": "✍️"
+    "emoji": "✍️",
+    "category": "verbs"
   },
   {
     "target": "essen",
@@ -3037,7 +3387,8 @@ const WORDS = [
     "imageSearch": "eating food",
     "id": "w0350",
     "imageable": true,
-    "emoji": "🍽️"
+    "emoji": "🍽️",
+    "category": "verbs"
   },
   {
     "target": "trinken",
@@ -3046,7 +3397,8 @@ const WORDS = [
     "imageSearch": "drinking water",
     "id": "w0351",
     "imageable": true,
-    "emoji": "🥤"
+    "emoji": "🥤",
+    "category": "verbs"
   },
   {
     "target": "schlafen",
@@ -3055,7 +3407,8 @@ const WORDS = [
     "imageSearch": "sleeping bed",
     "id": "w0352",
     "imageable": true,
-    "emoji": "😴"
+    "emoji": "😴",
+    "category": "verbs"
   },
   {
     "target": "kaufen",
@@ -3064,7 +3417,8 @@ const WORDS = [
     "imageSearch": "shopping buying",
     "id": "w0353",
     "imageable": true,
-    "emoji": "🛒"
+    "emoji": "🛒",
+    "category": "verbs"
   },
   {
     "target": "verkaufen",
@@ -3073,7 +3427,8 @@ const WORDS = [
     "imageSearch": "selling store",
     "id": "w0354",
     "imageable": true,
-    "emoji": "💲"
+    "emoji": "💲",
+    "category": "verbs"
   },
   {
     "target": "kochen",
@@ -3082,7 +3437,8 @@ const WORDS = [
     "imageSearch": "cooking kitchen",
     "id": "w0355",
     "imageable": true,
-    "emoji": "👨‍🍳"
+    "emoji": "👨‍🍳",
+    "category": "verbs"
   },
   {
     "target": "waschen",
@@ -3091,7 +3447,8 @@ const WORDS = [
     "imageSearch": "washing hands",
     "id": "w0356",
     "imageable": true,
-    "emoji": "🧼"
+    "emoji": "🧼",
+    "category": "verbs"
   },
   {
     "target": "öffnen",
@@ -3100,7 +3457,8 @@ const WORDS = [
     "imageSearch": "opening door",
     "id": "w0357",
     "imageable": true,
-    "emoji": "📭"
+    "emoji": "📭",
+    "category": "verbs"
   },
   {
     "target": "schließen",
@@ -3109,7 +3467,8 @@ const WORDS = [
     "imageSearch": "closing door",
     "id": "w0358",
     "imageable": true,
-    "emoji": "📪"
+    "emoji": "📪",
+    "category": "verbs"
   },
   {
     "target": "sitzen",
@@ -3118,7 +3477,8 @@ const WORDS = [
     "imageSearch": "sitting chair",
     "id": "w0359",
     "imageable": true,
-    "emoji": "💺"
+    "emoji": "💺",
+    "category": "verbs"
   },
   {
     "target": "ziehen",
@@ -3127,7 +3487,8 @@ const WORDS = [
     "imageSearch": "pulling rope",
     "id": "w0360",
     "imageable": true,
-    "emoji": "🔄"
+    "emoji": "🔄",
+    "category": "verbs"
   },
   {
     "target": "fallen",
@@ -3136,7 +3497,8 @@ const WORDS = [
     "imageSearch": "falling autumn leaves",
     "id": "w0361",
     "imageable": true,
-    "emoji": "⬇️"
+    "emoji": "⬇️",
+    "category": "verbs"
   },
   {
     "target": "steigen",
@@ -3145,7 +3507,8 @@ const WORDS = [
     "imageSearch": "climbing mountain",
     "id": "w0362",
     "imageable": true,
-    "emoji": "🧗"
+    "emoji": "🧗",
+    "category": "verbs"
   },
   {
     "target": "fliegen",
@@ -3154,7 +3517,8 @@ const WORDS = [
     "imageSearch": "flying airplane",
     "id": "w0363",
     "imageable": true,
-    "emoji": "✈️"
+    "emoji": "✈️",
+    "category": "verbs"
   },
   {
     "target": "schwimmen",
@@ -3163,7 +3527,8 @@ const WORDS = [
     "imageSearch": "swimming pool",
     "id": "w0364",
     "imageable": true,
-    "emoji": "🏊"
+    "emoji": "🏊",
+    "category": "verbs"
   },
   {
     "target": "tanzen",
@@ -3172,7 +3537,8 @@ const WORDS = [
     "imageSearch": "dancing couple",
     "id": "w0365",
     "imageable": true,
-    "emoji": "💃"
+    "emoji": "💃",
+    "category": "verbs"
   },
   {
     "target": "singen",
@@ -3181,7 +3547,8 @@ const WORDS = [
     "imageSearch": "singing microphone",
     "id": "w0366",
     "imageable": true,
-    "emoji": "🎤"
+    "emoji": "🎤",
+    "category": "verbs"
   },
   {
     "target": "lachen",
@@ -3190,7 +3557,8 @@ const WORDS = [
     "imageSearch": "laughing happy",
     "id": "w0367",
     "imageable": true,
-    "emoji": "😂"
+    "emoji": "😂",
+    "category": "verbs"
   },
   {
     "target": "weinen",
@@ -3199,7 +3567,8 @@ const WORDS = [
     "imageSearch": "crying tears",
     "id": "w0368",
     "imageable": true,
-    "emoji": "😢"
+    "emoji": "😢",
+    "category": "verbs"
   },
   {
     "target": "lächeln",
@@ -3208,7 +3577,8 @@ const WORDS = [
     "imageSearch": "smiling face",
     "id": "w0369",
     "imageable": true,
-    "emoji": "😊"
+    "emoji": "😊",
+    "category": "verbs"
   },
   {
     "target": "hören",
@@ -3217,7 +3587,8 @@ const WORDS = [
     "imageSearch": "listening headphones",
     "id": "w0370",
     "imageable": true,
-    "emoji": "👂"
+    "emoji": "👂",
+    "category": "verbs"
   },
   {
     "target": "fühlen",
@@ -3226,7 +3597,8 @@ const WORDS = [
     "imageSearch": "feeling touching",
     "id": "w0371",
     "imageable": true,
-    "emoji": "🤚"
+    "emoji": "🤚",
+    "category": "verbs"
   },
   {
     "target": "warten",
@@ -3235,7 +3607,8 @@ const WORDS = [
     "imageSearch": "waiting clock",
     "id": "w0372",
     "imageable": true,
-    "emoji": "⏳"
+    "emoji": "⏳",
+    "category": "verbs"
   },
   {
     "target": "suchen",
@@ -3244,7 +3617,8 @@ const WORDS = [
     "imageSearch": "searching magnifying glass",
     "id": "w0373",
     "imageable": true,
-    "emoji": "🔍"
+    "emoji": "🔍",
+    "category": "verbs"
   },
   {
     "target": "versuchen",
@@ -3252,7 +3626,8 @@ const WORDS = [
     "pos": "verb",
     "imageSearch": "trying attempt",
     "id": "w0374",
-    "imageable": false
+    "imageable": false,
+    "category": "verbs"
   },
   {
     "target": "vergessen",
@@ -3260,7 +3635,8 @@ const WORDS = [
     "pos": "verb",
     "imageSearch": "forgetting memory",
     "id": "w0375",
-    "imageable": false
+    "imageable": false,
+    "category": "verbs"
   },
   {
     "target": "erinnern",
@@ -3268,7 +3644,8 @@ const WORDS = [
     "pos": "verb",
     "imageSearch": "remembering memories",
     "id": "w0376",
-    "imageable": false
+    "imageable": false,
+    "category": "verbs"
   },
   {
     "target": "helfen",
@@ -3277,7 +3654,8 @@ const WORDS = [
     "imageSearch": "helping hand",
     "id": "w0377",
     "imageable": true,
-    "emoji": "🆘"
+    "emoji": "🆘",
+    "category": "verbs"
   },
   {
     "target": "zeigen",
@@ -3286,7 +3664,8 @@ const WORDS = [
     "imageSearch": "showing pointing",
     "id": "w0378",
     "imageable": true,
-    "emoji": "👉"
+    "emoji": "👉",
+    "category": "verbs"
   },
   {
     "target": "erklären",
@@ -3295,7 +3674,8 @@ const WORDS = [
     "imageSearch": "explaining teaching",
     "id": "w0379",
     "imageable": true,
-    "emoji": "📋"
+    "emoji": "📋",
+    "category": "verbs"
   },
   {
     "target": "lieben",
@@ -3304,7 +3684,8 @@ const WORDS = [
     "imageSearch": "love couple",
     "id": "w0380",
     "imageable": true,
-    "emoji": "❤️"
+    "emoji": "❤️",
+    "category": "verbs"
   },
   {
     "target": "hoffen",
@@ -3312,7 +3693,8 @@ const WORDS = [
     "pos": "verb",
     "imageSearch": "hope light sunrise",
     "id": "w0381",
-    "imageable": false
+    "imageable": false,
+    "category": "verbs"
   },
   {
     "target": "glauben",
@@ -3320,7 +3702,8 @@ const WORDS = [
     "pos": "verb",
     "imageSearch": "believe faith",
     "id": "w0382",
-    "imageable": false
+    "imageable": false,
+    "category": "verbs"
   },
   {
     "target": "wünschen",
@@ -3328,7 +3711,8 @@ const WORDS = [
     "pos": "verb",
     "imageSearch": "wishing star",
     "id": "w0383",
-    "imageable": false
+    "imageable": false,
+    "category": "verbs"
   },
   {
     "target": "entscheiden",
@@ -3336,7 +3720,8 @@ const WORDS = [
     "pos": "verb",
     "imageSearch": "deciding choice",
     "id": "w0384",
-    "imageable": false
+    "imageable": false,
+    "category": "verbs"
   },
   {
     "target": "ändern",
@@ -3344,7 +3729,8 @@ const WORDS = [
     "pos": "verb",
     "imageSearch": "changing transformation",
     "id": "w0385",
-    "imageable": false
+    "imageable": false,
+    "category": "verbs"
   },
   {
     "target": "benutzen",
@@ -3352,7 +3738,8 @@ const WORDS = [
     "pos": "verb",
     "imageSearch": "using tool",
     "id": "w0386",
-    "imageable": false
+    "imageable": false,
+    "category": "verbs"
   },
   {
     "target": "bezahlen",
@@ -3361,7 +3748,8 @@ const WORDS = [
     "imageSearch": "paying money",
     "id": "w0387",
     "imageable": true,
-    "emoji": "💳"
+    "emoji": "💳",
+    "category": "verbs"
   },
   {
     "target": "bestellen",
@@ -3370,7 +3758,8 @@ const WORDS = [
     "imageSearch": "ordering restaurant",
     "id": "w0388",
     "imageable": true,
-    "emoji": "📝"
+    "emoji": "📝",
+    "category": "verbs"
   },
   {
     "target": "bauen",
@@ -3379,7 +3768,8 @@ const WORDS = [
     "imageSearch": "building construction",
     "id": "w0389",
     "imageable": true,
-    "emoji": "🏗️"
+    "emoji": "🏗️",
+    "category": "verbs"
   },
   {
     "target": "putzen",
@@ -3388,7 +3778,8 @@ const WORDS = [
     "imageSearch": "cleaning house",
     "id": "w0390",
     "imageable": true,
-    "emoji": "🧹"
+    "emoji": "🧹",
+    "category": "verbs"
   },
   {
     "target": "reisen",
@@ -3397,7 +3788,8 @@ const WORDS = [
     "imageSearch": "traveling airplane",
     "id": "w0391",
     "imageable": true,
-    "emoji": "🧳"
+    "emoji": "🧳",
+    "category": "verbs"
   },
   {
     "target": "ankommen",
@@ -3406,7 +3798,8 @@ const WORDS = [
     "imageSearch": "arriving destination",
     "id": "w0392",
     "imageable": true,
-    "emoji": "📍"
+    "emoji": "📍",
+    "category": "verbs"
   },
   {
     "target": "einladen",
@@ -3415,7 +3808,8 @@ const WORDS = [
     "imageSearch": "invitation party",
     "id": "w0393",
     "imageable": true,
-    "emoji": "💌"
+    "emoji": "💌",
+    "category": "verbs"
   },
   {
     "target": "besuchen",
@@ -3424,7 +3818,8 @@ const WORDS = [
     "imageSearch": "visiting friends",
     "id": "w0394",
     "imageable": true,
-    "emoji": "🏠"
+    "emoji": "🏠",
+    "category": "verbs"
   },
   {
     "target": "anrufen",
@@ -3433,7 +3828,8 @@ const WORDS = [
     "imageSearch": "phone call",
     "id": "w0395",
     "imageable": true,
-    "emoji": "📞"
+    "emoji": "📞",
+    "category": "verbs"
   },
   {
     "target": "schicken",
@@ -3442,7 +3838,8 @@ const WORDS = [
     "imageSearch": "sending package",
     "id": "w0396",
     "imageable": true,
-    "emoji": "📤"
+    "emoji": "📤",
+    "category": "verbs"
   },
   {
     "target": "teilen",
@@ -3451,7 +3848,8 @@ const WORDS = [
     "imageSearch": "sharing food",
     "id": "w0397",
     "imageable": true,
-    "emoji": "🔗"
+    "emoji": "🔗",
+    "category": "verbs"
   },
   {
     "target": "schenken",
@@ -3460,7 +3858,8 @@ const WORDS = [
     "imageSearch": "giving gift",
     "id": "w0398",
     "imageable": true,
-    "emoji": "🎁"
+    "emoji": "🎁",
+    "category": "verbs"
   },
   {
     "target": "danken",
@@ -3469,7 +3868,8 @@ const WORDS = [
     "imageSearch": "thanking grateful",
     "id": "w0399",
     "imageable": true,
-    "emoji": "🙏"
+    "emoji": "🙏",
+    "category": "verbs"
   },
   {
     "target": "vorstellen",
@@ -3477,7 +3877,8 @@ const WORDS = [
     "pos": "verb",
     "imageSearch": "introducing handshake",
     "id": "w0400",
-    "imageable": false
+    "imageable": false,
+    "category": "verbs"
   },
   {
     "target": "versprechen",
@@ -3485,7 +3886,8 @@ const WORDS = [
     "pos": "verb",
     "imageSearch": "promise pinky",
     "id": "w0401",
-    "imageable": false
+    "imageable": false,
+    "category": "verbs"
   },
   {
     "target": "gewinnen",
@@ -3494,7 +3896,8 @@ const WORDS = [
     "imageSearch": "winning trophy",
     "id": "w0402",
     "imageable": true,
-    "emoji": "🏆"
+    "emoji": "🏆",
+    "category": "verbs"
   },
   {
     "target": "verlieren",
@@ -3503,7 +3906,8 @@ const WORDS = [
     "imageSearch": "losing sad",
     "id": "w0403",
     "imageable": true,
-    "emoji": "😞"
+    "emoji": "😞",
+    "category": "verbs"
   },
   {
     "target": "wachsen",
@@ -3512,7 +3916,8 @@ const WORDS = [
     "imageSearch": "growing plant seedling",
     "id": "w0404",
     "imageable": true,
-    "emoji": "🌱"
+    "emoji": "🌱",
+    "category": "verbs"
   },
   {
     "target": "tun",
@@ -3520,7 +3925,8 @@ const WORDS = [
     "pos": "verb",
     "imageSearch": "doing action",
     "id": "w0405",
-    "imageable": false
+    "imageable": false,
+    "category": "verbs"
   },
   {
     "target": "werfen",
@@ -3529,7 +3935,8 @@ const WORDS = [
     "imageSearch": "throwing ball",
     "id": "w0406",
     "imageable": true,
-    "emoji": "🤾"
+    "emoji": "🤾",
+    "category": "verbs"
   },
   {
     "target": "fangen",
@@ -3538,7 +3945,8 @@ const WORDS = [
     "imageSearch": "catching ball",
     "id": "w0407",
     "imageable": true,
-    "emoji": "🤲"
+    "emoji": "🤲",
+    "category": "verbs"
   },
   {
     "target": "schneiden",
@@ -3547,7 +3955,8 @@ const WORDS = [
     "imageSearch": "cutting scissors",
     "id": "w0408",
     "imageable": true,
-    "emoji": "✂️"
+    "emoji": "✂️",
+    "category": "verbs"
   },
   {
     "target": "zeichnen",
@@ -3556,7 +3965,8 @@ const WORDS = [
     "imageSearch": "drawing pencil",
     "id": "w0409",
     "imageable": true,
-    "emoji": "✏️"
+    "emoji": "✏️",
+    "category": "verbs"
   },
   {
     "target": "malen",
@@ -3565,7 +3975,8 @@ const WORDS = [
     "imageSearch": "painting brush art",
     "id": "w0410",
     "imageable": true,
-    "emoji": "🎨"
+    "emoji": "🎨",
+    "category": "verbs"
   },
   {
     "target": "rennen",
@@ -3574,7 +3985,8 @@ const WORDS = [
     "imageSearch": "sprinting running",
     "id": "w0411",
     "imageable": true,
-    "emoji": "🏃‍♂️"
+    "emoji": "🏃‍♂️",
+    "category": "verbs"
   },
   {
     "target": "springen",
@@ -3583,7 +3995,8 @@ const WORDS = [
     "imageSearch": "jumping high",
     "id": "w0412",
     "imageable": true,
-    "emoji": "🦘"
+    "emoji": "🦘",
+    "category": "verbs"
   },
   {
     "target": "klettern",
@@ -3592,7 +4005,8 @@ const WORDS = [
     "imageSearch": "climbing rock",
     "id": "w0413",
     "imageable": true,
-    "emoji": "🧗"
+    "emoji": "🧗",
+    "category": "verbs"
   },
   {
     "target": "atmen",
@@ -3601,7 +4015,8 @@ const WORDS = [
     "imageSearch": "breathing meditation",
     "id": "w0414",
     "imageable": true,
-    "emoji": "🌬️"
+    "emoji": "🌬️",
+    "category": "verbs"
   },
   {
     "target": "träumen",
@@ -3610,7 +4025,8 @@ const WORDS = [
     "imageSearch": "dreaming sleeping",
     "id": "w0415",
     "imageable": true,
-    "emoji": "💭"
+    "emoji": "💭",
+    "category": "verbs"
   },
   {
     "target": "aufwachen",
@@ -3619,7 +4035,8 @@ const WORDS = [
     "imageSearch": "waking up morning",
     "id": "w0416",
     "imageable": true,
-    "emoji": "⏰"
+    "emoji": "⏰",
+    "category": "verbs"
   },
   {
     "target": "anziehen",
@@ -3628,7 +4045,8 @@ const WORDS = [
     "imageSearch": "getting dressed",
     "id": "w0417",
     "imageable": true,
-    "emoji": "👔"
+    "emoji": "👔",
+    "category": "verbs"
   },
   {
     "target": "duschen",
@@ -3637,7 +4055,8 @@ const WORDS = [
     "imageSearch": "showering",
     "id": "w0418",
     "imageable": true,
-    "emoji": "🚿"
+    "emoji": "🚿",
+    "category": "verbs"
   },
   {
     "target": "frühstücken",
@@ -3646,7 +4065,8 @@ const WORDS = [
     "imageSearch": "breakfast morning",
     "id": "w0419",
     "imageable": true,
-    "emoji": "🥐"
+    "emoji": "🥐",
+    "category": "verbs"
   },
   {
     "target": "rufen",
@@ -3655,7 +4075,8 @@ const WORDS = [
     "imageSearch": "shouting calling",
     "id": "w0420",
     "imageable": true,
-    "emoji": "📢"
+    "emoji": "📢",
+    "category": "verbs"
   },
   {
     "target": "erzählen",
@@ -3664,7 +4085,8 @@ const WORDS = [
     "imageSearch": "storytelling narrating",
     "id": "w0421",
     "imageable": true,
-    "emoji": "📖"
+    "emoji": "📖",
+    "category": "verbs"
   },
   {
     "target": "übersetzen",
@@ -3673,7 +4095,8 @@ const WORDS = [
     "imageSearch": "translating languages",
     "id": "w0422",
     "imageable": true,
-    "emoji": "🌐"
+    "emoji": "🌐",
+    "category": "verbs"
   },
   {
     "target": "üben",
@@ -3682,7 +4105,8 @@ const WORDS = [
     "imageSearch": "practicing piano",
     "id": "w0423",
     "imageable": true,
-    "emoji": "📝"
+    "emoji": "📝",
+    "category": "verbs"
   },
   {
     "target": "gut",
@@ -3690,7 +4114,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "thumbs up good",
     "id": "w0424",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "schlecht",
@@ -3698,7 +4123,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "thumbs down bad",
     "id": "w0425",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "groß",
@@ -3707,7 +4133,8 @@ const WORDS = [
     "imageSearch": "big large",
     "id": "w0426",
     "imageable": true,
-    "emoji": "📏"
+    "emoji": "📏",
+    "category": "adjectives"
   },
   {
     "target": "klein",
@@ -3716,7 +4143,8 @@ const WORDS = [
     "imageSearch": "small tiny",
     "id": "w0427",
     "imageable": true,
-    "emoji": "🤏"
+    "emoji": "🤏",
+    "category": "adjectives"
   },
   {
     "target": "neu",
@@ -3724,7 +4152,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "new shiny",
     "id": "w0428",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "alt",
@@ -3732,7 +4161,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "old vintage",
     "id": "w0429",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "lang",
@@ -3741,7 +4171,8 @@ const WORDS = [
     "imageSearch": "long road",
     "id": "w0430",
     "imageable": true,
-    "emoji": "📏"
+    "emoji": "📏",
+    "category": "adjectives"
   },
   {
     "target": "kurz",
@@ -3750,7 +4181,8 @@ const WORDS = [
     "imageSearch": "short small",
     "id": "w0431",
     "imageable": true,
-    "emoji": "📐"
+    "emoji": "📐",
+    "category": "adjectives"
   },
   {
     "target": "schön",
@@ -3759,7 +4191,8 @@ const WORDS = [
     "imageSearch": "beautiful landscape",
     "id": "w0432",
     "imageable": true,
-    "emoji": "✨"
+    "emoji": "✨",
+    "category": "adjectives"
   },
   {
     "target": "schnell",
@@ -3768,7 +4201,8 @@ const WORDS = [
     "imageSearch": "fast speed",
     "id": "w0433",
     "imageable": true,
-    "emoji": "⚡"
+    "emoji": "⚡",
+    "category": "adjectives"
   },
   {
     "target": "langsam",
@@ -3777,7 +4211,8 @@ const WORDS = [
     "imageSearch": "slow snail",
     "id": "w0434",
     "imageable": true,
-    "emoji": "🐌"
+    "emoji": "🐌",
+    "category": "adjectives"
   },
   {
     "target": "stark",
@@ -3786,7 +4221,8 @@ const WORDS = [
     "imageSearch": "strong muscle",
     "id": "w0435",
     "imageable": true,
-    "emoji": "💪"
+    "emoji": "💪",
+    "category": "adjectives"
   },
   {
     "target": "schwach",
@@ -3795,7 +4231,8 @@ const WORDS = [
     "imageSearch": "weak fragile",
     "id": "w0436",
     "imageable": true,
-    "emoji": "😩"
+    "emoji": "😩",
+    "category": "adjectives"
   },
   {
     "target": "jung",
@@ -3803,7 +4240,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "young person",
     "id": "w0437",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "schwer",
@@ -3812,7 +4250,8 @@ const WORDS = [
     "imageSearch": "heavy weight",
     "id": "w0438",
     "imageable": true,
-    "emoji": "🏋️"
+    "emoji": "🏋️",
+    "category": "adjectives"
   },
   {
     "target": "leicht",
@@ -3821,7 +4260,8 @@ const WORDS = [
     "imageSearch": "light feather",
     "id": "w0439",
     "imageable": true,
-    "emoji": "🪶"
+    "emoji": "🪶",
+    "category": "adjectives"
   },
   {
     "target": "warm",
@@ -3830,7 +4270,8 @@ const WORDS = [
     "imageSearch": "warm cozy fire",
     "id": "w0440",
     "imageable": true,
-    "emoji": "🌡️"
+    "emoji": "🌡️",
+    "category": "adjectives"
   },
   {
     "target": "kalt",
@@ -3839,7 +4280,8 @@ const WORDS = [
     "imageSearch": "cold ice frozen",
     "id": "w0441",
     "imageable": true,
-    "emoji": "🥶"
+    "emoji": "🥶",
+    "category": "adjectives"
   },
   {
     "target": "heiß",
@@ -3848,7 +4290,8 @@ const WORDS = [
     "imageSearch": "hot summer heat",
     "id": "w0442",
     "imageable": true,
-    "emoji": "🔥"
+    "emoji": "🔥",
+    "category": "adjectives"
   },
   {
     "target": "nass",
@@ -3857,7 +4300,8 @@ const WORDS = [
     "imageSearch": "wet rain drops",
     "id": "w0443",
     "imageable": true,
-    "emoji": "💦"
+    "emoji": "💦",
+    "category": "adjectives"
   },
   {
     "target": "trocken",
@@ -3866,7 +4310,8 @@ const WORDS = [
     "imageSearch": "dry desert",
     "id": "w0444",
     "imageable": true,
-    "emoji": "🏜️"
+    "emoji": "🏜️",
+    "category": "adjectives"
   },
   {
     "target": "hell",
@@ -3875,7 +4320,8 @@ const WORDS = [
     "imageSearch": "bright light",
     "id": "w0445",
     "imageable": true,
-    "emoji": "🔆"
+    "emoji": "🔆",
+    "category": "adjectives"
   },
   {
     "target": "dunkel",
@@ -3884,7 +4330,8 @@ const WORDS = [
     "imageSearch": "dark night",
     "id": "w0446",
     "imageable": true,
-    "emoji": "🌑"
+    "emoji": "🌑",
+    "category": "adjectives"
   },
   {
     "target": "laut",
@@ -3893,7 +4340,8 @@ const WORDS = [
     "imageSearch": "loud speaker",
     "id": "w0447",
     "imageable": true,
-    "emoji": "📢"
+    "emoji": "📢",
+    "category": "adjectives"
   },
   {
     "target": "leise",
@@ -3902,7 +4350,8 @@ const WORDS = [
     "imageSearch": "quiet silence",
     "id": "w0448",
     "imageable": true,
-    "emoji": "🤫"
+    "emoji": "🤫",
+    "category": "adjectives"
   },
   {
     "target": "süß",
@@ -3911,7 +4360,8 @@ const WORDS = [
     "imageSearch": "sweet candy",
     "id": "w0449",
     "imageable": true,
-    "emoji": "🍬"
+    "emoji": "🍬",
+    "category": "adjectives"
   },
   {
     "target": "sauer",
@@ -3920,7 +4370,8 @@ const WORDS = [
     "imageSearch": "sour lemon",
     "id": "w0450",
     "imageable": true,
-    "emoji": "🍋"
+    "emoji": "🍋",
+    "category": "adjectives"
   },
   {
     "target": "scharf",
@@ -3929,7 +4380,8 @@ const WORDS = [
     "imageSearch": "spicy chili pepper",
     "id": "w0451",
     "imageable": true,
-    "emoji": "🌶️"
+    "emoji": "🌶️",
+    "category": "adjectives"
   },
   {
     "target": "weich",
@@ -3938,7 +4390,8 @@ const WORDS = [
     "imageSearch": "soft pillow",
     "id": "w0452",
     "imageable": true,
-    "emoji": "☁️"
+    "emoji": "☁️",
+    "category": "adjectives"
   },
   {
     "target": "hart",
@@ -3947,7 +4400,8 @@ const WORDS = [
     "imageSearch": "hard rock stone",
     "id": "w0453",
     "imageable": true,
-    "emoji": "🪨"
+    "emoji": "🪨",
+    "category": "adjectives"
   },
   {
     "target": "rund",
@@ -3956,7 +4410,8 @@ const WORDS = [
     "imageSearch": "round circle ball",
     "id": "w0454",
     "imageable": true,
-    "emoji": "⭕"
+    "emoji": "⭕",
+    "category": "adjectives"
   },
   {
     "target": "breit",
@@ -3965,7 +4420,8 @@ const WORDS = [
     "imageSearch": "wide road panorama",
     "id": "w0455",
     "imageable": true,
-    "emoji": "↔️"
+    "emoji": "↔️",
+    "category": "adjectives"
   },
   {
     "target": "eng",
@@ -3974,7 +4430,8 @@ const WORDS = [
     "imageSearch": "narrow alley",
     "id": "w0456",
     "imageable": true,
-    "emoji": "⬛"
+    "emoji": "⬛",
+    "category": "adjectives"
   },
   {
     "target": "voll",
@@ -3983,7 +4440,8 @@ const WORDS = [
     "imageSearch": "full glass",
     "id": "w0457",
     "imageable": true,
-    "emoji": "🫙"
+    "emoji": "🫙",
+    "category": "adjectives"
   },
   {
     "target": "leer",
@@ -3992,7 +4450,8 @@ const WORDS = [
     "imageSearch": "empty room",
     "id": "w0458",
     "imageable": true,
-    "emoji": "📭"
+    "emoji": "📭",
+    "category": "adjectives"
   },
   {
     "target": "offen",
@@ -4001,7 +4460,8 @@ const WORDS = [
     "imageSearch": "open door",
     "id": "w0459",
     "imageable": true,
-    "emoji": "📖"
+    "emoji": "📖",
+    "category": "adjectives"
   },
   {
     "target": "richtig",
@@ -4009,7 +4469,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "correct checkmark green",
     "id": "w0460",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "falsch",
@@ -4017,7 +4478,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "wrong cross red",
     "id": "w0461",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "wichtig",
@@ -4025,7 +4487,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "important exclamation",
     "id": "w0462",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "einfach",
@@ -4033,7 +4496,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "simple minimal",
     "id": "w0463",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "schwierig",
@@ -4041,7 +4505,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "difficult puzzle",
     "id": "w0464",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "möglich",
@@ -4049,7 +4514,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "possible check",
     "id": "w0465",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "frei",
@@ -4057,7 +4523,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "free bird flying",
     "id": "w0466",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "fertig",
@@ -4065,7 +4532,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "finished done",
     "id": "w0467",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "bereit",
@@ -4073,7 +4541,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "ready set go",
     "id": "w0468",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "müde",
@@ -4082,7 +4551,8 @@ const WORDS = [
     "imageSearch": "tired sleepy",
     "id": "w0469",
     "imageable": true,
-    "emoji": "😴"
+    "emoji": "😴",
+    "category": "adjectives"
   },
   {
     "target": "gesund",
@@ -4090,7 +4560,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "healthy food",
     "id": "w0470",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "krank",
@@ -4098,7 +4569,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "sick ill",
     "id": "w0471",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "hungrig",
@@ -4107,7 +4579,8 @@ const WORDS = [
     "imageSearch": "hungry food",
     "id": "w0472",
     "imageable": true,
-    "emoji": "🤤"
+    "emoji": "🤤",
+    "category": "adjectives"
   },
   {
     "target": "durstig",
@@ -4116,7 +4589,8 @@ const WORDS = [
     "imageSearch": "thirsty water",
     "id": "w0473",
     "imageable": true,
-    "emoji": "🥵"
+    "emoji": "🥵",
+    "category": "adjectives"
   },
   {
     "target": "glücklich",
@@ -4125,7 +4599,8 @@ const WORDS = [
     "imageSearch": "happy smiling",
     "id": "w0474",
     "imageable": true,
-    "emoji": "😄"
+    "emoji": "😄",
+    "category": "adjectives"
   },
   {
     "target": "traurig",
@@ -4134,7 +4609,8 @@ const WORDS = [
     "imageSearch": "sad crying",
     "id": "w0475",
     "imageable": true,
-    "emoji": "😢"
+    "emoji": "😢",
+    "category": "adjectives"
   },
   {
     "target": "böse",
@@ -4143,7 +4619,8 @@ const WORDS = [
     "imageSearch": "angry face",
     "id": "w0476",
     "imageable": true,
-    "emoji": "😡"
+    "emoji": "😡",
+    "category": "adjectives"
   },
   {
     "target": "freundlich",
@@ -4151,7 +4628,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "friendly smiling",
     "id": "w0477",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "nett",
@@ -4159,7 +4637,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "nice kind person",
     "id": "w0478",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "lustig",
@@ -4167,7 +4646,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "funny laughing",
     "id": "w0479",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "langweilig",
@@ -4175,7 +4655,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "bored yawning",
     "id": "w0480",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "interessant",
@@ -4183,7 +4664,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "interesting curious",
     "id": "w0481",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "gefährlich",
@@ -4191,7 +4673,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "dangerous warning",
     "id": "w0482",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "sicher",
@@ -4199,7 +4682,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "safe secure lock",
     "id": "w0483",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "billig",
@@ -4207,7 +4691,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "cheap sale discount",
     "id": "w0484",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "teuer",
@@ -4215,7 +4700,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "expensive luxury",
     "id": "w0485",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "reich",
@@ -4223,7 +4709,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "rich wealthy gold",
     "id": "w0486",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "sauber",
@@ -4232,7 +4719,8 @@ const WORDS = [
     "imageSearch": "clean sparkling",
     "id": "w0487",
     "imageable": true,
-    "emoji": "✨"
+    "emoji": "✨",
+    "category": "adjectives"
   },
   {
     "target": "schmutzig",
@@ -4241,7 +4729,8 @@ const WORDS = [
     "imageSearch": "dirty muddy",
     "id": "w0488",
     "imageable": true,
-    "emoji": "🟤"
+    "emoji": "🟤",
+    "category": "adjectives"
   },
   {
     "target": "frisch",
@@ -4250,7 +4739,8 @@ const WORDS = [
     "imageSearch": "fresh vegetables",
     "id": "w0489",
     "imageable": true,
-    "emoji": "🌿"
+    "emoji": "🌿",
+    "category": "adjectives"
   },
   {
     "target": "rot",
@@ -4259,7 +4749,8 @@ const WORDS = [
     "imageSearch": "red color",
     "id": "w0490",
     "imageable": true,
-    "emoji": "🔴"
+    "emoji": "🔴",
+    "category": "colors"
   },
   {
     "target": "blau",
@@ -4268,7 +4759,8 @@ const WORDS = [
     "imageSearch": "blue ocean sky",
     "id": "w0491",
     "imageable": true,
-    "emoji": "🔵"
+    "emoji": "🔵",
+    "category": "colors"
   },
   {
     "target": "grün",
@@ -4277,7 +4769,8 @@ const WORDS = [
     "imageSearch": "green nature grass",
     "id": "w0492",
     "imageable": true,
-    "emoji": "🟢"
+    "emoji": "🟢",
+    "category": "colors"
   },
   {
     "target": "gelb",
@@ -4286,7 +4779,8 @@ const WORDS = [
     "imageSearch": "yellow sunflower",
     "id": "w0493",
     "imageable": true,
-    "emoji": "🟡"
+    "emoji": "🟡",
+    "category": "colors"
   },
   {
     "target": "schwarz",
@@ -4295,7 +4789,8 @@ const WORDS = [
     "imageSearch": "black dark",
     "id": "w0494",
     "imageable": true,
-    "emoji": "⚫"
+    "emoji": "⚫",
+    "category": "colors"
   },
   {
     "target": "weiß",
@@ -4304,7 +4799,8 @@ const WORDS = [
     "imageSearch": "white snow clean",
     "id": "w0495",
     "imageable": true,
-    "emoji": "⚪"
+    "emoji": "⚪",
+    "category": "colors"
   },
   {
     "target": "grau",
@@ -4313,7 +4809,8 @@ const WORDS = [
     "imageSearch": "gray fog",
     "id": "w0496",
     "imageable": true,
-    "emoji": "🔘"
+    "emoji": "🔘",
+    "category": "colors"
   },
   {
     "target": "braun",
@@ -4322,7 +4819,8 @@ const WORDS = [
     "imageSearch": "brown chocolate wood",
     "id": "w0497",
     "imageable": true,
-    "emoji": "🟤"
+    "emoji": "🟤",
+    "category": "colors"
   },
   {
     "target": "dick",
@@ -4331,7 +4829,8 @@ const WORDS = [
     "imageSearch": "thick book",
     "id": "w0498",
     "imageable": true,
-    "emoji": "🍔"
+    "emoji": "🍔",
+    "category": "adjectives"
   },
   {
     "target": "dünn",
@@ -4340,7 +4839,8 @@ const WORDS = [
     "imageSearch": "thin slim",
     "id": "w0499",
     "imageable": true,
-    "emoji": "📄"
+    "emoji": "📄",
+    "category": "adjectives"
   },
   {
     "target": "tief",
@@ -4349,7 +4849,8 @@ const WORDS = [
     "imageSearch": "deep ocean water",
     "id": "w0500",
     "imageable": true,
-    "emoji": "🌊"
+    "emoji": "🌊",
+    "category": "adjectives"
   },
   {
     "target": "hoch",
@@ -4358,7 +4859,8 @@ const WORDS = [
     "imageSearch": "high mountain tall",
     "id": "w0501",
     "imageable": true,
-    "emoji": "🏔️"
+    "emoji": "🏔️",
+    "category": "adjectives"
   },
   {
     "target": "nah",
@@ -4366,7 +4868,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "close nearby",
     "id": "w0502",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "weit",
@@ -4374,7 +4877,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "far distance",
     "id": "w0503",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "früh",
@@ -4382,7 +4886,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "early morning sunrise",
     "id": "w0504",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "spät",
@@ -4390,7 +4895,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "late night clock",
     "id": "w0505",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "bekannt",
@@ -4398,7 +4904,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "famous celebrity",
     "id": "w0506",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "besonder",
@@ -4406,7 +4913,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "special unique star",
     "id": "w0507",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "verschieden",
@@ -4414,7 +4922,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "different variety",
     "id": "w0508",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "gleich",
@@ -4422,7 +4931,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "same equal identical",
     "id": "w0509",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "wunderbar",
@@ -4430,7 +4940,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "wonderful amazing",
     "id": "w0510",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "perfekt",
@@ -4438,7 +4949,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "perfect score",
     "id": "w0511",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "schrecklich",
@@ -4446,7 +4958,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "terrible storm",
     "id": "w0512",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "verrückt",
@@ -4454,7 +4967,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "crazy wild fun",
     "id": "w0513",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "ruhig",
@@ -4462,7 +4976,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "calm peaceful lake",
     "id": "w0514",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "lecker",
@@ -4470,7 +4985,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "delicious food",
     "id": "w0515",
-    "imageable": false
+    "imageable": false,
+    "category": "food-drink"
   },
   {
     "target": "gemütlich",
@@ -4478,7 +4994,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "cozy room fireplace",
     "id": "w0516",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "pünktlich",
@@ -4486,7 +5003,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "punctual clock time",
     "id": "w0517",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "fleißig",
@@ -4494,7 +5012,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "hardworking studying",
     "id": "w0518",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "faul",
@@ -4502,7 +5021,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "lazy sleeping cat",
     "id": "w0519",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "höflich",
@@ -4510,7 +5030,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "polite gentleman",
     "id": "w0520",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "klug",
@@ -4518,7 +5039,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "smart clever brain",
     "id": "w0521",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "mutig",
@@ -4526,7 +5048,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "brave courageous lion",
     "id": "w0522",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "neugierig",
@@ -4534,7 +5057,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "curious exploring",
     "id": "w0523",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "stolz",
@@ -4542,7 +5066,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "proud achievement",
     "id": "w0524",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "dankbar",
@@ -4550,7 +5075,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "grateful thankful",
     "id": "w0525",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "zufrieden",
@@ -4558,7 +5084,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "satisfied content happy",
     "id": "w0526",
-    "imageable": false
+    "imageable": false,
+    "category": "adjectives"
   },
   {
     "target": "sehr",
@@ -4566,7 +5093,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "very much extreme",
     "id": "w0527",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "auch",
@@ -4574,7 +5102,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "also plus addition",
     "id": "w0528",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "schon",
@@ -4582,7 +5111,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "already done finished",
     "id": "w0529",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "noch",
@@ -4590,7 +5120,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "still waiting",
     "id": "w0530",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "immer",
@@ -4598,7 +5129,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "always forever infinity",
     "id": "w0531",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "nie",
@@ -4606,7 +5138,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "never stop sign",
     "id": "w0532",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "oft",
@@ -4614,7 +5147,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "often frequently repeat",
     "id": "w0533",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "manchmal",
@@ -4622,7 +5156,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "sometimes occasional",
     "id": "w0534",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "selten",
@@ -4630,7 +5165,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "rare diamond",
     "id": "w0535",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "hier",
@@ -4638,7 +5174,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "here pin location",
     "id": "w0536",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "dort",
@@ -4646,7 +5183,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "there pointing far",
     "id": "w0537",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "heute",
@@ -4654,7 +5192,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "today calendar",
     "id": "w0538",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "gestern",
@@ -4662,7 +5201,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "yesterday past",
     "id": "w0539",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "morgen",
@@ -4670,7 +5210,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "tomorrow future",
     "id": "w0540",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "jetzt",
@@ -4678,7 +5219,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "now present moment",
     "id": "w0541",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "bald",
@@ -4686,7 +5228,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "soon upcoming",
     "id": "w0542",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "wieder",
@@ -4694,7 +5237,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "again repeat",
     "id": "w0543",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "zusammen",
@@ -4702,7 +5246,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "together hands",
     "id": "w0544",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "allein",
@@ -4710,7 +5255,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "alone lonely",
     "id": "w0545",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "draußen",
@@ -4718,7 +5264,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "outside nature outdoors",
     "id": "w0546",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "drinnen",
@@ -4726,7 +5273,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "inside house cozy",
     "id": "w0547",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "oben",
@@ -4734,7 +5282,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "above sky up",
     "id": "w0548",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "unten",
@@ -4742,7 +5291,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "below down under",
     "id": "w0549",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "links",
@@ -4750,7 +5300,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "left arrow direction",
     "id": "w0550",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "rechts",
@@ -4758,7 +5309,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "right arrow direction",
     "id": "w0551",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "geradeaus",
@@ -4766,7 +5318,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "straight road ahead",
     "id": "w0552",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "vielleicht",
@@ -4774,7 +5327,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "maybe uncertain",
     "id": "w0553",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "bestimmt",
@@ -4782,7 +5336,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "certain sure",
     "id": "w0554",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "wahrscheinlich",
@@ -4790,7 +5345,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "probably likely",
     "id": "w0555",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "wirklich",
@@ -4798,7 +5354,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "really truly",
     "id": "w0556",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "genau",
@@ -4806,7 +5363,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "exact precise target",
     "id": "w0557",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "sofort",
@@ -4814,7 +5372,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "immediately instant fast",
     "id": "w0558",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "endlich",
@@ -4822,7 +5381,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "finally done celebration",
     "id": "w0559",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "plötzlich",
@@ -4830,7 +5390,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "suddenly surprise lightning",
     "id": "w0560",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "trotzdem",
@@ -4838,7 +5399,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "nevertheless perseverance",
     "id": "w0561",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "überall",
@@ -4846,7 +5408,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "everywhere all around",
     "id": "w0562",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "nirgendwo",
@@ -4854,7 +5417,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "nowhere empty desert",
     "id": "w0563",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "irgendwo",
@@ -4862,7 +5426,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "somewhere mystery",
     "id": "w0564",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "gern",
@@ -4870,7 +5435,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "gladly happy willing",
     "id": "w0565",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "leider",
@@ -4878,7 +5444,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "unfortunately sad",
     "id": "w0566",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "natürlich",
@@ -4886,7 +5453,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "naturally obvious",
     "id": "w0567",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "besonders",
@@ -4894,7 +5462,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "especially special star",
     "id": "w0568",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "ziemlich",
@@ -4902,7 +5471,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "quite fairly",
     "id": "w0569",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "fast",
@@ -4910,7 +5480,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "almost nearly close",
     "id": "w0570",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "genug",
@@ -4918,7 +5489,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "enough sufficient",
     "id": "w0571",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "zuerst",
@@ -4926,7 +5498,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "first number one",
     "id": "w0572",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "danach",
@@ -4934,7 +5507,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "afterwards then next",
     "id": "w0573",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "gleichzeitig",
@@ -4942,7 +5516,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "simultaneous parallel",
     "id": "w0574",
-    "imageable": false
+    "imageable": false,
+    "category": "adverbs"
   },
   {
     "target": "null",
@@ -4950,7 +5525,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "zero number",
     "id": "w0575",
-    "imageable": false
+    "imageable": false,
+    "category": "numbers"
   },
   {
     "target": "eins",
@@ -4958,7 +5534,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "one single",
     "id": "w0576",
-    "imageable": false
+    "imageable": false,
+    "category": "numbers"
   },
   {
     "target": "zwei",
@@ -4966,7 +5543,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "two pair",
     "id": "w0577",
-    "imageable": false
+    "imageable": false,
+    "category": "numbers"
   },
   {
     "target": "drei",
@@ -4974,7 +5552,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "three trio",
     "id": "w0578",
-    "imageable": false
+    "imageable": false,
+    "category": "numbers"
   },
   {
     "target": "vier",
@@ -4982,7 +5561,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "four number",
     "id": "w0579",
-    "imageable": false
+    "imageable": false,
+    "category": "numbers"
   },
   {
     "target": "fünf",
@@ -4990,7 +5570,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "five hand fingers",
     "id": "w0580",
-    "imageable": false
+    "imageable": false,
+    "category": "numbers"
   },
   {
     "target": "sechs",
@@ -4998,7 +5579,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "six dice",
     "id": "w0581",
-    "imageable": false
+    "imageable": false,
+    "category": "numbers"
   },
   {
     "target": "sieben",
@@ -5006,7 +5588,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "seven lucky",
     "id": "w0582",
-    "imageable": false
+    "imageable": false,
+    "category": "numbers"
   },
   {
     "target": "acht",
@@ -5014,7 +5597,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "eight number",
     "id": "w0583",
-    "imageable": false
+    "imageable": false,
+    "category": "numbers"
   },
   {
     "target": "neun",
@@ -5022,7 +5606,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "nine number",
     "id": "w0584",
-    "imageable": false
+    "imageable": false,
+    "category": "numbers"
   },
   {
     "target": "zehn",
@@ -5030,7 +5615,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "ten number",
     "id": "w0585",
-    "imageable": false
+    "imageable": false,
+    "category": "numbers"
   },
   {
     "target": "hundert",
@@ -5038,7 +5624,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "hundred century",
     "id": "w0586",
-    "imageable": false
+    "imageable": false,
+    "category": "numbers"
   },
   {
     "target": "tausend",
@@ -5046,7 +5633,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "thousand many",
     "id": "w0587",
-    "imageable": false
+    "imageable": false,
+    "category": "numbers"
   },
   {
     "target": "ja",
@@ -5054,7 +5642,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "yes thumbs up",
     "id": "w0588",
-    "imageable": false
+    "imageable": false,
+    "category": "greetings"
   },
   {
     "target": "nein",
@@ -5062,7 +5651,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "no stop hand",
     "id": "w0589",
-    "imageable": false
+    "imageable": false,
+    "category": "greetings"
   },
   {
     "target": "bitte",
@@ -5070,7 +5660,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "please polite",
     "id": "w0590",
-    "imageable": false
+    "imageable": false,
+    "category": "greetings"
   },
   {
     "target": "danke",
@@ -5078,7 +5669,8 @@ const WORDS = [
     "pos": "adverb",
     "imageSearch": "thank you grateful",
     "id": "w0591",
-    "imageable": false
+    "imageable": false,
+    "category": "greetings"
   },
   {
     "target": "Entschuldigung",
@@ -5086,7 +5678,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "sorry apology",
     "id": "w0592",
-    "imageable": false
+    "imageable": false,
+    "category": "greetings"
   },
   {
     "target": "Willkommen",
@@ -5094,7 +5687,8 @@ const WORDS = [
     "pos": "adjective",
     "imageSearch": "welcome mat",
     "id": "w0593",
-    "imageable": false
+    "imageable": false,
+    "category": "greetings"
   },
   {
     "target": "Tschüss",
@@ -5102,7 +5696,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "goodbye waving",
     "id": "w0594",
-    "imageable": false
+    "imageable": false,
+    "category": "greetings"
   },
   {
     "target": "Hallo",
@@ -5110,7 +5705,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "hello greeting wave",
     "id": "w0595",
-    "imageable": false
+    "imageable": false,
+    "category": "greetings"
   },
   {
     "target": "Prost",
@@ -5118,7 +5714,8 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "cheers toast drinks",
     "id": "w0596",
-    "imageable": false
+    "imageable": false,
+    "category": "greetings"
   },
   {
     "target": "Mahlzeit",
@@ -5126,6 +5723,7 @@ const WORDS = [
     "pos": "noun",
     "imageSearch": "meal lunch food",
     "id": "w0597",
-    "imageable": false
+    "imageable": false,
+    "category": "greetings"
   }
 ];

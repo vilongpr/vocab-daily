@@ -2,6 +2,8 @@
 
 const App = (() => {
   let lastMode = 'target-base';
+  let lastCategory = 'all';
+  let lastReviewOnly = false;
 
   function init() {
     Flashcard.init();
@@ -62,6 +64,7 @@ const App = (() => {
     if (name === 'dashboard') updateDashboard();
     if (name === 'vocabulary') renderVocabulary();
     if (name === 'summary') renderMasteryBar('mastery-bar-summary', 'mastery-legend-summary');
+    if (name === 'mode') populateCategoryFilter();
   }
 
   // --- Vocabulary ---
@@ -74,8 +77,18 @@ const App = (() => {
     const thBase = document.getElementById('vocab-th-base');
     const thTarget = document.getElementById('vocab-th-target');
 
+    // Populate category dropdown if needed
+    const catSelect = document.getElementById('vocab-category-filter');
+    if (catSelect.options.length <= 1) {
+      const cats = Categories.getAll();
+      catSelect.innerHTML = Object.entries(cats).map(([key, cat]) =>
+        `<option value="${key}">${cat.emoji} ${cat.label}</option>`
+      ).join('');
+    }
+
+    const catKey = catSelect.value || 'all';
     const query = filter.toLowerCase();
-    let words = WORDS.filter(w =>
+    let words = Categories.filterWords(WORDS, catKey).filter(w =>
       !query || w.base.toLowerCase().includes(query) || w.target.toLowerCase().includes(query)
     );
 
@@ -161,6 +174,29 @@ const App = (() => {
     }).join('');
   }
 
+  function populateCategoryFilter() {
+    const select = document.getElementById('filter-category');
+    if (select.options.length > 1) return; // already populated
+    const cats = Categories.getAll();
+    select.innerHTML = Object.entries(cats).map(([key, cat]) =>
+      `<option value="${key}">${cat.emoji} ${cat.label}</option>`
+    ).join('');
+    select.value = lastCategory;
+  }
+
+  function getFilteredWordPool(mode) {
+    const category = document.getElementById('filter-category').value;
+    const reviewOnly = document.getElementById('filter-review-only').checked;
+    lastCategory = category;
+    lastReviewOnly = reviewOnly;
+
+    let pool = Categories.filterWords(WORDS, category);
+    if (mode === 'img-target') {
+      pool = pool.filter(w => w.imageable);
+    }
+    return { pool, reviewOnly };
+  }
+
   function renderMasteryBar(barId, legendId) {
     const m = SRS.getMasteryBreakdown(WORDS);
     const pct = (n) => m.total > 0 ? ((n / m.total) * 100).toFixed(1) : 0;
@@ -214,6 +250,9 @@ const App = (() => {
     document.getElementById('vocab-search').addEventListener('input', (e) => {
       renderVocabulary(e.target.value);
     });
+    document.getElementById('vocab-category-filter').addEventListener('change', () => {
+      renderVocabulary(document.getElementById('vocab-search').value);
+    });
     document.getElementById('vocab-body').addEventListener('click', handleVocabSpeak);
     document.getElementById('vocab-th-base').addEventListener('click', () => {
       if (vocabSortField === 'base') vocabSortAsc = !vocabSortAsc;
@@ -236,11 +275,10 @@ const App = (() => {
       btn.addEventListener('click', () => {
         const mode = btn.dataset.mode;
         lastMode = mode;
-        // For image mode, only include words with clear visual representations
-        const wordPool = mode === 'img-target'
-          ? WORDS.filter(w => w.imageable)
-          : WORDS;
-        const queue = SRS.getTodayQueue(wordPool);
+        const { pool, reviewOnly } = getFilteredWordPool(mode);
+        const queue = reviewOnly
+          ? SRS.getReviewQueue(pool)
+          : SRS.getTodayQueue(pool);
         showView('flashcard');
         Flashcard.startSession(queue, mode);
       });
@@ -267,10 +305,10 @@ const App = (() => {
 
     // Learn more words from summary
     document.getElementById('btn-learn-more').addEventListener('click', () => {
-      const wordPool = lastMode === 'img-target'
-        ? WORDS.filter(w => w.imageable)
-        : WORDS;
-      const queue = SRS.getExtraQueue(wordPool, 5);
+      const pool = lastMode === 'img-target'
+        ? Categories.filterWords(WORDS, lastCategory).filter(w => w.imageable)
+        : Categories.filterWords(WORDS, lastCategory);
+      const queue = SRS.getExtraQueue(pool, 5);
       if (queue.length > 0) {
         showView('flashcard');
         Flashcard.startSession(queue, lastMode);
@@ -279,10 +317,10 @@ const App = (() => {
 
     // "Caught up" screen buttons
     document.getElementById('btn-caught-up-learn').addEventListener('click', () => {
-      const wordPool = lastMode === 'img-target'
-        ? WORDS.filter(w => w.imageable)
-        : WORDS;
-      const queue = SRS.getExtraQueue(wordPool, 5);
+      const pool = lastMode === 'img-target'
+        ? Categories.filterWords(WORDS, lastCategory).filter(w => w.imageable)
+        : Categories.filterWords(WORDS, lastCategory);
+      const queue = SRS.getExtraQueue(pool, 5);
       if (queue.length > 0) {
         Flashcard.startSession(queue, lastMode);
       }

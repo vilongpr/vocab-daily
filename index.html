@@ -66,6 +66,20 @@
       <!-- Mode Selection View -->
       <section id="mode-view" class="view">
         <h2>Choose Your Mode</h2>
+
+        <div class="filter-bar">
+          <div class="filter-group">
+            <label for="filter-category">Category</label>
+            <select id="filter-category" class="filter-select"></select>
+          </div>
+          <div class="filter-group">
+            <label class="filter-toggle-label" for="filter-review-only">
+              <input type="checkbox" id="filter-review-only">
+              <span>Review only (no new words)</span>
+            </label>
+          </div>
+        </div>
+
         <div class="mode-grid">
           <button class="mode-card" data-mode="target-base">
             <span class="mode-icon" id="mode-icon-tb"></span>
@@ -154,6 +168,7 @@
         <h2>Vocabulary</h2>
         <div class="vocab-controls">
           <input type="text" id="vocab-search" placeholder="Search words…" class="vocab-search">
+          <select id="vocab-category-filter" class="filter-select"></select>
           <span class="vocab-count" id="vocab-count"></span>
         </div>
         <div class="vocab-table-wrap">
@@ -197,6 +212,7 @@
 
   <script src="js/storage.js"></script>
   <script src="js/lang.js"></script>
+  <script src="js/categories.js"></script>
   <script src="data/de.js"></script>
   <script src="js/srs.js"></script>
   <script src="js/images.js"></script>
