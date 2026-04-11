@@ -103,7 +103,7 @@ const Storage = (() => {
     return get('settings', {
       dailyNew: 5,
       unsplashKey: '',
-      theme: 'light',
+      theme: 'system',
       language: 'de'
     });
   }

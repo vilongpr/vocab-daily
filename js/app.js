@@ -264,11 +264,31 @@ const App = (() => {
     ).join('');
   }
 
+  let systemThemeQuery = null;
+  let systemThemeListener = null;
+
   function loadTheme() {
     const settings = Storage.getSettings();
-    document.documentElement.setAttribute('data-theme', settings.theme);
     const themeSelect = document.getElementById('setting-theme');
     if (themeSelect) themeSelect.value = settings.theme;
+
+    // Clean up previous system listener
+    if (systemThemeQuery && systemThemeListener) {
+      systemThemeQuery.removeEventListener('change', systemThemeListener);
+      systemThemeListener = null;
+    }
+
+    if (settings.theme === 'system') {
+      systemThemeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+      const apply = () => {
+        document.documentElement.setAttribute('data-theme', systemThemeQuery.matches ? 'dark' : 'light');
+      };
+      systemThemeListener = apply;
+      systemThemeQuery.addEventListener('change', apply);
+      apply();
+    } else {
+      document.documentElement.setAttribute('data-theme', settings.theme);
+    }
   }
 
   function initThemeSelector() {
