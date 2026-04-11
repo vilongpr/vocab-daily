@@ -28,6 +28,15 @@ const Categories = (() => {
 
   function getAll() { return ALL; }
 
+  /** Return entries sorted alphabetically by label, with 'All Words' pinned first. */
+  function getSorted() {
+    const entries = Object.entries(ALL);
+    const allEntry = entries.find(([k]) => k === 'all');
+    const rest = entries.filter(([k]) => k !== 'all')
+      .sort((a, b) => a[1].label.localeCompare(b[1].label));
+    return [allEntry, ...rest];
+  }
+
   function getLabel(key) {
     return ALL[key] ? ALL[key].label : key;
   }
@@ -41,5 +50,5 @@ const Categories = (() => {
     return words.filter(w => w.category === categoryKey);
   }
 
-  return { getAll, getLabel, getEmoji, filterWords };
+  return { getAll, getSorted, getLabel, getEmoji, filterWords };
 })();

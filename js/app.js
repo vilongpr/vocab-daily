@@ -94,8 +94,8 @@ const App = (() => {
     // Populate category dropdown if needed
     const catSelect = document.getElementById('vocab-category-filter');
     if (catSelect.options.length <= 1) {
-      const cats = Categories.getAll();
-      catSelect.innerHTML = Object.entries(cats).map(([key, cat]) =>
+      const cats = Categories.getSorted();
+      catSelect.innerHTML = cats.map(([key, cat]) =>
         `<option value="${key}">${cat.emoji} ${cat.label}</option>`
       ).join('');
     }
@@ -191,8 +191,8 @@ const App = (() => {
   function populateCategoryFilter() {
     const select = document.getElementById('filter-category');
     if (select.options.length > 1) return; // already populated
-    const cats = Categories.getAll();
-    select.innerHTML = Object.entries(cats).map(([key, cat]) =>
+    const cats = Categories.getSorted();
+    select.innerHTML = cats.map(([key, cat]) =>
       `<option value="${key}">${cat.emoji} ${cat.label}</option>`
     ).join('');
     select.value = lastCategory;
