@@ -254,21 +254,11 @@ const App = (() => {
     });
   }
 
-  function toggleTheme() {
-    const settings = Storage.getSettings();
-    const newTheme = settings.theme === 'dark' ? 'light' : 'dark';
-    Storage.updateSettings({ theme: newTheme });
-    loadTheme();
-  }
-
   function bindEvents() {
     // Navigation
     document.querySelectorAll('.nav-btn').forEach(btn => {
       btn.addEventListener('click', () => showView(btn.dataset.view));
     });
-
-    // Theme toggle (legacy header button, now hidden)
-    document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
 
     // Word of the Day pronunciation
     document.getElementById('btn-wod-speak').addEventListener('click', () => {

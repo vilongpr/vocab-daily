@@ -74,17 +74,6 @@ header {
 .nav-btn:hover { background: var(--border); }
 .nav-btn.active { color: var(--accent); font-weight: 600; }
 
-#theme-toggle {
-  background: none;
-  border: none;
-  font-size: 1.3rem;
-  cursor: pointer;
-  padding: 0.4rem;
-  border-radius: 8px;
-  transition: background 0.2s;
-}
-#theme-toggle:hover { background: var(--border); }
-
 /* === Views === */
 .view { display: none; padding: 1.5rem; max-width: 700px; margin: 0 auto; }
 .view.active { display: block; }
