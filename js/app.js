@@ -39,9 +39,6 @@ const App = (() => {
     document.getElementById('mode-icon-bt').textContent = labels['base-target'].icon;
     document.getElementById('mode-title-bt').textContent = labels['base-target'].title;
     document.getElementById('mode-desc-bt').textContent = labels['base-target'].desc;
-    document.getElementById('mode-icon-it').textContent = labels['img-target'].icon;
-    document.getElementById('mode-title-it').textContent = labels['img-target'].title;
-    document.getElementById('mode-desc-it').textContent = labels['img-target'].desc;
   }
 
   function initLanguageSelector() {
@@ -91,14 +88,14 @@ const App = (() => {
     const thBase = document.getElementById('vocab-th-base');
     const thTarget = document.getElementById('vocab-th-target');
 
-    // Populate category dropdown if needed
+    // Populate category dropdown
     const catSelect = document.getElementById('vocab-category-filter');
-    if (catSelect.options.length <= 1) {
-      const cats = Categories.getSorted();
-      catSelect.innerHTML = cats.map(([key, cat]) =>
-        `<option value="${key}">${cat.emoji} ${cat.label}</option>`
-      ).join('');
-    }
+    const currentCat = catSelect.value || 'all';
+    const cats = Categories.getSorted();
+    catSelect.innerHTML = cats.map(([key, cat]) =>
+      `<option value="${key}">${cat.emoji} ${cat.label}</option>`
+    ).join('');
+    catSelect.value = currentCat;
 
     const catKey = catSelect.value || 'all';
     const query = filter.toLowerCase();
@@ -205,9 +202,6 @@ const App = (() => {
     lastReviewOnly = reviewOnly;
 
     let pool = Categories.filterWords(WORDS, category);
-    if (mode === 'img-target') {
-      pool = pool.filter(w => w.imageable);
-    }
     return { pool, reviewOnly };
   }
 
@@ -328,9 +322,7 @@ const App = (() => {
 
     // Learn more words from summary
     document.getElementById('btn-learn-more').addEventListener('click', () => {
-      const pool = lastMode === 'img-target'
-        ? Categories.filterWords(WORDS, lastCategory).filter(w => w.imageable)
-        : Categories.filterWords(WORDS, lastCategory);
+      const pool = Categories.filterWords(WORDS, lastCategory);
       const queue = SRS.getExtraQueue(pool, 5);
       if (queue.length > 0) {
         showView('flashcard');
@@ -340,9 +332,7 @@ const App = (() => {
 
     // "Caught up" screen buttons
     document.getElementById('btn-caught-up-learn').addEventListener('click', () => {
-      const pool = lastMode === 'img-target'
-        ? Categories.filterWords(WORDS, lastCategory).filter(w => w.imageable)
-        : Categories.filterWords(WORDS, lastCategory);
+      const pool = Categories.filterWords(WORDS, lastCategory);
       const queue = SRS.getExtraQueue(pool, 5);
       if (queue.length > 0) {
         Flashcard.startSession(queue, lastMode);

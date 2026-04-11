@@ -122,26 +122,6 @@ const Flashcard = (() => {
       elements.answer.textContent = (word.emoji ? word.emoji + ' ' : '') + word.target;
       elements.pos.textContent = word.pos;
       elements.extra.textContent = '';
-    } else if (currentMode === 'img-target') {
-      const lang = Lang.getCurrent();
-      elements.word.textContent = '';
-      elements.hint.textContent = `Guess the ${lang.name} word`;
-
-      const img = await Images.fetchImage(word);
-      if (img.url) {
-        elements.image.style.display = 'block';
-        elements.image.style.backgroundImage = `url(${img.url})`;
-        elements.word.textContent = img.emoji || '';
-      } else {
-        // Emoji fallback — show the word-specific emoji large
-        elements.image.style.display = 'none';
-        elements.word.textContent = img.emoji || '🖼️';
-        elements.word.style.fontSize = '4rem';
-      }
-
-      elements.answer.textContent = word.target;
-      elements.pos.textContent = word.pos;
-      elements.extra.textContent = word.base;
     }
   }
 
