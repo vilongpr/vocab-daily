@@ -5,15 +5,24 @@ const App = (() => {
   let lastCategory = 'all';
   let lastReviewOnly = false;
 
+  const ROUTABLE_VIEWS = ['dashboard', 'vocabulary', 'settings'];
+
   function init() {
     Flashcard.init();
     loadTheme();
+    initThemeSelector();
     updateBranding();
     updateModeLabels();
     bindEvents();
     initLanguageSelector();
-    showView('dashboard');
-    updateDashboard();
+    navigateToHash();
+    window.addEventListener('hashchange', navigateToHash);
+  }
+
+  function navigateToHash() {
+    const hash = location.hash.replace('#', '') || 'dashboard';
+    const view = ROUTABLE_VIEWS.includes(hash) ? hash : 'dashboard';
+    showView(view, true);
   }
 
   function updateBranding() {
@@ -52,7 +61,7 @@ const App = (() => {
     });
   }
 
-  function showView(name) {
+  function showView(name, fromHash) {
     document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
     const view = document.getElementById(`${name}-view`);
     if (view) view.classList.add('active');
@@ -60,6 +69,11 @@ const App = (() => {
     document.querySelectorAll('.nav-btn').forEach(btn => {
       btn.classList.toggle('active', btn.dataset.view === name);
     });
+
+    // Update URL hash for routable views (avoid re-triggering hashchange)
+    if (!fromHash && ROUTABLE_VIEWS.includes(name)) {
+      history.replaceState(null, '', '#' + name);
+    }
 
     if (name === 'dashboard') updateDashboard();
     if (name === 'vocabulary') renderVocabulary();
@@ -227,7 +241,17 @@ const App = (() => {
   function loadTheme() {
     const settings = Storage.getSettings();
     document.documentElement.setAttribute('data-theme', settings.theme);
-    document.getElementById('theme-toggle').textContent = settings.theme === 'dark' ? '☀️' : '🌙';
+    const themeSelect = document.getElementById('setting-theme');
+    if (themeSelect) themeSelect.value = settings.theme;
+  }
+
+  function initThemeSelector() {
+    const themeSelect = document.getElementById('setting-theme');
+    themeSelect.value = Storage.getSettings().theme;
+    themeSelect.addEventListener('change', () => {
+      Storage.updateSettings({ theme: themeSelect.value });
+      loadTheme();
+    });
   }
 
   function toggleTheme() {
@@ -243,8 +267,17 @@ const App = (() => {
       btn.addEventListener('click', () => showView(btn.dataset.view));
     });
 
-    // Theme toggle
+    // Theme toggle (legacy header button, now hidden)
     document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
+
+    // Word of the Day pronunciation
+    document.getElementById('btn-wod-speak').addEventListener('click', () => {
+      const word = document.getElementById('wod-target').textContent;
+      if (word && word !== '—') {
+        const lang = Lang.getCurrent();
+        Speech.speak(word, lang.speechCode || lang.code);
+      }
+    });
 
     // Vocabulary search and sort
     document.getElementById('vocab-search').addEventListener('input', (e) => {

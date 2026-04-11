@@ -18,7 +18,7 @@
         <button class="nav-btn" data-view="vocabulary">Vocabulary</button>
         <button class="nav-btn" data-view="settings">Settings</button>
       </nav>
-      <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      <button id="theme-toggle" aria-label="Toggle dark mode" style="display:none">🌙</button>
     </header>
 
     <main id="view-container">
@@ -47,6 +47,7 @@
           <h3>Word of the Day</h3>
           <p class="wod-target" id="wod-target">—</p>
           <p class="wod-base" id="wod-base">—</p>
+          <button class="btn-pronounce" id="btn-wod-speak" aria-label="Hear pronunciation" style="position:static;margin:0.5rem auto 0">🔊</button>
         </div>
 
         <div class="progress-section">
@@ -190,6 +191,15 @@
       <!-- Settings View -->
       <section id="settings-view" class="view">
         <h2>Settings</h2>
+        <div class="settings-group">
+          <label>
+            Theme
+            <select id="setting-theme">
+              <option value="light">☀️ Light</option>
+              <option value="dark">🌙 Dark</option>
+            </select>
+          </label>
+        </div>
         <div class="settings-group">
           <label>
             Language
