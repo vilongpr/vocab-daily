@@ -1,0 +1,38 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - heading "🇩🇪 Vocab Daily" [level=1] [ref=e4]
+    - navigation [ref=e5]:
+      - button "Dashboard" [ref=e6] [cursor=pointer]
+      - button "Vocabulary" [ref=e7] [cursor=pointer]
+      - button "Settings" [ref=e8] [cursor=pointer]
+    - button "Toggle dark mode" [ref=e9] [cursor=pointer]: 🌙
+  - main [ref=e10]:
+    - generic [ref=e11]:
+      - generic [ref=e12]:
+        - generic [ref=e13]:
+          - generic [ref=e14]: "0"
+          - generic [ref=e15]: Words Learned
+        - generic [ref=e16]:
+          - generic [ref=e17]: "0"
+          - generic [ref=e18]: Day Streak 🔥
+        - generic [ref=e19]:
+          - generic [ref=e20]: 0%
+          - generic [ref=e21]: Accuracy
+        - generic [ref=e22]:
+          - generic [ref=e23]: "5"
+          - generic [ref=e24]: Due Today
+      - generic [ref=e25]:
+        - heading "Word of the Day" [level=3] [ref=e26]
+        - paragraph [ref=e27]: Nummer
+        - paragraph [ref=e28]: number
+      - generic [ref=e29]:
+        - heading "Weekly Progress" [level=3] [ref=e30]
+        - generic [ref=e31]:
+          - generic [ref=e33]: Sat
+          - generic [ref=e35]: Sun
+          - generic [ref=e37]: Mon
+          - generic [ref=e39]: Tue
+          - generic [ref=e41]: Wed
+          - generic [ref=e43]: Thu
+          - generic [ref=e45]: Fri
+      - button "Start Today's Practice →" [ref=e46] [cursor=pointer]

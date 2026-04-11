@@ -1,0 +1,53 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - heading "🇩🇪 Vocab Daily" [level=1] [ref=e4]
+    - navigation [ref=e5]:
+      - button "Dashboard" [ref=e6] [cursor=pointer]
+      - button "Vocabulary" [ref=e7] [cursor=pointer]
+      - button "Settings" [ref=e8] [cursor=pointer]
+    - button "Toggle dark mode" [ref=e9] [cursor=pointer]: 🌙
+  - main [ref=e10]:
+    - generic [ref=e62]:
+      - heading "Choose Your Mode" [level=2] [ref=e63]
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - generic [ref=e66]: Category
+          - combobox "Category" [ref=e67]:
+            - option "📚 All Words" [selected]
+            - option "🍽️ Food & Drink"
+            - option "✈️ Travel & Transport"
+            - option "🏠 Home & Furniture"
+            - option "🌿 Nature & Weather"
+            - option "🫀 Body"
+            - option "👨‍👩‍👧‍👦 Family & People"
+            - option "🐾 Animals"
+            - option "🎨 Colors"
+            - option "🔢 Numbers"
+            - option "⏰ Time & Seasons"
+            - option "👕 Clothing"
+            - option "🍳 Kitchen"
+            - option "🏥 Health & Medicine"
+            - option "🎓 Education"
+            - option "💼 Work & Society"
+            - option "🎭 Entertainment"
+            - option "💭 Emotions & Abstract"
+            - option "👋 Greetings & Basics"
+            - option "🏃 Verbs"
+            - option "✨ Adjectives"
+            - option "📍 Adverbs"
+        - generic [ref=e69] [cursor=pointer]:
+          - checkbox "Review only (no new words)" [ref=e70]
+          - generic [ref=e71]: Review only (no new words)
+      - generic [ref=e72]:
+        - button "🇩🇪 → 🇬🇧 German → English See German, guess English" [ref=e73] [cursor=pointer]:
+          - generic [ref=e74]: 🇩🇪 → 🇬🇧
+          - generic [ref=e75]: German → English
+          - generic [ref=e76]: See German, guess English
+        - button "🇬🇧 → 🇩🇪 English → German See English, guess German" [ref=e77] [cursor=pointer]:
+          - generic [ref=e78]: 🇬🇧 → 🇩🇪
+          - generic [ref=e79]: English → German
+          - generic [ref=e80]: See English, guess German
+        - button "🖼️ → 🇩🇪 Image → German See image, guess the word" [ref=e81] [cursor=pointer]:
+          - generic [ref=e82]: 🖼️ → 🇩🇪
+          - generic [ref=e83]: Image → German
+          - generic [ref=e84]: See image, guess the word

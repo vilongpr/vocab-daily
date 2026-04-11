@@ -8,6 +8,7 @@ const LANGUAGES = {
     flag: '🇩🇪',
     dataFile: 'data/de.js',
     speechCode: 'de-DE',
+    piperVoiceId: 'de_DE-thorsten-medium',
     // Base language the learner already speaks
     base: { code: 'en', name: 'English', flag: '🇬🇧' }
   }

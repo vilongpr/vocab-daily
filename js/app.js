@@ -15,6 +15,7 @@ const App = (() => {
     updateModeLabels();
     bindEvents();
     initLanguageSelector();
+    initPiperLoadingUI();
     navigateToHash();
     window.addEventListener('hashchange', navigateToHash);
   }
@@ -363,6 +364,17 @@ const App = (() => {
         Storage.resetAll();
         location.reload();
       }
+    });
+  }
+
+  function initPiperLoadingUI() {
+    if (typeof Speech.onPiperStatusChange !== 'function') return;
+    Speech.onPiperStatusChange((status) => {
+      const loading = status === 'downloading';
+      document.querySelectorAll('.btn-pronounce, .btn-pronounce-sm').forEach(btn => {
+        btn.classList.toggle('piper-loading', loading);
+        btn.title = loading ? 'Downloading voice model…' : '';
+      });
     });
   }
 

@@ -1,0 +1,24 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - heading "🇩🇪 Vocab Daily" [level=1] [ref=e4]
+    - navigation [ref=e5]:
+      - button "Dashboard" [ref=e6] [cursor=pointer]
+      - button "Vocabulary" [ref=e7] [cursor=pointer]
+      - button "Settings" [ref=e8] [cursor=pointer]
+  - main [ref=e9]:
+    - generic [ref=e4264]:
+      - heading "Settings" [level=2] [ref=e4265]
+      - generic [ref=e4267]:
+        - text: Theme
+        - combobox "Theme" [ref=e4268]:
+          - option "☀️ Light" [selected]
+          - option "🌙 Dark"
+      - generic [ref=e4270]:
+        - text: Language
+        - combobox "Language" [ref=e4271]:
+          - option "🇩🇪 German (Deutsch)" [selected]
+      - generic [ref=e4273]:
+        - text: New words per day
+        - slider "New words per day 5" [ref=e4274]: "5"
+        - generic [ref=e4275]: "5"
+      - button "Reset All Progress" [ref=e4277] [cursor=pointer]

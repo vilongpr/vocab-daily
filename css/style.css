@@ -409,6 +409,16 @@ header {
 }
 .btn-pronounce:hover { border-color: var(--accent); background: var(--accent); color: #fff; transform: scale(1.1); }
 .btn-pronounce:active { transform: scale(0.95); }
+.btn-pronounce.piper-loading,
+.btn-pronounce-sm.piper-loading {
+  pointer-events: none;
+  opacity: 0.6;
+  animation: pulse-loading 1.2s ease-in-out infinite;
+}
+@keyframes pulse-loading {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
 
 .card-image {
   width: 200px;

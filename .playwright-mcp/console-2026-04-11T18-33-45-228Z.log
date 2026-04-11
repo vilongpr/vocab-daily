@@ -1,0 +1,10 @@
+[   27696ms] [WARNING] Piper TTS synthesis failed, falling back: TypeError: Failed to resolve module specifier 'onnxruntime-web'
+    at _TtsSession.init (https://cdn.jsdelivr.net/npm/@mintplex-labs/piper-tts-web@1.0.4/dist/piper-tts-web.js:283:30)
+    at async _TtsSession.predict (https://cdn.jsdelivr.net/npm/@mintplex-labs/piper-tts-web@1.0.4/dist/piper-tts-web.js:299:5)
+    at async piperSpeak (http://localhost:8765/js/speech.js:90:19)
+    at async Object.speak (http://localhost:8765/js/speech.js:123:20) @ http://localhost:8765/js/speech.js:94
+[   65045ms] [WARNING] Piper TTS synthesis failed, falling back: TypeError: Failed to resolve module specifier 'onnxruntime-web'
+    at _TtsSession.init (https://cdn.jsdelivr.net/npm/@mintplex-labs/piper-tts-web@1.0.4/dist/piper-tts-web.js:283:30)
+    at async _TtsSession.predict (https://cdn.jsdelivr.net/npm/@mintplex-labs/piper-tts-web@1.0.4/dist/piper-tts-web.js:299:5)
+    at async piperSpeak (http://localhost:8765/js/speech.js:90:19)
+    at async Object.speak (http://localhost:8765/js/speech.js:123:20) @ http://localhost:8765/js/speech.js:94

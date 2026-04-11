@@ -1,0 +1,4 @@
+[    2301ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://cdn.jsdelivr.net/npm/@mintplex-labs/piper-tts-web@1.0.4/dist/index.js:0
+[    2313ms] ReferenceError: Speech is not defined
+    at initPiperLoadingUI (http://localhost:8765/js/app.js:371:5)
+    at HTMLDocument.init (http://localhost:8765/js/app.js:18:5)
