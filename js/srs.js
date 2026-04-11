@@ -178,9 +178,35 @@ const SRS = (() => {
     return allWords.filter(w => !introduced.includes(w.id)).length;
   }
 
+  /**
+   * Categorise every word into a mastery level.
+   * Returns { new, learning, familiar, mastered, total }.
+   */
+  function getMasteryBreakdown(allWords) {
+    const allSRS = Storage.getAllWordData();
+    const introduced = new Set(Storage.getIntroducedWords());
+    let counts = { new: 0, learning: 0, familiar: 0, mastered: 0, total: allWords.length };
+
+    for (const w of allWords) {
+      if (!introduced.has(w.id)) {
+        counts.new++;
+        continue;
+      }
+      const d = allSRS[w.id];
+      if (!d || d.interval <= 1) {
+        counts.learning++;
+      } else if (d.interval <= 20) {
+        counts.familiar++;
+      } else {
+        counts.mastered++;
+      }
+    }
+    return counts;
+  }
+
   return {
     initWord, grade, getTodayQueue, getDueCount,
     getTotalLearned, getAccuracy, shuffle,
-    getExtraQueue, getAvailableNewCount
+    getExtraQueue, getAvailableNewCount, getMasteryBreakdown
   };
 })();

@@ -61,6 +61,7 @@ const App = (() => {
 
     if (name === 'dashboard') updateDashboard();
     if (name === 'vocabulary') renderVocabulary();
+    if (name === 'summary') renderMasteryBar('mastery-bar-summary', 'mastery-legend-summary');
   }
 
   // --- Vocabulary ---
@@ -128,6 +129,7 @@ const App = (() => {
     document.getElementById('wod-base').textContent = wod.base;
 
     renderWeeklyChart();
+    renderMasteryBar('mastery-bar-dashboard', 'mastery-legend-dashboard');
   }
 
   function renderWeeklyChart() {
@@ -157,6 +159,33 @@ const App = (() => {
         </div>
       `;
     }).join('');
+  }
+
+  function renderMasteryBar(barId, legendId) {
+    const m = SRS.getMasteryBreakdown(WORDS);
+    const pct = (n) => m.total > 0 ? ((n / m.total) * 100).toFixed(1) : 0;
+
+    const bar = document.getElementById(barId);
+    const legend = document.getElementById(legendId);
+
+    bar.innerHTML = [
+      { cls: 'seg-mastered', val: m.mastered },
+      { cls: 'seg-familiar', val: m.familiar },
+      { cls: 'seg-learning', val: m.learning },
+      { cls: 'seg-new',      val: m.new },
+    ].map(s => s.val > 0
+      ? `<div class="seg ${s.cls}" style="width:${pct(s.val)}%"></div>`
+      : ''
+    ).join('');
+
+    legend.innerHTML = [
+      { cls: 'mastered', label: 'Mastered', val: m.mastered },
+      { cls: 'familiar', label: 'Familiar', val: m.familiar },
+      { cls: 'learning', label: 'Learning', val: m.learning },
+      { cls: 'new',      label: 'New',      val: m.new },
+    ].map(s =>
+      `<span class="mastery-legend-item"><span class="mastery-dot ${s.cls}"></span>${s.label}: ${s.val}</span>`
+    ).join('');
   }
 
   function loadTheme() {

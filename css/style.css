@@ -551,6 +551,57 @@ kbd {
   color: var(--text-secondary);
 }
 
+/* === Mastery Progress Bar === */
+.mastery-section {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  box-shadow: var(--shadow);
+}
+.mastery-section h3 { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem; }
+
+.mastery-bar {
+  display: flex;
+  height: 1.4rem;
+  border-radius: 0.7rem;
+  overflow: hidden;
+  background: var(--border);
+}
+.mastery-bar .seg {
+  transition: width 0.5s ease;
+  min-width: 0;
+}
+.mastery-bar .seg-mastered  { background: #2ec4b6; }
+.mastery-bar .seg-familiar  { background: #4361ee; }
+.mastery-bar .seg-learning  { background: #f4a261; }
+.mastery-bar .seg-new       { background: var(--border); }
+
+.mastery-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.75rem;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+.mastery-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.mastery-dot {
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  display: inline-block;
+}
+.mastery-dot.mastered  { background: #2ec4b6; }
+.mastery-dot.familiar  { background: #4361ee; }
+.mastery-dot.learning  { background: #f4a261; }
+.mastery-dot.new       { background: var(--border); border: 1px solid var(--text-secondary); }
+
 /* === Responsive === */
 @media (max-width: 600px) {
   header { flex-wrap: wrap; padding: 0.75rem 1rem; }
