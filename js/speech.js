@@ -111,9 +111,8 @@ const Speech = (() => {
   async function speak(text, langCode) {
     if (!text) return;
 
-    // Check if the current language has a Piper voice configured
     const lang = typeof Lang !== 'undefined' ? Lang.getCurrent() : null;
-    const piperVoiceId = lang?.piperVoiceId;
+    const piperVoiceId = typeof Lang !== 'undefined' ? Lang.getPiperVoiceId() : null;
     const isTargetLang = lang && (langCode === lang.speechCode || langCode === lang.code);
 
     if (piperVoiceId && isTargetLang) {

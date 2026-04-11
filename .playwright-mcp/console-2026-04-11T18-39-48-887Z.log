@@ -1,0 +1,4 @@
+[   50577ms] [WARNING] env.wasm.numThreads is set to 12, but this will not work unless you enable crossOriginIsolated mode. See https://web.dev/cross-origin-isolation-guide/ for more info. @ https://cdn.jsdelivr.net/npm/onnxruntime-web@1.18.0/dist/esm/ort.min.js:1805
+[   50980ms] [WARNING] Piper TTS synthesis failed, falling back: Error: Can't create a session. ERROR_CODE: 2, ERROR_MESSAGE: No graph was found in the protobuf.
+    at _e (https://cdn.jsdelivr.net/npm/onnxruntime-web@1.18.0/dist/esm/ort.min.js:1806:13675)
+    at Jp (https://cdn.jsdelivr.net/npm/onnxruntime-web@1.18.0/dist/esm/ort.min.js:1806:22489) @ http://localhost:8765/js/speech.js:94

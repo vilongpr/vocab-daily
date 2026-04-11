@@ -15,6 +15,7 @@ const App = (() => {
     updateModeLabels();
     bindEvents();
     initLanguageSelector();
+    initVoiceSelector();
     initPiperLoadingUI();
     navigateToHash();
     window.addEventListener('hashchange', navigateToHash);
@@ -56,7 +57,37 @@ const App = (() => {
       updateBranding();
       updateModeLabels();
       updateDashboard();
+      populateVoiceSelector();
     });
+  }
+
+  function initVoiceSelector() {
+    populateVoiceSelector();
+    document.getElementById('setting-voice').addEventListener('change', (e) => {
+      Storage.updateSettings({ piperVoice: e.target.value });
+      // Piper TTS uses a singleton ONNX session — reload to apply the new voice model
+      location.reload();
+    });
+  }
+
+  function populateVoiceSelector() {
+    const select = document.getElementById('setting-voice');
+    const lang = Lang.getCurrent();
+    const voices = lang.piperVoices || [];
+    const currentVoice = Lang.getPiperVoiceId();
+
+    select.innerHTML = voices.map(v => {
+      const icon = v.gender === 'female' ? '♀' : '♂';
+      const rec = v.id === lang.piperVoiceId ? ' (Recommended)' : '';
+      return `<option value="${v.id}" ${v.id === currentVoice ? 'selected' : ''}>${icon} ${v.label}${rec}</option>`;
+    }).join('');
+
+    if (voices.length === 0) {
+      select.innerHTML = '<option>Default</option>';
+      select.disabled = true;
+    } else {
+      select.disabled = false;
+    }
   }
 
   function showView(name, fromHash) {

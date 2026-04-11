@@ -1,0 +1,6 @@
+[   40544ms] [WARNING] Piper TTS synthesis failed, falling back: Error: Can't create a session. ERROR_CODE: 2, ERROR_MESSAGE: No graph was found in the protobuf.
+    at _e (https://cdn.jsdelivr.net/npm/onnxruntime-web@1.18.0/dist/esm/ort.min.js:1806:13675)
+    at Jp (https://cdn.jsdelivr.net/npm/onnxruntime-web@1.18.0/dist/esm/ort.min.js:1806:22489) @ http://localhost:8765/js/speech.js:94
+[   72789ms] [WARNING] Piper TTS synthesis failed, falling back: Error: Can't create a session. ERROR_CODE: 2, ERROR_MESSAGE: No graph was found in the protobuf.
+    at _e (https://cdn.jsdelivr.net/npm/onnxruntime-web@1.18.0/dist/esm/ort.min.js:1806:13675)
+    at Jp (https://cdn.jsdelivr.net/npm/onnxruntime-web@1.18.0/dist/esm/ort.min.js:1806:22489) @ http://localhost:8765/js/speech.js:94

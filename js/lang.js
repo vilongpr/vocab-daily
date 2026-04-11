@@ -9,6 +9,17 @@ const LANGUAGES = {
     dataFile: 'data/de.js',
     speechCode: 'de-DE',
     piperVoiceId: 'de_DE-thorsten-medium',
+    piperVoices: [
+      { id: 'de_DE-thorsten-medium', label: 'Thorsten (medium)', gender: 'male', quality: 'medium' },
+      { id: 'de_DE-thorsten-high', label: 'Thorsten (high)', gender: 'male', quality: 'high' },
+      { id: 'de_DE-thorsten-low', label: 'Thorsten (low)', gender: 'male', quality: 'low' },
+      { id: 'de_DE-thorsten_emotional-medium', label: 'Thorsten Emotional', gender: 'male', quality: 'medium' },
+      { id: 'de_DE-kerstin-low', label: 'Kerstin', gender: 'female', quality: 'low' },
+      { id: 'de_DE-karlsson-low', label: 'Karlsson', gender: 'male', quality: 'low' },
+      { id: 'de_DE-ramona-low', label: 'Ramona', gender: 'female', quality: 'low' },
+      { id: 'de_DE-eva_k-x_low', label: 'Eva K', gender: 'female', quality: 'x-low' },
+      { id: 'de_DE-pavoque-low', label: 'Pavoque', gender: 'male', quality: 'low' },
+    ],
     // Base language the learner already speaks
     base: { code: 'en', name: 'English', flag: '🇬🇧' }
   }
@@ -53,5 +64,14 @@ const Lang = (() => {
     };
   }
 
-  return { getCurrent, getCode, getAvailable, getModeLabels };
+  function getPiperVoiceId() {
+    const lang = getCurrent();
+    const settings = Storage.getSettings();
+    const saved = settings.piperVoice;
+    // Validate saved voice still exists for this language
+    if (saved && lang.piperVoices?.some(v => v.id === saved)) return saved;
+    return lang.piperVoiceId;
+  }
+
+  return { getCurrent, getCode, getAvailable, getModeLabels, getPiperVoiceId };
 })();
