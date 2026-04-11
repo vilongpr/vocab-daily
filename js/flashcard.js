@@ -111,7 +111,7 @@ const Flashcard = (() => {
     }
 
     if (currentMode === 'target-base') {
-      elements.word.textContent = word.target;
+      elements.word.textContent = (word.emoji ? word.emoji + ' ' : '') + word.target;
       elements.hint.textContent = word.pos;
       elements.answer.textContent = word.base;
       elements.pos.textContent = '';
@@ -119,7 +119,7 @@ const Flashcard = (() => {
     } else if (currentMode === 'base-target') {
       elements.word.textContent = word.base;
       elements.hint.textContent = word.pos;
-      elements.answer.textContent = word.target;
+      elements.answer.textContent = (word.emoji ? word.emoji + ' ' : '') + word.target;
       elements.pos.textContent = word.pos;
       elements.extra.textContent = '';
     } else if (currentMode === 'img-target') {
