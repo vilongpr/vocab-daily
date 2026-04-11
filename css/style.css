@@ -663,4 +663,25 @@ kbd {
   .flashcard-actions { grid-template-columns: repeat(3, 1fr); }
   .summary-stats { grid-template-columns: 1fr; }
   .btn-rating { font-size: 0.8rem; }
+
+  /* Vocab controls: stack vertically */
+  .vocab-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .vocab-controls .filter-select { width: 100%; }
+
+  /* Vocab table: compact to avoid horizontal scroll */
+  .vocab-table-wrap { overflow-x: hidden; }
+  .vocab-table { font-size: 0.8rem; table-layout: fixed; width: 100%; }
+  .vocab-table th,
+  .vocab-table td { padding: 0.4rem 0.3rem; }
+  .vocab-table .vocab-emoji { width: 1.8rem; font-size: 1rem; padding: 0.3rem 0.15rem; }
+  .vocab-table .vocab-speak { width: 1.8rem; padding: 0.3rem 0.15rem; }
+  .vocab-table .pos-badge { font-size: 0.65rem; padding: 0.1rem 0.3rem; }
+  .btn-pronounce-sm { width: 1.6rem; height: 1.6rem; font-size: 0.75rem; }
+
+  /* Filter bar */
+  .filter-bar { flex-direction: column; }
+  .filter-select { min-width: unset; width: 100%; }
 }
