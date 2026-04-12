@@ -121,7 +121,8 @@ header {
   margin-bottom: 1.5rem;
   box-shadow: var(--shadow);
 }
-.progress-section h3 { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1rem; }
+.progress-section h3 { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.25rem; }
+.progress-subtitle { font-size: 0.75rem; color: var(--text-secondary); opacity: 0.7; margin: 0 0 1rem; }
 
 .progress-chart {
   display: flex;
