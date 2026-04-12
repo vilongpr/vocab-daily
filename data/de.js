@@ -2064,7 +2064,7 @@ const WORDS = [
     "imageSearch": "message notification",
     "id": "w0210",
     "imageable": false,
-    "category": "work"
+    "category": "phone-ui"
   },
   {
     "target": "Foto",
@@ -3618,7 +3618,7 @@ const WORDS = [
     "id": "w0373",
     "imageable": true,
     "emoji": "🔍",
-    "category": "verbs"
+    "category": "phone-ui"
   },
   {
     "target": "versuchen",
@@ -3829,7 +3829,7 @@ const WORDS = [
     "id": "w0395",
     "imageable": true,
     "emoji": "📞",
-    "category": "verbs"
+    "category": "phone-ui"
   },
   {
     "target": "schicken",
@@ -3849,7 +3849,7 @@ const WORDS = [
     "id": "w0397",
     "imageable": true,
     "emoji": "🔗",
-    "category": "verbs"
+    "category": "phone-ui"
   },
   {
     "target": "schenken",
@@ -5725,5 +5725,350 @@ const WORDS = [
     "id": "w0597",
     "imageable": false,
     "category": "greetings"
+  },
+  {
+    "target": "Einstellungen",
+    "base": "settings",
+    "pos": "noun",
+    "imageSearch": "gear settings icon",
+    "id": "w0598",
+    "imageable": true,
+    "emoji": "⚙️",
+    "category": "phone-ui"
+  },
+  {
+    "target": "löschen",
+    "base": "to delete",
+    "pos": "verb",
+    "imageSearch": "delete trash icon",
+    "id": "w0599",
+    "imageable": true,
+    "emoji": "🗑️",
+    "category": "phone-ui"
+  },
+  {
+    "target": "speichern",
+    "base": "to save",
+    "pos": "verb",
+    "imageSearch": "save floppy disk icon",
+    "id": "w0600",
+    "imageable": true,
+    "emoji": "💾",
+    "category": "phone-ui"
+  },
+  {
+    "target": "senden",
+    "base": "to send",
+    "pos": "verb",
+    "imageSearch": "send message arrow",
+    "id": "w0601",
+    "imageable": true,
+    "emoji": "📤",
+    "category": "phone-ui"
+  },
+  {
+    "target": "empfangen",
+    "base": "to receive",
+    "pos": "verb",
+    "imageSearch": "receive inbox",
+    "id": "w0602",
+    "imageable": true,
+    "emoji": "📥",
+    "category": "phone-ui"
+  },
+  {
+    "target": "herunterladen",
+    "base": "to download",
+    "pos": "verb",
+    "imageSearch": "download arrow icon",
+    "id": "w0603",
+    "imageable": true,
+    "emoji": "⬇️",
+    "category": "phone-ui"
+  },
+  {
+    "target": "hochladen",
+    "base": "to upload",
+    "pos": "verb",
+    "imageSearch": "upload arrow icon",
+    "id": "w0604",
+    "imageable": true,
+    "emoji": "⬆️",
+    "category": "phone-ui"
+  },
+  {
+    "target": "abbrechen",
+    "base": "to cancel",
+    "pos": "verb",
+    "imageSearch": "cancel X button",
+    "id": "w0605",
+    "imageable": true,
+    "emoji": "❌",
+    "category": "phone-ui"
+  },
+  {
+    "target": "bestätigen",
+    "base": "to confirm",
+    "pos": "verb",
+    "imageSearch": "confirm checkmark",
+    "id": "w0606",
+    "imageable": true,
+    "emoji": "✅",
+    "category": "phone-ui"
+  },
+  {
+    "target": "aktualisieren",
+    "base": "to update/refresh",
+    "pos": "verb",
+    "imageSearch": "refresh update icon",
+    "id": "w0607",
+    "imageable": true,
+    "emoji": "🔄",
+    "category": "phone-ui"
+  },
+  {
+    "target": "kopieren",
+    "base": "to copy",
+    "pos": "verb",
+    "imageSearch": "copy clipboard",
+    "id": "w0608",
+    "imageable": true,
+    "emoji": "📋",
+    "category": "phone-ui"
+  },
+  {
+    "target": "einfügen",
+    "base": "to paste",
+    "pos": "verb",
+    "imageSearch": "paste clipboard",
+    "id": "w0609",
+    "imageable": false,
+    "category": "phone-ui"
+  },
+  {
+    "target": "rückgängig",
+    "base": "undo",
+    "pos": "adjective",
+    "imageSearch": "undo arrow icon",
+    "id": "w0610",
+    "imageable": true,
+    "emoji": "↩️",
+    "category": "phone-ui"
+  },
+  {
+    "target": "weiter",
+    "base": "next/continue",
+    "pos": "adverb",
+    "imageSearch": "next forward arrow",
+    "id": "w0611",
+    "imageable": true,
+    "emoji": "➡️",
+    "category": "phone-ui"
+  },
+  {
+    "target": "zurück",
+    "base": "back",
+    "pos": "adverb",
+    "imageSearch": "back arrow",
+    "id": "w0612",
+    "imageable": true,
+    "emoji": "⬅️",
+    "category": "phone-ui"
+  },
+  {
+    "target": "Benachrichtigung",
+    "base": "notification",
+    "pos": "noun",
+    "imageSearch": "notification bell icon",
+    "id": "w0613",
+    "imageable": true,
+    "emoji": "🔔",
+    "category": "phone-ui"
+  },
+  {
+    "target": "Bildschirm",
+    "base": "screen",
+    "pos": "noun",
+    "imageSearch": "phone screen display",
+    "id": "w0614",
+    "imageable": true,
+    "emoji": "📱",
+    "category": "phone-ui"
+  },
+  {
+    "target": "Startseite",
+    "base": "home screen",
+    "pos": "noun",
+    "imageSearch": "phone home screen",
+    "id": "w0615",
+    "imageable": true,
+    "emoji": "🏠",
+    "category": "phone-ui"
+  },
+  {
+    "target": "Tastatur",
+    "base": "keyboard",
+    "pos": "noun",
+    "imageSearch": "phone keyboard",
+    "id": "w0616",
+    "imageable": true,
+    "emoji": "⌨️",
+    "category": "phone-ui"
+  },
+  {
+    "target": "Passwort",
+    "base": "password",
+    "pos": "noun",
+    "imageSearch": "password lock",
+    "id": "w0617",
+    "imageable": true,
+    "emoji": "🔒",
+    "category": "phone-ui"
+  },
+  {
+    "target": "Konto",
+    "base": "account",
+    "pos": "noun",
+    "imageSearch": "user account icon",
+    "id": "w0618",
+    "imageable": true,
+    "emoji": "👤",
+    "category": "phone-ui"
+  },
+  {
+    "target": "Profil",
+    "base": "profile",
+    "pos": "noun",
+    "imageSearch": "user profile",
+    "id": "w0619",
+    "imageable": true,
+    "emoji": "🪪",
+    "category": "phone-ui"
+  },
+  {
+    "target": "anmelden",
+    "base": "to log in",
+    "pos": "verb",
+    "imageSearch": "login sign in",
+    "id": "w0620",
+    "imageable": false,
+    "category": "phone-ui"
+  },
+  {
+    "target": "abmelden",
+    "base": "to log out",
+    "pos": "verb",
+    "imageSearch": "logout sign out",
+    "id": "w0621",
+    "imageable": false,
+    "category": "phone-ui"
+  },
+  {
+    "target": "Lautstärke",
+    "base": "volume",
+    "pos": "noun",
+    "imageSearch": "volume speaker icon",
+    "id": "w0622",
+    "imageable": true,
+    "emoji": "🔊",
+    "category": "phone-ui"
+  },
+  {
+    "target": "Helligkeit",
+    "base": "brightness",
+    "pos": "noun",
+    "imageSearch": "brightness sun icon",
+    "id": "w0623",
+    "imageable": true,
+    "emoji": "☀️",
+    "category": "phone-ui"
+  },
+  {
+    "target": "WLAN",
+    "base": "Wi-Fi",
+    "pos": "noun",
+    "imageSearch": "wifi signal icon",
+    "id": "w0624",
+    "imageable": true,
+    "emoji": "📶",
+    "category": "phone-ui"
+  },
+  {
+    "target": "Bluetooth",
+    "base": "Bluetooth",
+    "pos": "noun",
+    "imageSearch": "bluetooth icon",
+    "id": "w0625",
+    "imageable": false,
+    "category": "phone-ui"
+  },
+  {
+    "target": "Akku",
+    "base": "battery",
+    "pos": "noun",
+    "imageSearch": "battery icon",
+    "id": "w0626",
+    "imageable": true,
+    "emoji": "🔋",
+    "category": "phone-ui"
+  },
+  {
+    "target": "Speicher",
+    "base": "storage/memory",
+    "pos": "noun",
+    "imageSearch": "storage memory chip",
+    "id": "w0627",
+    "imageable": false,
+    "category": "phone-ui"
+  },
+  {
+    "target": "Kamera",
+    "base": "camera",
+    "pos": "noun",
+    "imageSearch": "camera phone",
+    "id": "w0628",
+    "imageable": true,
+    "emoji": "📷",
+    "category": "phone-ui"
+  },
+  {
+    "target": "Mikrofon",
+    "base": "microphone",
+    "pos": "noun",
+    "imageSearch": "microphone",
+    "id": "w0629",
+    "imageable": true,
+    "emoji": "🎤",
+    "category": "phone-ui"
+  },
+  {
+    "target": "Lautsprecher",
+    "base": "speaker",
+    "pos": "noun",
+    "imageSearch": "speaker audio",
+    "id": "w0630",
+    "imageable": true,
+    "emoji": "🔈",
+    "category": "phone-ui"
+  },
+  {
+    "target": "Flugmodus",
+    "base": "airplane mode",
+    "pos": "noun",
+    "imageSearch": "airplane mode icon",
+    "id": "w0631",
+    "imageable": true,
+    "emoji": "✈️",
+    "category": "phone-ui"
+  },
+  {
+    "target": "Mobilfunknetz",
+    "base": "cellular network",
+    "pos": "noun",
+    "imageSearch": "cell tower signal",
+    "id": "w0632",
+    "imageable": true,
+    "emoji": "📡",
+    "category": "phone-ui"
   }
 ];

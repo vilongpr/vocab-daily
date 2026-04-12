@@ -24,6 +24,7 @@ const Categories = (() => {
     'verbs':         { label: 'Verbs',              emoji: '🏃' },
     'adjectives':    { label: 'Adjectives',         emoji: '✨' },
     'adverbs':       { label: 'Adverbs',            emoji: '📍' },
+    'phone-ui':      { label: 'Phone & Tech UI',   emoji: '📱' },
   };
 
   function getAll() { return ALL; }
