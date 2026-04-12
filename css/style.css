@@ -110,18 +110,7 @@ header {
 }
 
 /* === Word of the Day === */
-.word-of-day {
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 1.5rem;
-  text-align: center;
-  margin-bottom: 1.5rem;
-  box-shadow: var(--shadow);
-}
-.word-of-day h3 { font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 0.5rem; }
-.wod-target { font-size: 2rem; font-weight: 700; }
-.wod-base { color: var(--text-secondary); font-size: 1.1rem; margin-top: 0.3rem; }
+
 
 /* === Progress Chart === */
 .progress-section {

@@ -177,13 +177,6 @@ const App = (() => {
     document.getElementById('stat-accuracy').textContent = SRS.getAccuracy() + '%';
     document.getElementById('stat-due').textContent = SRS.getDueCount(WORDS);
 
-    // Word of the Day (deterministic per date)
-    const today = Storage.getLocalDateStr();
-    const dayHash = today.split('-').reduce((a, b) => a + parseInt(b), 0);
-    const wod = WORDS[dayHash % WORDS.length];
-    document.getElementById('wod-target').textContent = wod.target;
-    document.getElementById('wod-base').textContent = wod.base;
-
     renderWeeklyChart();
     renderMasteryBar('mastery-bar-dashboard', 'mastery-legend-dashboard');
   }
@@ -304,15 +297,6 @@ const App = (() => {
     // Navigation
     document.querySelectorAll('.nav-btn').forEach(btn => {
       btn.addEventListener('click', () => showView(btn.dataset.view));
-    });
-
-    // Word of the Day pronunciation
-    document.getElementById('btn-wod-speak').addEventListener('click', () => {
-      const word = document.getElementById('wod-target').textContent;
-      if (word && word !== '—') {
-        const lang = Lang.getCurrent();
-        Speech.speak(word, lang.speechCode || lang.code);
-      }
     });
 
     // Vocabulary search and sort
