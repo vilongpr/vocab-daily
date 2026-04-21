@@ -6070,5 +6070,626 @@ const WORDS = [
     "imageable": true,
     "emoji": "📡",
     "category": "phone-ui"
+  },
+  {
+    "target": "mit",
+    "base": "with",
+    "pos": "preposition",
+    "imageSearch": "together with",
+    "id": "w0633",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "für",
+    "base": "for",
+    "pos": "preposition",
+    "imageSearch": "for someone gift",
+    "id": "w0634",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "von",
+    "base": "from/of",
+    "pos": "preposition",
+    "imageSearch": "from origin",
+    "id": "w0635",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "aus",
+    "base": "out of/from",
+    "pos": "preposition",
+    "imageSearch": "out of exit",
+    "id": "w0636",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "nach",
+    "base": "after/to",
+    "pos": "preposition",
+    "imageSearch": "after next direction",
+    "id": "w0637",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "zu",
+    "base": "to/too",
+    "pos": "preposition",
+    "imageSearch": "toward direction",
+    "id": "w0638",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "bei",
+    "base": "at/near/with",
+    "pos": "preposition",
+    "imageSearch": "near beside",
+    "id": "w0639",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "um",
+    "base": "around/at (time)",
+    "pos": "preposition",
+    "imageSearch": "around circle",
+    "id": "w0640",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "auf",
+    "base": "on/upon",
+    "pos": "preposition",
+    "imageSearch": "on top surface",
+    "id": "w0641",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "an",
+    "base": "at/on (vertical)",
+    "pos": "preposition",
+    "imageSearch": "at location",
+    "id": "w0642",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "in",
+    "base": "in/into",
+    "pos": "preposition",
+    "imageSearch": "inside within",
+    "id": "w0643",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "über",
+    "base": "over/about",
+    "pos": "preposition",
+    "imageSearch": "over above",
+    "id": "w0644",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "unter",
+    "base": "under/among",
+    "pos": "preposition",
+    "imageSearch": "under below",
+    "id": "w0645",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "vor",
+    "base": "before/in front of",
+    "pos": "preposition",
+    "imageSearch": "in front before",
+    "id": "w0646",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "bis",
+    "base": "until/to",
+    "pos": "preposition",
+    "imageSearch": "until end point",
+    "id": "w0647",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "durch",
+    "base": "through",
+    "pos": "preposition",
+    "imageSearch": "through passage",
+    "id": "w0648",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "gegen",
+    "base": "against",
+    "pos": "preposition",
+    "imageSearch": "against opposition",
+    "id": "w0649",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "ohne",
+    "base": "without",
+    "pos": "preposition",
+    "imageSearch": "without missing",
+    "id": "w0650",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "seit",
+    "base": "since/for (time)",
+    "pos": "preposition",
+    "imageSearch": "since time ago",
+    "id": "w0651",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "ab",
+    "base": "from/starting",
+    "pos": "preposition",
+    "imageSearch": "starting from point",
+    "id": "w0652",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "hinter",
+    "base": "behind",
+    "pos": "preposition",
+    "imageSearch": "behind back",
+    "id": "w0653",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "neben",
+    "base": "next to/beside",
+    "pos": "preposition",
+    "imageSearch": "beside next to",
+    "id": "w0654",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "zwischen",
+    "base": "between",
+    "pos": "preposition",
+    "imageSearch": "between middle",
+    "id": "w0655",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "außer",
+    "base": "except/besides",
+    "pos": "preposition",
+    "imageSearch": "except excluding",
+    "id": "w0656",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "wegen",
+    "base": "because of",
+    "pos": "preposition",
+    "imageSearch": "because reason",
+    "id": "w0657",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "während",
+    "base": "during",
+    "pos": "preposition",
+    "imageSearch": "during meanwhile",
+    "id": "w0658",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "trotz",
+    "base": "despite/in spite of",
+    "pos": "preposition",
+    "imageSearch": "despite nevertheless",
+    "id": "w0659",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "statt",
+    "base": "instead of",
+    "pos": "preposition",
+    "imageSearch": "instead alternative",
+    "id": "w0660",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "gegenüber",
+    "base": "opposite/across from",
+    "pos": "preposition",
+    "imageSearch": "opposite facing across",
+    "id": "w0661",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "und",
+    "base": "and",
+    "pos": "conjunction",
+    "imageSearch": "and plus together",
+    "id": "w0662",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "oder",
+    "base": "or",
+    "pos": "conjunction",
+    "imageSearch": "or choice alternative",
+    "id": "w0663",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "aber",
+    "base": "but",
+    "pos": "conjunction",
+    "imageSearch": "but however contrast",
+    "id": "w0664",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "denn",
+    "base": "because/for",
+    "pos": "conjunction",
+    "imageSearch": "because reason why",
+    "id": "w0665",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "sondern",
+    "base": "but rather",
+    "pos": "conjunction",
+    "imageSearch": "but rather instead",
+    "id": "w0666",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "wenn",
+    "base": "when/if",
+    "pos": "conjunction",
+    "imageSearch": "when if condition",
+    "id": "w0667",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "weil",
+    "base": "because",
+    "pos": "conjunction",
+    "imageSearch": "because cause",
+    "id": "w0668",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "dass",
+    "base": "that (conjunction)",
+    "pos": "conjunction",
+    "imageSearch": "that clause",
+    "id": "w0669",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "ob",
+    "base": "whether/if",
+    "pos": "conjunction",
+    "imageSearch": "whether question",
+    "id": "w0670",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "als",
+    "base": "when/as/than",
+    "pos": "conjunction",
+    "imageSearch": "when as comparison",
+    "id": "w0671",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "damit",
+    "base": "so that/in order to",
+    "pos": "conjunction",
+    "imageSearch": "so that purpose",
+    "id": "w0672",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "obwohl",
+    "base": "although",
+    "pos": "conjunction",
+    "imageSearch": "although despite",
+    "id": "w0673",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "bevor",
+    "base": "before",
+    "pos": "conjunction",
+    "imageSearch": "before prior",
+    "id": "w0674",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "nachdem",
+    "base": "after (time)",
+    "pos": "conjunction",
+    "imageSearch": "after following",
+    "id": "w0675",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "falls",
+    "base": "in case/if",
+    "pos": "conjunction",
+    "imageSearch": "in case condition",
+    "id": "w0676",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "sobald",
+    "base": "as soon as",
+    "pos": "conjunction",
+    "imageSearch": "as soon as immediately",
+    "id": "w0677",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "solange",
+    "base": "as long as",
+    "pos": "conjunction",
+    "imageSearch": "as long as duration",
+    "id": "w0678",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "ja",
+    "base": "yes",
+    "pos": "particle",
+    "imageSearch": "yes affirmative",
+    "id": "w0679",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "nein",
+    "base": "no",
+    "pos": "particle",
+    "imageSearch": "no negative",
+    "id": "w0680",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "nicht",
+    "base": "not",
+    "pos": "particle",
+    "imageSearch": "not negation",
+    "id": "w0681",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "doch",
+    "base": "yet/indeed/on the contrary",
+    "pos": "particle",
+    "imageSearch": "indeed contrary",
+    "id": "w0682",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "nur",
+    "base": "only/just",
+    "pos": "particle",
+    "imageSearch": "only just sole",
+    "id": "w0683",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "ganz",
+    "base": "quite/entirely/whole",
+    "pos": "particle",
+    "imageSearch": "entirely whole complete",
+    "id": "w0684",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "etwa",
+    "base": "approximately/about",
+    "pos": "particle",
+    "imageSearch": "approximately roughly",
+    "id": "w0685",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "circa",
+    "base": "approximately",
+    "pos": "particle",
+    "imageSearch": "approximately around",
+    "id": "w0686",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "mal",
+    "base": "once/times (casual)",
+    "pos": "particle",
+    "imageSearch": "once time casual",
+    "id": "w0687",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "wohl",
+    "base": "probably/well",
+    "pos": "particle",
+    "imageSearch": "probably likely",
+    "id": "w0688",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "eigentlich",
+    "base": "actually/really",
+    "pos": "particle",
+    "imageSearch": "actually really truth",
+    "id": "w0689",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "vielleicht",
+    "base": "maybe/perhaps",
+    "pos": "particle",
+    "imageSearch": "maybe perhaps uncertain",
+    "id": "w0690",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "natürlich",
+    "base": "naturally/of course",
+    "pos": "particle",
+    "imageSearch": "of course naturally",
+    "id": "w0691",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "bestimmt",
+    "base": "certainly/definitely",
+    "pos": "particle",
+    "imageSearch": "certainly sure definite",
+    "id": "w0692",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "überhaupt",
+    "base": "at all/in general",
+    "pos": "particle",
+    "imageSearch": "at all general",
+    "id": "w0693",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "ins",
+    "base": "into the (in+das)",
+    "pos": "contraction",
+    "imageSearch": "into inside",
+    "id": "w0694",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "zum",
+    "base": "to the (zu+dem)",
+    "pos": "contraction",
+    "imageSearch": "to the toward",
+    "id": "w0695",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "zur",
+    "base": "to the (zu+der)",
+    "pos": "contraction",
+    "imageSearch": "to the feminine",
+    "id": "w0696",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "am",
+    "base": "at the (an+dem)",
+    "pos": "contraction",
+    "imageSearch": "at the location",
+    "id": "w0697",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "im",
+    "base": "in the (in+dem)",
+    "pos": "contraction",
+    "imageSearch": "in the inside",
+    "id": "w0698",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "vom",
+    "base": "from the (von+dem)",
+    "pos": "contraction",
+    "imageSearch": "from the origin",
+    "id": "w0699",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "ans",
+    "base": "to the (an+das)",
+    "pos": "contraction",
+    "imageSearch": "to the onto",
+    "id": "w0700",
+    "imageable": false,
+    "category": "grammar"
+  },
+  {
+    "target": "beim",
+    "base": "at the (bei+dem)",
+    "pos": "contraction",
+    "imageSearch": "at the during",
+    "id": "w0701",
+    "imageable": false,
+    "category": "grammar"
   }
 ];
